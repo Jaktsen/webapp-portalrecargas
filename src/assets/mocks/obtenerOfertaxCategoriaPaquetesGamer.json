@@ -1,0 +1,139 @@
+{
+	"comunResponseType": {
+		"MessageResponse": {
+			"Body": {
+				"listaProductosDeCompra": [{
+					"idTipoLinea": "1",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2022-01-10 00:00:00.0",
+					"codTipoLinea": "1",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "64",
+					"moneda1": "",
+					"subtitulo": "CBiO RI Extendida Catar22",
+					"estadoMetodoPago": "1",
+					"catvTitulo": "Paquetes Gamer",
+					"codigoPaquete": "D_PAQGAMER1_5GB3",
+					"idProductoDeCompraAsociado": "",
+					"vigencia": "3",
+					"finVigencia": "2099-01-30 00:00:00.0",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "PAQ_GAMER1_5GB",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "7225",
+					"ordenMetodoPago": "1",
+					"catnId": "1251",
+					"catvCodCategoria": "95",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "13923",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "7217",
+						"nombre": "Free Fire Free Fire Max"
+					}, {
+						"idCaracteristica": "13924",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "7217",
+						"nombre": "Mobile Legends: Bang Bang 1.5GB"
+					}, {
+						"idCaracteristica": "13925",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "7217",
+						"nombre": "por 3 d\u00edas"
+					}, {
+						"idCaracteristica": "13926",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "7217",
+						"nombre": "a S\/ 3"
+					}],
+					"nombreProducto": "Free Fire, Free Fire Max, Mobile Legends: Bang Bang 1.5GB por 3 d\u00edas a S\/3"
+				}, {
+					"idTipoLinea": "1",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2022-01-10 00:00:00.0",
+					"codTipoLinea": "1",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "106",
+					"moneda1": "",
+					"subtitulo": "CBiO RI Extendida Catar22",
+					"estadoMetodoPago": "1",
+					"catvTitulo": "Paquetes Gamer",
+					"codigoPaquete": "D_PAQGAMER3GB7D",
+					"idProductoDeCompraAsociado": "",
+					"vigencia": "7",
+					"finVigencia": "2099-01-30 00:00:00.0",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "PAQ_GAMER3GB",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "7226",
+					"ordenMetodoPago": "1",
+					"catnId": "1251",
+					"catvCodCategoria": "95",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "13927",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "7218",
+						"nombre": "Free Fire Free Fire Max"
+					}, {
+						"idCaracteristica": "13928",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "7218",
+						"nombre": "Mobile Legends: Bang Bang 3GB"
+					}, {
+						"idCaracteristica": "13929",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "7218",
+						"nombre": "por 7 d\u00edas"
+					}, {
+						"idCaracteristica": "13930",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "7218",
+						"nombre": "a S\/ 5"
+					}],
+					"nombreProducto": "Free Fire, Free Fire Max, Mobile Legends: Bang Bang 3GB por 7 d\u00edas a S\/5"
+				}],
+				"defaultServiceResponse": {
+					"idSesion": "0cd1c3e5-e9d4-4442-8400-ceea78e12910",
+					"mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+					"idTransaccional": "0080e889-5858-4c68-8c2d-979220d94e1b",
+					"idRespuesta": "0"
+				}
+			},
+			"Header": {
+				"HeaderResponse": {
+					"status": {
+						"type": "0",
+						"code": "0",
+						"msgid": "DPS01-d1e5cca7-01bf-4e1c-a02f-efc974d8d81e",
+						"message": "EJECUCI\u00d3N CON \u00c9XITO"
+					},
+					"pid": "73170116-6759-4c71-9cf8-a4a9d786d1de",
+					"consumer": "",
+					"timestamp": "2022-07-19T15:58:40-05:00",
+					"VarArg": ""
+				}
+			}
+		}
+	}
+}

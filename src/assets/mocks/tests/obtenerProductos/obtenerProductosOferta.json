@@ -1,0 +1,315 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": [
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "moneda2": "Claro Puntos",
+            "precio": "64",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "PQTCHV1D",
+            "idProductoDeCompraAsociado": "1",
+            "vigencia": "1",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "CHEVERE1",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "1",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "1189",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "1",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "1190",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "1",
+                "nombre": "+ 150 MB"
+              },
+              {
+                "idCaracteristica": "1191",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "1",
+                "nombre": "x 1 d\u00eda"
+              },
+              {
+                "idCaracteristica": "1192",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "1",
+                "nombre": "a S/ 3"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 150MB x1 dia a S/3"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "moneda2": "Claro Puntos",
+            "precio": "106",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "PQTCHV2D",
+            "idProductoDeCompraAsociado": "2",
+            "vigencia": "2",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "CHEVERE2",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "2",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "1225",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "2",
+                "nombre": "TUS MB X2"
+              },
+              {
+                "idCaracteristica": "1226",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "2",
+                "nombre": "610 MB"
+              },
+              {
+                "idCaracteristica": "1227",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "2",
+                "nombre": "+ Redes sociales"
+              },
+              {
+                "idCaracteristica": "1228",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "2",
+                "nombre": "x 2 d\u00edas a S/5"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 610MB x2 dias a S/5"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "moneda2": "Claro Puntos",
+            "precio": "211",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "PQTCHV5D",
+            "idProductoDeCompraAsociado": "3",
+            "vigencia": "5",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "CHEVERE3",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "3",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "1229",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "3",
+                "nombre": "TUS MB X2"
+              },
+              {
+                "idCaracteristica": "1230",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "3",
+                "nombre": "1510 MB"
+              },
+              {
+                "idCaracteristica": "1231",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "3",
+                "nombre": "+ Redes sociales"
+              },
+              {
+                "idCaracteristica": "1232",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "3",
+                "nombre": "x 5 d\u00edas a S/10"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 1510MB x5 dias a S/10"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "moneda2": "Claro Puntos",
+            "precio": "422",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "PQTCHV12D",
+            "idProductoDeCompraAsociado": "4",
+            "vigencia": "12",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "4",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "5",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "4",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "6",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "4",
+                "nombre": "+ 1.8 GB"
+              },
+              {
+                "idCaracteristica": "7",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "4",
+                "nombre": "x 12 d\u00edas"
+              },
+              {
+                "idCaracteristica": "8",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "4",
+                "nombre": "a S/ 20"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 1.8GB x12 d\u00edas a S/20"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "moneda2": "Claro Puntos",
+            "precio": "633",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "PQTCHV20D",
+            "idProductoDeCompraAsociado": "5",
+            "vigencia": "20",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "5",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "9",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "5",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "10",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "5",
+                "nombre": "+ 3 GB"
+              },
+              {
+                "idCaracteristica": "11",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "5",
+                "nombre": "x 20 d\u00edas"
+              },
+              {
+                "idCaracteristica": "12",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "5",
+                "nombre": "a S/ 30"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 3GB x20 d\u00edas a S/30"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "1374d49e-f65a-4f7c-b48e-837c84eccfea",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "d20fd534-a23c-44d1-9d2c-66b89cd97506",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-c45a5e00-1979-4e85-9642-c017dfe165f4",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "aa521709-6c3f-4e67-8477-0a10f18b1ab7",
+          "consumer": "",
+          "timestamp": "2020-12-11T12:46:50-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

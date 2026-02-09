@@ -1,0 +1,80 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Header": {
+        "HeaderResponse": {
+          "consumer": "",
+          "pid": "6b78a3c8-2d06-4232-a5ea-079783b337e5",
+          "timestamp": "2019-10-03T09:46:00-05:00",
+          "VarArg": "",
+          "status": {
+            "type": "0",
+            "code": "0",
+            "message": "EJECUCI?N CON ?XITO",
+            "msgid": "DPS01-2e0fb8a4-a7ca-45a2-9064-efc974d85454"
+          }
+        }
+      },
+      "Body": {
+        "defaultServiceResponse": {
+          "idRespuesta": "0",
+          "idTransaccional": "7abb94d7-bda8-4dc7-84a4-d473b2384d5a",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud."
+        },
+        "listaMetodoPago": [
+          {
+            "cantidad": "10",
+            "estado": "0",
+            "fechaCompra": "2019-10-03T09:45:59.721-05:00",
+            "fechaVigencia": "2019-10-04T09:45:59.721-05:00",
+            "flagMuestraTerminosCondiciones": true,
+            "idMetodoPago": "21",
+            "codValidacionClaroClub": "11",
+            "msgValidacionClaroClub": "eeeeeeeee dsa ewew eweew",
+            "nombre": "Claro Puntos",
+            "precioMoneda": "64",
+            "simboloMoneda": "S/",
+            "tipoMetodoPago": "1",
+            "totalClaroPuntos": 15
+          },
+          {
+            "cantidad": "3",
+            "estado": "1",
+            "fechaCompra": "2019-10-03T09:46:00.249-05:00",
+            "fechaVigencia": "2019-10-04T09:46:00.249-05:00",
+            "flagMuestraTerminosCondiciones": true,
+            "idMetodoPago": "24",
+            "nombre": "Saldo de Recarga",
+            "precioMoneda": "5",
+            "simboloMoneda": "S/",
+            "tipoMetodoPago": "4"
+          },
+          {
+            "cantidad": "3",
+            "estado": "1",
+            "fechaCompra": "2019-10-03T09:46:00.251-05:00",
+            "fechaVigencia": "2019-10-04T09:46:00.251-05:00",
+            "flagMuestraTerminosCondiciones": true,
+            "idMetodoPago": "23",
+            "nombre": "Tarjeta de Crédito/Débito",
+            "precioMoneda": "3",
+            "simboloMoneda": "S/",
+            "tipoMetodoPago": "3"
+          },
+          {
+            "cantidad": "3",
+            "estado": "0",
+            "fechaCompra": "2019-10-03T09:46:00.251-05:00",
+            "fechaVigencia": "2019-10-04T09:46:00.251-05:00",
+            "flagMuestraTerminosCondiciones": true,
+            "idMetodoPago": "22",
+            "nombre": "Cargo en Recibo",
+            "precioMoneda": "3",
+            "simboloMoneda": "S/",
+            "tipoMetodoPago": "2"
+          }
+        ]
+      }
+    }
+  }
+}

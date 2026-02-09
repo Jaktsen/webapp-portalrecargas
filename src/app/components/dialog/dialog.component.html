@@ -1,0 +1,43 @@
+<div>
+    <mat-dialog-content *ngIf="passedData.buttonMessage == null">
+      <div class="cerrar">
+        <div class="imagen_cerrar" (click)="closeDialog()"></div>
+      </div>
+      </mat-dialog-content>
+      <mat-dialog-content
+        *ngIf="
+          passedData.imagen != null &&
+          passedData.imagen != undefined &&
+          passedData.imagen.pos == 'up'
+        "
+      >
+      <div class="imagen_center {{passedData.imagen.path}}"></div>
+      </mat-dialog-content>
+      <h1
+        mat-dialog-title
+        class="title"
+        [innerHTML]="passedData.title | safeHTML"
+      ></h1>
+      <mat-dialog-content
+        *ngIf="
+          passedData.imagen != null &&
+          passedData.imagen != undefined &&
+          passedData.imagen.pos == 'down'
+        "
+      >
+      <div class="imagen_center {{passedData.imagen.path}}"></div>
+      </mat-dialog-content>
+      <mat-dialog-content>
+    <p class="content" [innerHTML]="passedData.content | safeHTML"></p>
+</mat-dialog-content>
+<mat-dialog-actions *ngIf="passedData.buttonMessage != null">
+  <button
+    class="verde-blanco"
+    [class.inverted]="passedData.isInvertedButton"
+    (click)="closeDialog()"
+    [disabled]="!enabled"
+  >
+    {{ passedData.buttonMessage }}
+  </button>
+</mat-dialog-actions>
+</div>

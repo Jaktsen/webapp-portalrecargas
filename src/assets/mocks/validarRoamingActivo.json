@@ -1,0 +1,37 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "listado": {
+                    "simboloMoneda": "S\/.",
+                    "status": "true",
+                    "etiqueta": "Roaming",
+                    "codServicioAdicional": "3_47_11",
+                    "tooltip": "Un servicio que te permite seguir comunicado con tu Claro Postpago desde el extranjero sin cambiar tu n\u00famero.",
+                    "costo": "0"
+                },
+                "defaultServiceResponse": {
+                    "idSesion": "472d487b-a633-46ce-8b2e-115956538bbc",
+                    "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "idTransaccional": "15d4ae1e-a21a-472c-9508-ef5113e72afd",
+                    "idRespuesta": "0",
+                    "categoria": "1"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-3e5101a2-5401-4ba2-a92a-efc974d85c0e",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "149fad72-a931-4983-8ff1-9bd7f1c3517e",
+                    "consumer": "",
+                    "timestamp": "2021-01-26T14:33:15-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

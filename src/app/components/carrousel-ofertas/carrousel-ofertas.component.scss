@@ -1,0 +1,57 @@
+.carousel-ofertas {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 10px;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: 500px) {
+    overflow: auto;
+    scroll-behavior: auto;
+  }
+}
+
+.carousel-ofertas img:not(:first-child) {
+  @media screen and (max-width: 500px) {
+    margin-left: 10px;
+  }
+}
+
+h3 {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.carrousel-container {
+  display: flex;
+}
+
+.boton-box {
+  display: table;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+.boton-box div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.boton-box .boton-previous {
+  padding-right: 15px;
+}
+
+.boton-box .boton-next {
+  padding-left: 15px;
+}
+
+.boton-box .boton-next a {
+  cursor: pointer;
+}
+.boton-box .boton-previous a {
+  cursor: pointer;
+}

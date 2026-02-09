@@ -1,0 +1,35 @@
+var confRecomendado = 
+[
+{
+  codcategoria:'99',
+  clase       :'recomenTriplica',
+  imagen       :'http://192.168.5.165:10039/wps/wcm/connect/3de82834-f598-4170-b09a-746aab8d6f5b/FrameRecomeTriplica_FireLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-3de82834-f598-4170-b09a-746aab8d6f5b-ngsmG8d',
+  comment      :'para paquetes recomendados'
+},
+{
+  codcategoria:'CHEVERE1',
+  clase       :'chevere1',
+  imagen       :'http://192.168.5.165:10039/wps/wcm/connect/825b8f16-85c2-4c14-873d-6c6f34a454ce/x2_banner.png?MOD=AJPERES &CACHEID=ROOTWORKSPACE-825b8f16-85c2-4c14-873d-6c6f34a454ce-ngslWP7',
+  comment      :'chevere 1 - X2'
+},
+{
+  codcategoria:'CHEVERE2',
+  clase       :'chevere2',
+  imagen       :'http://192.168.5.165:10039/wps/wcm/connect/29ce0737-cef9-4fb2-a453-2375e75a0d1f/x3_banner.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-29ce0737-cef9-4fb2-a453-2375e75a0d1f-ngsv6H1',
+  comment      :'chevere 2 - X3'
+},
+{
+  codcategoria:'CHEVERE3',
+  clase       :'chevere3',
+  imagen       :'http://192.168.5.165:10039/wps/wcm/connect/c9e09118-8547-407d-908a-5e102fde6bd0/x4_banner.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-c9e09118-8547-407d-908a-5e102fde6bd0-ngsmnHC',
+  comment      :'chevere 3 - X4'
+}, {},
+   {
+     codcategoria:'9|10|282|283|128|129|130|5241|5242',
+     clase       :'promo postpagos',
+     imagen       :'http://192.168.5.165:10039/wps/wcm/connect/879ae331-8e36-498f-aece-bf548cbbde1c/banner-postpago.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-879ae331-8e36-498f-aece-bf548cbbde1c-nldzA9S',
+     comment: 'promo postpagos',
+     fechaDesde: '10/01/2020',
+     fechaHasta: '30/12/2020'
+   }
+];

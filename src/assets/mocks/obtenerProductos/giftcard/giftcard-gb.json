@@ -1,0 +1,109 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": [
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-07-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "6",
+            "idMetodoPago": "4",
+            "precio": "50",
+            "moneda1": "S/",
+            "subtitulo": "",
+            "estadoMetodoPago": "0",
+            "catvTitulo": "Regala GB para navegar",
+            "codigoPaquete": "SIN CODIGO",
+            "idProductoDeCompraAsociado": "181",
+            "vigencia": "12",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "181",
+            "ordenMetodoPago": "1",
+            "catnId": "62",
+            "catvCodCategoria": "81",
+            "cantidadFavoritos": "3",
+            "nombreProducto": "Gift Card 5GB a S/50"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-07-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "idMetodoPago": "4",
+            "tipoVigencia": "6",
+            "precio": "90",
+            "moneda1": "S/",
+            "estadoMetodoPago": "0",
+            "catvTitulo": "Regala GB para navegar",
+            "codigoPaquete": "SIN CODIGO",
+            "idProductoDeCompraAsociado": "182",
+            "vigencia": "12",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "182",
+            "ordenMetodoPago": "1",
+            "catnId": "62",
+            "catvCodCategoria": "81",
+            "cantidadFavoritos": "3",
+            "nombreProducto": "Gift Card 10GB a S/90"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-07-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "idMetodoPago": "4",
+            "tipoVigencia": "6",
+            "precio": "250",
+            "moneda1": "S/",
+            "estadoMetodoPago": "0",
+            "catvTitulo": "Regala GB para navegar",
+            "codigoPaquete": "SIN CODIGO",
+            "idProductoDeCompraAsociado": "183",
+            "vigencia": "12",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "183",
+            "ordenMetodoPago": "1",
+            "catnId": "62",
+            "catvCodCategoria": "81",
+            "cantidadFavoritos": "3",
+            "nombreProducto": "Gift Card 30GB a S/250"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "d4f61dad-5eea-4770-ac80-853c99aada82",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "d97bb245-7d5c-4c80-9d13-dc250fdaded1",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-cb11ee8c-53d4-4a02-ab79-c017dfe12e52",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "3c7e6523-1fda-482a-839c-5ef17d89598c",
+          "consumer": "",
+          "timestamp": "2021-03-24T11:49:14-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

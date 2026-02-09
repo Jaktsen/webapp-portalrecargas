@@ -1,0 +1,43 @@
+.snack_bar_pop {
+    //padding: 8px;
+
+    .caja_cerrar {
+        width: 100%;
+        height: 16px;
+
+        .cerrar {
+            width: 16px;
+            height: 16px;
+            background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.4673 11.533C12.734 11.7997 12.734 12.1997 12.4673 12.4663C12.334 12.5997 12.2007 12.6663 12.0007 12.6663C11.8007 12.6663 11.6673 12.5997 11.534 12.4663L8.00065 8.93301L4.46732 12.4663C4.33398 12.5997 4.20065 12.6663 4.00065 12.6663C3.80065 12.6663 3.66732 12.5997 3.53398 12.4663C3.26732 12.1997 3.26732 11.7997 3.53398 11.533L7.06732 7.99967L3.53398 4.46634C3.26732 4.19967 3.26732 3.79967 3.53398 3.53301C3.80065 3.26634 4.20065 3.26634 4.46732 3.53301L8.00065 7.06634L11.534 3.53301C11.8007 3.26634 12.2007 3.26634 12.4673 3.53301C12.734 3.79967 12.734 4.19967 12.4673 4.46634L8.93398 7.99967L12.4673 11.533Z' fill='%232197AE'/%3E%3C/svg%3E%0A") no-repeat;
+            float: right;
+            cursor: pointer;
+        }
+    }
+
+    .dibujo_texto {
+        width: 100%;
+        height: 24px;
+        margin-top: -4px;
+
+        .dibujo {
+            height: 24px;
+            width: 24px;
+            background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 9.08262 21.8411 6.28473 19.7782 4.22183C17.7153 2.15893 14.9174 1 12 1Z' fill='%230FD299'/%3E%3Cpath d='M10.4102 14.2088L17.2582 7.36074C17.7952 6.82377 18.6658 6.82377 19.2027 7.36074C19.7397 7.89771 19.7397 8.76831 19.2027 9.30528L11.3824 17.1256C10.8455 17.6626 9.97486 17.6626 9.43788 17.1256L5.52773 13.2154C4.99076 12.6785 4.99076 11.8079 5.52773 11.2709C6.0647 10.7339 6.9353 10.7339 7.47227 11.2709L10.4102 14.2088Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat;
+            float: left;
+            margin: 0 8px;
+        }
+
+        .texto {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #212121;
+            float: left;
+            padding-top: 1px;
+            max-width: 224px;
+            text-align: left;
+        }
+    }
+}

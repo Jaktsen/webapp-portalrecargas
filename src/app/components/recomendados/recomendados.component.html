@@ -1,0 +1,39 @@
+<div class="carousel-box" [ngClass]="{'opacity': !disabled}" *ngIf="enableRecomendados">
+    <div class="titulo"><p>{{tituloCarousel}}</p></div>
+
+    <div class="esqueleto">
+        <div class="boton-box" *ngIf="btnPrev"><div *ngIf="btnPrev" class="boton-prev" id="{{nombre}}_prev" (click)="move('1')"></div></div>
+        <div id="{{nombre}}_espacio" *ngIf="recomendadosListos" class="espacio-box">
+            <div id="{{nombre}}_slide" class="cards-box">
+                <div class="card" [ngClass]="{ 'disabledClick': !disabled, 'disabledBackgroundImage': getObtenerFondoRecomendados(prod) && !disabled }" [ngStyle]="{'backgroundImage': getObtenerFondoRecomendados(prod)}" id="rec_{{prod.idProductoDeCompra}}" (click)="escogerCard(prod,disabled)" *ngFor="let prod of listProductos">
+                    <div class="subtitulo color_{{prod.catvCodCategoria}}" *ngIf="!getObtenerRecomendados(prod)">
+                        <div class="icono imagen_{{prod.catvCodCategoria}}"></div>
+                        <p>{{prod.catvTitulo | filtrarNombrePaquete}}</p>
+                    </div>
+                    <div class="subtitulo_fondo" *ngIf="getObtenerRecomendados(prod)">
+                    </div>
+                    <div class="{{nombre}}">
+                        <div class="titulo-rec" [ngClass]="{ 'messageDisabled': !disabled }" *ngIf="!getObtenerRecomendados(prod)" [ngStyle]="{'font-size':prod.nombreCompleto.length >= minimaCantidadCaracteres ? '12px' :  prod.nombreCompleto.length >= minima2CantidadCaracteres ? '15px' : '18px' }">
+                            <p>{{prod.nombreCompleto}}</p>
+                        </div>
+
+                        <div class="titulo-rec-blanco" *ngIf="getObtenerRecomendados(prod)" [ngStyle]="{'font-size':prod.nombreCompleto.length >= minimaCantidadCaracteres ? '12px' :  prod.nombreCompleto.length >= minima2CantidadCaracteres ? '15px' : '18px', 'color': prod.color }">
+                            <p>{{prod.nombreCompleto}}</p>
+                        </div>
+
+                        <div class="precio_fecha_metodo">
+                            <div class="precio_fecha" [ngClass]="{ 'messageDisabled': !disabled }" [ngStyle]="{'color': prod.color }">
+                                <p [ngClass]="{'color_white': getObtenerFondoRecomendados(prod) && !disabled}">{{prod.tiempoCompleto}}</p>
+                                <p [ngClass]="{'color_white': getObtenerFondoRecomendados(prod) && !disabled}" class="precio">{{prod.precioCompleto}}</p>
+                            </div>
+                            <div class="metodo_pago"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="boton-box"><div *ngIf="btnNext" class="boton-next" id="{{nombre}}_next" (click)="move('2')"></div></div>
+    </div>
+</div>
+

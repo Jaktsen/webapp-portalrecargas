@@ -1,0 +1,56 @@
+{
+		"comunResponseType": {
+			"MessageResponse": {
+				"Body": {
+					"listaProductosDeCompra": {
+						"idTipoLinea": "1",
+						"flagValidarSaldoPontis": "1",
+						"nombreMetodoPago": "Saldo de Recarga",
+						"iniVigencia": "2018-07-01 00:00:00.0",
+						"codTipoLinea": "1",
+						"tipoVigencia": "DIAS",
+						"idMetodoPago": "4",
+						"precio": "10.9",
+						"moneda1": "S/",
+						"subtitulo": "VIDEOS_9.9",
+						"estadoMetodoPago": "1",
+						"catvTitulo": "Alquiler de películas",
+						"codigoPaquete": "D_PQTCLAVIDummy",
+						"idProductoDeCompraAsociado": "101",
+						"vigencia": "30",
+						"finVigencia": "2099-07-30 00:00:00.0",
+						"tituloProducto": "",
+						"codigoProducto": "",
+						"recomendadoCategoriaOrden": "9999",
+						"idProductoDeCompra": "101",
+						"ordenMetodoPago": "1",
+						"catnId": "8",
+						"catvCodCategoria": "13",
+						"cantidadFavoritos": "3",
+						"nombreProducto": "Pelicula a S/10.90"
+					},
+					"defaultServiceResponse": {
+						"idSesion": "602ee471-c53c-4aca-b72b-66ac1797848b",
+						"mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+						"idTransaccional": "aa82578c-122f-4825-af50-1f1d44c1c035",
+						"idRespuesta": "0"
+					}
+				},
+				"Header": {
+					"HeaderResponse": {
+						"status": {
+							"type": "0",
+							"code": "0",
+							"msgid": "DPS02-e9089201-2a03-40b4-8211-fe2fe26b72ce",
+							"message": "EJECUCIÓN CON ÉXITO"
+						},
+						"pid": "4609fc43-2e97-4a32-bb31-286e0d837211",
+						"consumer": "",
+						"timestamp": "2021-02-03T10:02:14-05:00",
+						"VarArg": ""
+					}
+				}
+			}
+		}
+
+}

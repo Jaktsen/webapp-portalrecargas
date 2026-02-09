@@ -1,0 +1,21 @@
+#gulp files
+gulp-config/data.js
+logs/commands.log
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+coverage/
+/.idea
+pnpm-lock.yaml
+
+# System and IDE
+sh.exe.stackdump
+gulpfile.rar
+.vscode/
+.idea/
+*.log

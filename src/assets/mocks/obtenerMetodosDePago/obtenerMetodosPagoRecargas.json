@@ -1,0 +1,58 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaMetodoPago": [
+          {
+            "precioMoneda": "330",
+            "estado": "0",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-05-11T09:59:45.978-05:00",
+            "tipoMetodoPago": "1",
+            "msgValidacionClaroClub": "No te encuentras afiliado a Claro Club.",
+            "simboloMoneda": "S/",
+            "cantidad": "330",
+            "totalClaroPuntos": "0",
+            "fechaVigencia": "2022-05-11T09:59:45.978-05:00",
+            "codValidacionClaroClub": "1",
+            "nombre": "Claro Puntos",
+            "idMetodoPago": "1"
+          },
+          {
+            "precioMoneda": "15",
+            "estado": "1",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-05-11T09:59:46.286-05:00",
+            "tipoMetodoPago": "3",
+            "simboloMoneda": "S/",
+            "cantidad": "15",
+            "fechaVigencia": "2022-05-11T09:59:46.286-05:00",
+            "nombre": "Tarjeta de Cr\u00e9dito/D\u00e9bito",
+            "idMetodoPago": "3"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "844f3634-4e55-4efe-a431-537ba1f19229",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "9817baf9-8841-417c-9dbd-b9341f1089cf",
+          "idRespuesta": "0",
+          "categoria": "3"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-ff9e545c-2af4-4377-9066-c017dfe1e157",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "faefcba2-24f7-4aca-9773-eadf7f966720",
+          "consumer": "",
+          "timestamp": "2021-05-11T09:59:46-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

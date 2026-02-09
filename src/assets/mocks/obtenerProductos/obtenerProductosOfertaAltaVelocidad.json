@@ -1,0 +1,324 @@
+{
+  "comunResponseType":{
+     "MessageResponse":{
+        "Body":{
+           "listaProductosDeCompra":[
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2017-09-01 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "moneda2":"Claro Puntos",
+                 "precio":"211",
+                 "subtitulo":"",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQT500MB",
+                 "idProductoDeCompraAsociado":"881",
+                 "vigencia":"10",
+                 "finVigencia":"2099-12-08 00:00:00.0",
+                 "tituloProducto":"",
+                 "codigoProducto":"INTERNET-1",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"881",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"2016",
+                       "estilo":"titulo_rojo",
+                       "orden":"2",
+                       "idProducto":"881",
+                       "nombre":"1.5GB"
+                    },
+                    {
+                       "idCaracteristica":"2017",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"881",
+                       "nombre":"x 10 d\u00edas"
+                    },
+                    {
+                       "idCaracteristica":"2018",
+                       "estilo":"titulo_gris",
+                       "orden":"4",
+                       "idProducto":"881",
+                       "nombre":"a S\/ 10"
+                    }
+                 ],
+                 "nombreProducto":"1.5GB x10 d\u00edas a S\/10"
+              },
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2017-09-01 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "moneda2":"Claro Puntos",
+                 "precio":"422",
+                 "subtitulo":"",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQT1024MB",
+                 "idProductoDeCompraAsociado":"882",
+                 "vigencia":"20",
+                 "finVigencia":"2099-12-08 00:00:00.0",
+                 "tituloProducto":"",
+                 "codigoProducto":"INTERNET-2",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"882",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"2019",
+                       "estilo":"titulo_rojo",
+                       "orden":"2",
+                       "idProducto":"882",
+                       "nombre":"3GB"
+                    },
+                    {
+                       "idCaracteristica":"2020",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"882",
+                       "nombre":"x 20 d\u00edas"
+                    },
+                    {
+                       "idCaracteristica":"2021",
+                       "estilo":"titulo_gris",
+                       "orden":"4",
+                       "idProducto":"882",
+                       "nombre":"a S\/ 20"
+                    }
+                 ],
+                 "nombreProducto":"3 GB x20 d\u00edas a S\/20"
+              },
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2017-09-01 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "moneda2":"Claro Puntos",
+                 "precio":"633",
+                 "subtitulo":"",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQT3072MB",
+                 "idProductoDeCompraAsociado":"883",
+                 "vigencia":"30",
+                 "finVigencia":"2099-12-08 00:00:00.0",
+                 "tituloProducto":"",
+                 "codigoProducto":"INTERNET-3",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"883",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"2022",
+                       "estilo":"titulo_rojo",
+                       "orden":"1",
+                       "idProducto":"883",
+                       "nombre":"4.5GB"
+                    },
+                    {
+                       "idCaracteristica":"2023",
+                       "estilo":"titulo_gris",
+                       "orden":"2",
+                       "idProducto":"883",
+                       "nombre":"x 30 d\u00edas"
+                    },
+                    {
+                       "idCaracteristica":"2024",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"883",
+                       "nombre":"a S\/ 30"
+                    }
+                 ],
+                 "nombreProducto":"4.5GB x30 d\u00edas a S\/30"
+              },
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2018-03-08 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "precio":"1372",
+                 "moneda2":"Claro Puntos",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQTREI10GB",
+                 "idProductoDeCompraAsociado":"286",
+                 "vigencia":"30",
+                 "finVigencia":"2099-09-30 00:00:00.0",
+                 "codigoProducto":"",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"286",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"381",
+                       "estilo":"titulo_rojo",
+                       "orden":"1",
+                       "idProducto":"286",
+                       "nombre":"10GB"
+                    },
+                    {
+                       "idCaracteristica":"382",
+                       "estilo":"titulo_gris",
+                       "orden":"2",
+                       "idProducto":"286",
+                       "nombre":"x 30 dias"
+                    },
+                    {
+                       "idCaracteristica":"383",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"286",
+                       "nombre":"a S\/ 65"
+                    }
+                 ],
+                 "nombreProducto":"Alta Velocidad 10GB a S\/65"
+              },
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2018-03-08 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "precio":"2532",
+                 "moneda2":"Claro Puntos",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQTREI20GB",
+                 "idProductoDeCompraAsociado":"287",
+                 "vigencia":"30",
+                 "finVigencia":"2099-09-30 00:00:00.0",
+                 "codigoProducto":"",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"287",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"384",
+                       "estilo":"titulo_rojo",
+                       "orden":"1",
+                       "idProducto":"287",
+                       "nombre":"20GB"
+                    },
+                    {
+                       "idCaracteristica":"385",
+                       "estilo":"titulo_gris",
+                       "orden":"2",
+                       "idProducto":"287",
+                       "nombre":"x 30 dias"
+                    },
+                    {
+                       "idCaracteristica":"386",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"287",
+                       "nombre":"a S\/ 120"
+                    }
+                 ],
+                 "nombreProducto":"Alta Velocidad 20GB a S\/120"
+              },
+              {
+                 "idTipoLinea":"2",
+                 "flagValidarSaldoPontis":"1",
+                 "nombreMetodoPago":"Claro Puntos",
+                 "iniVigencia":"2020-04-20 00:00:00.0",
+                 "codTipoLinea":"2",
+                 "tipoVigencia":"DIAS",
+                 "idMetodoPago":"1",
+                 "precio":"4008",
+                 "moneda2":"Claro Puntos",
+                 "estadoMetodoPago":"1",
+                 "catvTitulo":"Paquetes Alta Velocidad",
+                 "codigoPaquete":"D_PQTREI40GB",
+                 "idProductoDeCompraAsociado":"701",
+                 "vigencia":"30",
+                 "finVigencia":"2099-09-30 00:00:00.0",
+                 "codigoProducto":"",
+                 "recomendadoCategoriaOrden":"9999",
+                 "idProductoDeCompra":"701",
+                 "ordenMetodoPago":"1",
+                 "catnId":"9",
+                 "catvCodCategoria":"11",
+                 "cantidadFavoritos":"3",
+                 "listaCaracteristicasProducto":[
+                    {
+                       "idCaracteristica":"1601",
+                       "estilo":"titulo_rojo",
+                       "orden":"1",
+                       "idProducto":"701",
+                       "nombre":"40GB"
+                    },
+                    {
+                       "idCaracteristica":"1602",
+                       "estilo":"titulo_gris",
+                       "orden":"2",
+                       "idProducto":"701",
+                       "nombre":"x 30 dias"
+                    },
+                    {
+                       "idCaracteristica":"1603",
+                       "estilo":"titulo_gris",
+                       "orden":"3",
+                       "idProducto":"701",
+                       "nombre":"a S\/ 190"
+                    }
+                 ],
+                 "nombreProducto":"Alta Velocidad 40GB a S\/190"
+              }
+           ],
+           "defaultServiceResponse":{
+              "idSesion":"d804b9ad-1d7d-46ed-93b6-b9183632b535",
+              "mensaje":"Consulta con ?xito, se proces? correctamente la solicitud.",
+              "idTransaccional":"73b48b1e-07d4-44a6-bec6-2a21a997c41f",
+              "idRespuesta":"0"
+           }
+        },
+        "Header":{
+           "HeaderResponse":{
+              "status":{
+                 "type":"0",
+                 "code":"0",
+                 "msgid":"DPS02-1eeb32af-ec1d-40c2-b909-fe2fe26b1c7f",
+                 "message":"EJECUCI\u00d3N CON \u00c9XITO"
+              },
+              "pid":"1c6a1ac9-c391-4140-8273-4f5ae3acec38",
+              "consumer":"",
+              "timestamp":"2021-03-11T19:10:09-05:00",
+              "VarArg":""
+           }
+        }
+     }
+  }
+}

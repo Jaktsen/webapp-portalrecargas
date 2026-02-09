@@ -1,0 +1,98 @@
+[
+    {
+      "idGiftCard":"74a73606-00f9-4f31-91ab-a991bdb8bf45",
+      "idProductoDeCompra":"182",
+      "catvCodCategoria":"81",
+      "nombreProducto":"Gift Card 10GB",
+      "tipoMoneda":"S/ ",
+      "costo":"90",
+      "ordenOferta":"2.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago y Postpago (No ilimitados).",
+      "urlCarrusel":"/assets/img/mocks/10GB.png",
+      "tempCategory":"Regala GB para navegar"
+    },
+    {
+      "idGiftCard":"e1cb0d75-11dd-41a4-8427-98a7552886b7",
+      "idProductoDeCompra":"183",
+      "catvCodCategoria":"81",
+      "nombreProducto":"Gift Card 30GB",
+      "tipoMoneda":"S/ ",
+      "costo":"250",
+      "ordenOferta":"3.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago y Postpago (No ilimitados).",
+      "urlCarrusel":"/assets/img/mocks/30GB.png",
+      "tempCategory":"Regala GB para navegar"
+    },
+    {
+      "idGiftCard":"f68bdf2c-d175-4501-805d-98ef1bf8df27",
+      "idProductoDeCompra":"188",
+      "catvCodCategoria":"82",
+      "nombreProducto":"Gift Card 30GB de Pack Video",
+      "tipoMoneda":"S/ ",
+      "costo":"200",
+      "ordenOferta":"4.0",
+      "recuerda":"Recuerda que aplica solo para líneas Prepago.",
+      "urlCarrusel":"/assets/img/mocks/PackVideo.png",
+      "tempCategory":"Regala Redes Sociales"
+    },
+    {
+      "idGiftCard":"d3726683-c33e-4f44-adf4-1026a3ae7900",
+      "idProductoDeCompra":"181",
+      "catvCodCategoria":"81",
+      "nombreProducto":"Gift Card 5GB",
+      "tipoMoneda":"S/ ",
+      "costo":"50",
+      "ordenOferta":"1.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago y Postpago (No ilimitados).",
+      "urlCarrusel":"/assets/img/mocks/5GB.png",
+      "tempCategory":"Regala GB para navegar"
+    },
+    {
+      "idGiftCard":"bd917578-1e94-4794-b38d-b6666f05ca0c",
+      "idProductoDeCompra":"184",
+      "catvCodCategoria":"82",
+      "nombreProducto":"Gift Card Facebook Full 3",
+      "tipoMoneda":"S/ ",
+      "costo":"60",
+      "ordenOferta":"3.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago.",
+      "urlCarrusel":"/assets/img/mocks/Facebook3meses.png",
+      "tempCategory":"Regala Redes Sociales"
+    },
+    {
+      "idGiftCard":"fdf6abf1-867f-44fa-ba9d-84b1206bea3b",
+      "idProductoDeCompra":"185",
+      "catvCodCategoria":"82",
+      "nombreProducto":"Gift Card Facebook Full 6",
+      "tipoMoneda":"S/ ",
+      "costo":"100",
+      "ordenOferta":"5.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago.",
+      "urlCarrusel":"/assets/img/mocks/Facebook6meses.png",
+      "tempCategory":"Regala Redes Sociales"
+    },
+    {
+      "idGiftCard":"798f0721-db95-4f63-9c5d-9ebb5a253527",
+      "idProductoDeCompra":"187",
+      "catvCodCategoria":"82",
+      "nombreProducto":"Gift Card Instagram 3",
+      "tipoMoneda":"S/ ",
+      "costo":"60",
+      "ordenOferta":"1.0",
+      "recuerda":"Recuerda que solo aplica para líneas Prepago.",
+      "urlCarrusel":"/assets/img/mocks/Instagram3meses.png",
+      "tempCategory":"Regala Redes Sociales"
+    },
+    {
+      "idGiftCard":"227817e3-f00d-4c29-9249-d7e478194a4c",
+      "idProductoDeCompra":"186",
+      "catvCodCategoria":"82",
+      "nombreProducto":"Gift Card WhatsApp 12",
+      "tipoMoneda":"S/ ",
+      "costo":"50",
+      "ordenOferta":"2.0",
+      "recuerda":"Recuerda que aplica solo para líneas Prepago.",
+      "urlCarrusel":"/assets/img/mocks/Whastapp.png",
+      "tempCategory":"Regala Redes Sociales"
+    }
+  ]

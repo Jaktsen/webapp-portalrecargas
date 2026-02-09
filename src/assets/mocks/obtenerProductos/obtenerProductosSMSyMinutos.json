@@ -1,0 +1,248 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra":[ 
+          {
+            "idTipoLinea": "2",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "2",
+            "tituloConfirma": "",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "528",
+            "moneda1": "",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Teletrabajo",
+            "codigoPaquete": "D_PQTEL5GB",
+            "idProductoDeCompraAsociado": "766",
+            "vigencia": "30",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "flagPontis": "0",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "766",
+            "ordenMetodoPago": "1",
+            "catnId": "201",
+            "catvCodCategoria": "11",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [{
+              "idCaracteristica": "1806",
+              "estilo": "",
+              "orden": "1",
+              "idProducto": "766",
+              "nombre": "Zoom, Ms Teams,"
+            }, {
+              "idCaracteristica": "1676",
+              "estilo": "",
+              "orden": "2",
+              "idProducto": "766",
+              "nombre": "Webex, Gmail"
+            }, {
+              "idCaracteristica": "1706",
+              "estilo": "",
+              "orden": "3",
+              "idProducto": "766",
+              "nombre": "Outlook x 5GB"
+            }, {
+              "idCaracteristica": "1677",
+              "estilo": "titulo_gris",
+              "orden": "4",
+              "idProducto": "766",
+              "nombre": "x 30 d\u00edas"
+            }, {
+              "idCaracteristica": "1678",
+              "estilo": "titulo_gris",
+              "orden": "5",
+              "idProducto": "766",
+              "nombre": "a S\/ 25"
+            }],
+            "nombreProducto": "Paquete Teletrabajo 5GB a S\/25"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "codMetodoPagoFav": "1",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "64",
+            "moneda1": "",
+            "subtitulo": "",
+            "catvTitulo": "Llamadas y SMS Ilimitadas",
+            "estadoMetodoPago": "1",
+            "codigoPaquete": "PCLUB_CHV_1D",
+            "idProductoDeCompraAsociado": "4684",
+            "vigencia": "1",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "flagPontis": "0",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "4684",
+            "ordenMetodoPago": "1",
+            "catnId": "11",
+            "catvCodCategoria": "41",
+            "cantidadFavoritos": "3",
+            "tipo_plan": "1",
+            "listaCaracteristicasProducto": [{
+              "idCaracteristica": "7053",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "4684",
+              "nombre": "Minutos y SMS Ilimitados"
+            }, {
+              "idCaracteristica": "7054",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "4684",
+              "nombre": "x 1 d\u00eda"
+            }, {
+              "idCaracteristica": "7055",
+              "estilo": "titulo_gris",
+              "orden": "3",
+              "idProducto": "4684",
+              "nombre": "a S\/ 3"
+            }],
+            "tipoProducto": "NORMAL",
+            "nombreProducto": "Ilimitado x 1 d\u00eda a S\/3"
+          }, {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "codMetodoPagoFav": "1",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "106",
+            "moneda1": "",
+            "subtitulo": "",
+            "catvTitulo": "Llamadas y SMS Ilimitadas",
+            "estadoMetodoPago": "1",
+            "codigoPaquete": "PCLUB_CHV_3D",
+            "idProductoDeCompraAsociado": "4685",
+            "vigencia": "3",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "flagPontis": "0",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "4685",
+            "ordenMetodoPago": "1",
+            "catnId": "11",
+            "catvCodCategoria": "41",
+            "cantidadFavoritos": "3",
+            "tipo_plan": "1",
+            "listaCaracteristicasProducto": [{
+              "idCaracteristica": "7056",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "4685",
+              "nombre": "Minutos y SMS Ilimitados"
+            }, {
+              "idCaracteristica": "7057",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "4685",
+              "nombre": "x 3 d\u00edas"
+            }, {
+              "idCaracteristica": "7058",
+              "estilo": "titulo_gris",
+              "orden": "3",
+              "idProducto": "4685",
+              "nombre": "a S\/ 5"
+            }],
+            "tipoProducto": "NORMAL",
+            "nombreProducto": "Ilimitado x5 d\u00edas a S\/5"
+          }, {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "codMetodoPagoFav": "1",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "211",
+            "moneda1": "",
+            "subtitulo": "",
+            "catvTitulo": "Llamadas y SMS Ilimitadas",
+            "estadoMetodoPago": "1",
+            "codigoPaquete": "PCLUB_CHV_6D",
+            "idProductoDeCompraAsociado": "4686",
+            "vigencia": "6",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "flagPontis": "0",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "4686",
+            "ordenMetodoPago": "1",
+            "catnId": "11",
+            "catvCodCategoria": "41",
+            "cantidadFavoritos": "3",
+            "tipo_plan": "1",
+            "listaCaracteristicasProducto": [{
+              "idCaracteristica": "7059",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "4686",
+              "nombre": "Minutos y SMS Ilimitados"
+            }, {
+              "idCaracteristica": "7060",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "4686",
+              "nombre": "x 6 d\u00edas"
+            }, {
+              "idCaracteristica": "7061",
+              "estilo": "titulo_gris",
+              "orden": "3",
+              "idProducto": "4686",
+              "nombre": "a S\/ 10"
+            }],
+            "tipoProducto": "NORMAL",
+            "nombreProducto": "Ilimitado x10 d\u00edas a S\/10"
+          }],
+        "defaultServiceResponse": {
+          "idSesion": "3bcfa83a-1a4a-438e-b9b2-35d083813f54",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "ee7edb0b-828e-48e9-90cb-f031d5df5e6a",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-55cde664-d3f2-4c9f-86c9-efc974d871ba",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "1969cd46-e08d-4df0-b015-89b875f05086",
+          "consumer": "",
+          "timestamp": "2021-02-08T07:40:30-06:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

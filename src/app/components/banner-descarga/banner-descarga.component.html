@@ -1,0 +1,25 @@
+<div class="banner-box" *ngIf="canal != '3'">
+    <div class="cerrar" (click)="cerrarBanner()"></div>
+    <div class="imagen-claro" *ngIf = "!mostrarBannerPorCanalSinSaldo"></div>
+    <div class="imagen-claro-sin-mega" *ngIf = "mostrarBannerPorCanalSinSaldo"></div>
+    <div class="info" *ngIf = "!mostrarBannerPorCanalSinSaldo">
+        <p class="titulo">Nueva App Mi Claro</p>
+        <p class="subtexto">Mide tus saldos y consumos, compra megas y más</p>
+    </div>
+
+    <div class="info" *ngIf = "mostrarBannerPorCanalSinSaldo" [ngClass]="{'sinsaldo': mostrarBannerPorCanalSinSaldo}">
+        <p class="titulo">Te quedaste sin Megas!</p>
+        <p class="subtexto">Compra un paquete de internet y <br> sigue navegando.</p>
+    </div>
+
+    <div class="boton-descarga" *ngIf = "!mostrarBannerPorCanalSinSaldo">
+        <a href="{{urlBanner}}">Descargar</a>
+    </div>
+</div>
+
+<div class="banner-box-fav" *ngIf="canal == '3'">
+    <div class="estrella"></div>
+    <div class="texto">Recuerda que ahora puedes guardar tus <b>compras favoritas y ahorrar tiempo en tu próxima compra</b></div>
+    <div class="cerrar" (click)="cerrarBanner()"></div>
+
+</div>

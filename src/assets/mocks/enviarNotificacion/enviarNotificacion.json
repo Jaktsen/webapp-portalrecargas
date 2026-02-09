@@ -1,0 +1,31 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "email": "asd@gmail.com",
+                "type": "enviarNotificacionResponse",
+                "idTransaccionCompra": "MzMwMjE=",
+                "defaultServiceResponse": {
+                    "idSesion": "aae20541-869f-4c20-b09f-667d43c27935",
+                    "mensaje": "Consulta con \u00e9xito, se proces\u00f3 correctamente la solicitud.",
+                    "idTransaccional": "6db10c18-df66-480d-b164-3ebebb713d86",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-d723be3a-f69e-40e4-8613-efc974d84ee9",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "26511025-0b6f-4d5d-869d-85d447d292b7",
+                    "consumer": "",
+                    "timestamp": "2021-01-08T00:14:15-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

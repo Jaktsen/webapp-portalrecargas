@@ -1,0 +1,27 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "defaultServiceResponse": {
+                    "mensaje": "Codigo secreto ingresado invalido.",
+                    "idTransaccional": "5712b690-2aa8-4556-b093-2bd9ba97a5c4",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-c4da1bad-0cec-4de2-8233-efc974d87b0e",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "3aab19e2-4df5-47cf-94b9-de11a385c333",
+                    "consumer": "",
+                    "timestamp": "2020-12-28T20:10:30-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

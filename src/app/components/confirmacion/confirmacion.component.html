@@ -1,0 +1,237 @@
+<nav class="navbar"  *ngIf="showFooter">
+    <div class="claro-logo"></div>
+</nav>
+
+<div class="volver-boton">
+    <div class="flecha" (click)="volver()"></div>
+    <div class="paso">Paso {{numeroPaso}}</div>
+</div>
+
+<div class="confirmacion-box">
+    <div class="modal-generico" *ngIf="mostrarLoading">
+            <div class="modal-white loading">
+                <div class="loading"></div>
+            </div>
+    </div>
+    <app-popup-general *ngIf="showPopup" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp"
+        [nombrePopUp]="nombrePopUp">
+    </app-popup-general>
+
+    <p class="titulo">{{title}}</p>
+
+    <p *ngIf="isProductPrestame" class="subtitulo" style="text-align: left;">
+        {{seleccionData.productoSeleccionado.tituloConfirma}} </p>
+    <p *ngIf="!esDebitoCredito && tipoMetodo === '2'" class="subtitulo">Esta compra se cargará a tu siguiente recibo</p>
+    <p *ngIf="!esDebitoCredito && tipoMetodo === '4'" class="subtitulo">Tienes <a
+            class="rojo-costo">{{creditoSaldo.lblSimboloMonedaSaldoPrep}}
+            {{creditoSaldo.lblSaldoPrepago}}</a> para realizar tu compra</p>
+    <p *ngIf="!esDebitoCredito && tipoMetodo === '1'" class="subtitulo">Tienes <a
+            class="rojo-costo">{{seleccionData.metodoSeleccionada.originalMetodoPago.totalClaroPuntos}} Claro puntos</a> para realizar tu
+        compra</p>
+
+    <!--<div class="botonCreditoDebito">
+        <div class="tyc">
+            <p class="normal" [innerHTML]="subtitle | safeHTML"></p>
+    </div>
+        <br />
+        <br />
+    </div>-->
+
+    <div class="info-box">
+        <ng-container *ngIf="isProductRecarga; else norecarga">
+            <app-infobox [data]="infoBoxPairs"></app-infobox>
+        </ng-container>
+        <ng-template #norecarga>
+            <div class="paquete-vigencia primera-fila" *ngIf="!esEventos">
+                <div class="paquetesel">
+                    <p class="minititulos">Tipo de paquete</p>
+                    <p class="miniinfo" *ngIf="!isProductPrestame">{{seleccionData.categoriaSeleccionada.titulo}}</p>
+                    <p class="miniinfo" *ngIf="isProductPrestame">Préstamo</p>
+                </div>
+                <div class="vigencia" *ngIf="!isProductPrestame">
+                    <p class="minititulos">{{fechaDeCompraLabel.replace(":","")}}</p>
+                    <p class="miniinfo">{{seleccionData.productoSeleccionado.fechaCompra | slice:0:10 | date: "dd 'de' MMMM yyyy"}}</p>
+                </div>
+                <div class="vigencia" *ngIf="isProductPrestame">
+                    <p class="minititulos">Vigencia</p>
+                    <p class="miniinfo">{{methodsService.printVigenciaUtil(seleccionData.productoSeleccionado.vigencia,seleccionData.productoSeleccionado.tipoVigencia)}}</p>
+                </div>
+            </div>
+
+            <div class="paquete-vigencia"  *ngIf="!esEventos">
+                <div class="paquetesel columnaunica">
+                    <p class="minititulos">{{productoLabel}}</p>
+                    <p class="miniinfo">{{seleccionData.productoSeleccionado.nombreProducto}}</p>
+                </div>
+            </div>
+
+            <div class="paquete-vigencia paquete-eventos"  *ngIf="esEventos">
+                <div class="paquete-vigencia primera-fila">                       
+                    <p class="maxtitulos" *ngIf="esEventos">{{eventoCanje.nombre}}</p>
+                </div>
+
+                <div class="metodo">
+                    <p class="minititulos">Método de pago</p>
+                    <p class="miniinfo" *ngIf="!isProductPrestame">{{seleccionData.metodoSeleccionada.nombre}}</p>
+                </div>             
+
+                <div class="vigencia">
+                    <p class="minititulos">Fecha del evento</p>
+                    <p class="miniinfo">{{eventoCanje.fecha}}</p>
+                </div>
+              
+            </div>
+        </ng-template>
+                </div>
+
+    <div class="info-box" *ngIf="!isProductRecarga">
+
+        <div class="paquete-vigencia primera-fila" *ngIf="esEventos">
+            <div class="paquetesel columnaunica">
+                <p class="minititulos">Paquete seleccionado</p>
+                <p class="miniinfo" *ngIf="!isProductPrestame">{{seleccionData.productoSeleccionado.nombreProducto}}</p>
+            </div>
+        </div>
+
+        <div class="paquete-vigencia metodo-pago ng-star-inserted">
+
+            <div class="paquetesel">
+                <p class="minititulos">Método de pago <a class="cambiar_fav" (click)="volver()" *ngIf="tipoSeccion == 'favoritos' || isExpress">Cambiar</a></p>
+                <p class="miniinfo" *ngIf="!isProductPrestame">{{seleccionData.metodoSeleccionada.nombre}}</p>
+                <p class="miniinfo" *ngIf="isProductPrestame">Se cobrará en tu próxima recarga</p>
+            </div>            
+
+            <div class="vigencia" *ngIf="!(seleccionData.metodoSeleccionada.tipoMetodoPago == '1')">
+                    <p class="minititulos">Costo (inc. IGV)</p>
+                    <p class="miniinfo">
+                        {{seleccionData.metodoSeleccionada.simboloMoneda}}{{seleccionData.productoSeleccionado.precioMoneda | number: '1.2-2'}}</p>
+                </div>
+                <div class="costo" *ngIf="seleccionData.metodoSeleccionada.tipoMetodoPago == '1'">
+                    <p class="minititulos">Costo</p>
+                    <p [ngClass]="(esEventos) ? 'miniinfo_rojo' : 'miniinfo'">{{seleccionData.productoSeleccionado.cantidad}} Puntos</p>
+                </div>     
+        </div> 
+    </div>
+
+    <div class="box_eventos" *ngIf="esEventos">
+        <a class="verde_eventos" href="{{eventoCanje.condiciones}}" target="_blank">Más información del evento</a>
+    </div>
+
+
+    <div class="botonCreditoDebito" *ngIf="showMensajePuedespagarconvisaomastercard">
+        <div class="tyc">
+            <p class="normal">
+                Puedes pagar con tu tarjeta <strong class="verde-click noclick">Visa o Mastercard.</strong>
+            </p>
+        </div>
+    </div>
+    <div class="numero-texto" *ngIf="!autenticado && !esDebitoCredito && !isIFILTE">
+        <p class="num">Hemos enviado un código temporal al <b>{{numeroCelular}}</b></p>
+
+        <form [formGroup]="textoForm" autocomplete="off">
+            <mat-form-field class="input-msg">
+                <input (click)="checkPlaceHolder()" (blur)="checkPlaceHolder()" matInput placeholder="{{placeHolder}}"
+                    type="text" inputmode="numeric" name="telephone" formControlName="telephone" autocomplete="off"
+                    #telephone maxlength="6" id="inputNumero" appBlockCopyPaste>
+            </mat-form-field>
+
+            <mat-error class="error-input"
+                *ngIf="textoForm.controls.telephone.dirty && textoForm.controls.telephone.touched && textoForm.controls.telephone.invalid">
+                <mat-icon class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                Ingresa un código válido
+            </mat-error>
+
+            <button type="submit"  class="buton-ingresar" *ngIf="!esCargoRecibo"
+                (click)="validarTokenxSMS()" [disabled]="!textoForm.valid || mostrarLoading || textoForm.controls.telephone.disabled">Confirmar</button>
+           
+        </form>
+
+        <div class="resend-text grow">
+            <div class="normal grow">¿No recibiste ningún código?</div>
+            <div class="verde-click grow" (click)="enviarSMSToken()">Inténtalo nuevamente</div>
+        </div>
+    </div>
+
+    <div class="botonCreditoDebito" *ngIf="esDebitoCredito">
+
+        <div class="tyc">
+            <div class="tyc-boton" [ngClass]="(terminosAceptados) ? 'lleno' : 'vacio'" (click)="estadoTermino()"></div>
+            <p class="normal">Acepto los <a class="verde-click" (click)="abreTerminos()">Términos y condiciones</a></p>
+        </div>
+        <div>
+            <button type="submit" class="buton-ingresar" [disabled]="!terminosAceptados || mostrarLoading"
+                (click)="comprar()">{{labelComprarTC}}</button>
+        </div>
+    </div>
+
+    <div class="botonCreditoDebito" *ngIf="esCargoRecibo && (autenticado || isIFILTE)">
+        <div class="tyc">
+            <div class="tyc-boton" [ngClass]="(terminosAceptados) ? 'lleno' : 'vacio'" (click)="estadoTermino()"></div>
+            <p class="normal terminos">Acepto los <a class="verde-click" (click)="abreTerminosCargo()">Términos y condiciones</a></p>
+        </div>
+        <div>
+            <button type="submit" *ngIf="autenticado || isIFILTE" class="buton-ingresar"
+            (click)="comprarAutenticadoNoTC()" [disabled]="!terminosAceptados || mostrarLoading">Comprar</button>
+        </div>
+    </div>    
+
+    <div class="botonCreditoDebito" *ngIf="!esDebitoCredito && !esCargoRecibo">
+        <div class="tyc">
+            <p class="normal entire-row" *ngIf="isProductPrestame" >Para más información ingresa 
+                <a target="_blank" class="verde-click"  href="https://www.claro.com.pe/personas/beneficios/movil/prestame-saldo/">aqu&iacute;</a>
+            </p>
+        <button type="submit" *ngIf="autenticado" class="buton-ingresar"
+            (click)="comprarAutenticadoNoTC()" [disabled]="mostrarLoading">{{esEventos ? 'Comprar' : 'Confirmar'}}</button>
+            <div class="tyc"></div>
+    </div>
+    
+</div>
+
+<app-footer [mostrarContenido]='showFooter'></app-footer>
+
+<div class="modal-generico" *ngIf="mostrarTYC">
+    <div class="modal-white tyc">
+        <div class="cerrar_button" (click)="cerrarTYC()"></div>
+        <p class="titulo">Términos y condiciones</p>
+        <p class="subtitulo">Forma de Pago</p>
+        <div class="texto-box">
+            <p class="texto">Tarjeta de Crédito / Débito <br>
+                Los medios de pagos que se pueden utilizar para comprar son: Visa, Mastercard, Diners y American Express, ingresando los dígitos de la tarjeta, la clave CVV (que es confidencial), correo electrónico y nombre de la tarjeta. <br>
+                Además puede realizar el pago con tarjeta internacional con previa validación de Score Crediticio definido por la marca. <br>
+                La aceptación de una compra bajo esta modalidad implica la aceptación del Cliente de los términos y condiciones que aplican. El Cliente que no se encuentre de acuerdo con los términos mencionados deberá abstenerse de realizar la operación de compra. <br>
+                Los aspectos relativos al funcionamiento de las tarjetas de crédito o débito, están sujetos al contrato existente entre el Cliente y el Banco emisor de su tarjeta de crédito o débito, sin que CLARO tenga responsabilidad alguna sobre los aspectos señalados en dichos contratos. <br>
+                CONDICIONES POR LAS QUE NO SE APLICAN LOS PAGOS<br>
+                Tarjetas sin fondos: ¡Ups ocurrió un error! Fondos insuficientes<br>
+                Tarjeta vencida: ¡Ups ocurrió un error! Comuníquese con su entidad financiera<br>
+                En estos casos la transacción no se procesa y el canal le pedirá que se comunique con su entidad financiera.<br>
+                
+                Una vez realizado la transacción se mostrará al Cliente el mensaje "¡Tu compra se realizó con éxito!". El cargo a la tarjeta es inmediato.
+                <br>
+                El Cliente declara haber leído y aceptar los términos y condiciones detallados, encontrándose plenamente de acuerdo y conforme con ellos.</p>
+                <p class="subtitulo">Datos Personales</p>
+                <p class="texto">
+                    El cliente garantiza que la información suministrada al aceptar estos términos y condiciones, es veraz, completa, exacta y actualizada <br>
+                    En ese sentido, AMERICA MOVIL PERU S.A.C. con domicilio en Av. Nicolás Arriola N° 480, Santa Catalina, La Victoria, provincia y departamento de Lima (CLARO), podrá tratar los datos personales brindados y registrarlos en el Banco de Datos Personales “Clientes” de su titularidad, con la finalidad de validar y procesar la compra de los productos y/o servicios que he solicitado mediante este formulario. El cliente podrá ejercer los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición); en los puntos de atención designados para tal efecto o a través del siguiente <a href="https://www.claro.com.pe/legal-y-regulatorio/derechos-arco/" target="_blank">enlace</a>.
+                </p>
+        </div>
+        <div class="boton-box">
+            <button (click)="aceptarTYC()">Acepto los terminos y condiciones</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-generico" *ngIf="mostrarTYCCargoRecibo">
+    <div class="modal-white tyc">
+        <p class="titulo">Términos y condiciones</p>
+        <p class="subtitulo">Forma de Pago</p>
+        <div class="texto-box"><p class="texto" [innerHTML]="terminosCargoRecibo"></p></div>
+        <div class="boton-box">
+            <button (click)="aceptarTYC()">Acepto los terminos y condiciones</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+

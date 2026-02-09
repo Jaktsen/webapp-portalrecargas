@@ -1,0 +1,147 @@
+
+    <div *ngIf="Express" class="loadingClaroImg">
+    </div>
+    <div [ngClass]="{'show': Express}">
+
+    <div (click)="cerrarTodosPopup($event)">
+    <div class="banner-head" *ngIf="mostrarBannerDescarga && !mostrarConfirma  && !confirmationbox">
+
+        <app-banner-descarga (estadoBanner)="habilitarBanner($event)"></app-banner-descarga>
+    </div>
+
+
+<div id="home" class="home-box"  [class.embedded]="embedded" [hidden]="mostrarConfirma">
+    <div class="red-back" *ngIf="!confirmationbox">
+        <nav class="navbar">
+            <div class="claro-logo"></div>
+        </nav>
+    </div>
+
+    <div id="infoLinea" class="info-linea " *ngIf="!confirmationbox">
+        <app-numero-capcha [cambiaNumero]="cambiaNumero"  [tipoLogin]="tipoComponenteLogin" [numeroTel]="numeroTele" (mostrarContenidoEvent)="habilitarContenido($event)" (resetEvent)="habilitarReset($event)" (flagErrorService)="habilitarErrorServicio($event)"></app-numero-capcha>
+    </div>
+
+    <div *ngIf="flagFijaSinPaquetes || flagErrorService">
+        <app-error [errorSinPaquetes]="flagFijaSinPaquetes" [errorService]="flagErrorService" (isClick)="cambiarNumero($event)"></app-error>
+    </div>
+
+    <div *ngIf="!(flagFijaSinPaquetes || flagErrorService)">
+        <div *ngIf="esRecargas && !isLoading && !popBloqueada" class="paquetes-recargas">
+            <app-recargas [activarRecargas]="activarRecargas"
+                          (abrirFlujoCarouselEvent)="habilitarFlujoCarousel($event)"
+                          [listaCategorias]="listaCategorias"
+                          (productoRecargaSelectionEvent)="selectionEventHandler($event)"
+                          [nombre]="'recargas'"
+                          (abrirFlujoCarouselEvent)="habilitarFlujoCarousel($event)"
+                          (favoriteSelectionEvent)="selectionFavHandler($event)">
+                        </app-recargas>
+        </div>
+
+        <div *ngIf="!esRecargas  && !isLoading && !popBloqueada">
+            <div class="paquetes-recomendados" *ngIf="listaRecomendados.length > 0 && !cargandoRecomendadoFlag">
+                <app-recomendados
+                [disabled]="isActive"
+                [carouselAbierto]="flujoCarousel"
+                [listProductos]="listaRecomendados"
+                [nombre]="'recomendados'"
+                [tituloCarousel]="'Paquetes recomendados'"
+                (abrirFlujoCarouselEvent)="habilitarFlujoCarousel($event)"
+                (recomendadoSelectionEvent)="selectionRecHandler($event)"
+                >
+                </app-recomendados>
+            </div>
+            <div class="paquetes-recomendados" style="text-align: center;" *ngIf="cargandoRecomendadoFlag" ><label class="loader"></label></div>
+
+            <div class="paquetes-favoritos" *ngIf="listaFavoritos.length > 0 && !cargandoFavoritosFlag">
+                <app-favoritos
+                [disabled]="isActive"
+                [carouselAbierto]="flujoCarousel" [listProductos]="listaFavoritos" [nombre]="'favoritos'" [tituloCarousel]="'Mis compras favoritas'"
+                (eliminarFavoritoEvent)="eliminarFavorito($event)"
+                 (abrirFlujoCarouselEvent)="habilitarFlujoCarousel($event)"
+                 (favoriteSelectionEvent)="selectionFavHandler($event)"
+                 ></app-favoritos>
+            </div>
+            <div class="paquetes-favoritos" style="text-align: center;" *ngIf="cargandoFavoritosFlag" ><label class="loader"></label></div>
+
+            <div class="categorias-home" *ngIf="listaCategorias.length > 0 && !cargandoCategoriaFlag">
+                <app-categorias
+                [disabled]="isActive"
+                [carouselAbierto]="flujoCarousel"
+                (carouselAbiertoChange)="habilitarFlujoCarousel($event)"
+                (mostrarConfirma)="habilitarConfirmacion($event)"
+                (productoSelect)="selectionEventHandler($event)"
+                (categoriaSelect)="selectionCategoria($event)"
+                (metodoseleccionado)="selectionMetodo($event)"
+                (compartirSubCat)="selectionSub($event)"
+                [listaCategorias]="listaCategorias"
+                [nombre]="'categorias'"
+                [categoria]="categoria_padre"
+                [subcategoria]="categoria_hija"
+                [creditoSaldo]="creditoSaldo"
+                [idProductoElegido]="productoParametro"
+                (flagErrorService)="habilitarErrorServicio($event)"
+                [isDeepLink]="isDeepLink"
+                >
+            </app-categorias>
+            </div>
+            <div class="loader-categoria" style="text-align: center;" *ngIf="cargandoCategoriaFlag" ><label class="loader"></label></div>
+
+        </div>
+
+        <div class="metodo-pago-carousel" *ngIf="(flujoCarousel === 'favoritos' || flujoCarousel === 'recomendados' || flujoCarousel === 'recargas') && mostrarMetodosPagoRecFav">
+            <app-metodos-pago
+            [numPaso]="'2'"
+            [metodosPago]='mostrarMetodosPagoRecFav'
+            [tipoSeccionIdMetodo] = "tipoSeccionIdMetodo"
+            [productoElegido]='productoElegido'
+            [listaMetodosPago]='listaMetodosPago'
+            [tipoMetodoPagoStar]='tipoMetodoPagoStar'
+            [creditoSaldo]='creditoSaldo'
+            [categoriaElegida]='seleccionData.productoSeleccionado.catvCodCategoria'
+            [idRespuesta]="obtenerMetodosPagoIdRespuesta"
+            (mandarConfirmacion)="habilitarConfirmacion($event)"
+            (metodoSeleccionado)="selectionMetodoPago($event)"
+            (quitarLoading)="quitarLoading($event)"
+            [isDegradado]="isDegradado"
+            [isRecarga]="isRecarga"
+            ></app-metodos-pago >
+        </div>
+    </div>
+
+    <!-- <div class="bemobi_carousel" *ngIf="listaCategorias.length > 0 && isGood()">
+        <section id="bemobiVAS"></section>
+    </div> -->
+
+    <div class="carrousel_ofertas" *ngIf="!esRecargas && listaCategorias.length > 0 && isCarrouselEnabled()">
+        <app-carrousel-ofertas></app-carrousel-ofertas>
+    </div>
+</div>
+
+
+
+<div class="confirma" id="confirmaPage" *ngIf="mostrarConfirma">
+    <app-confirmacion
+    (cerrarConfirmacion)="deshabilitarConfirmacion($event)"
+    [primerPago] = "primerPago"
+    [tipoSeccion] = "flujoCarousel"
+    [seleccionData]="seleccionData"
+    [creditoSaldo]="creditoSaldo"
+    [isDeepLink]="isDeepLink"
+    [isExpress]="isExpress"
+    [isRecarga]="isRecarga"
+    >
+</app-confirmacion>
+</div>
+
+<div *ngIf="!sinCategorias || !isExpress">
+    <!-- pop up suspendido-->
+    <app-popup-general *ngIf="mostrarPopUpSuspendido" (popupAbierto)="cerrarPopUpCallToAction($event)" [infoPopUp]="infoPopUp" [nombrePopUp]="nombrePopUp"></app-popup-general>
+    <app-popup-general *ngIf="popUpLinea && popBloqueada" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp" [nombrePopUp]="nombrePopUp"></app-popup-general>
+    <app-popup-promociones *ngIf="nombrePopUp === 'Promociones'" (popupAbierto)="cerrarPopUpCallToAction($event)" [infoPopUp]="infoPopUp" [nombrePopUp]="nombrePopUp"></app-popup-promociones>
+    <div class="modal-generico" *ngIf="mostrarLoadingFav">
+        <div class="modal-white loading">
+            <div class="loading"></div>
+        </div>
+    </div>
+</div>
+</div>

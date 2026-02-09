@@ -1,0 +1,61 @@
+var listaCategorias = 
+[
+{
+  0: {
+    icon: "/assets/img/megas.png",
+    name: "default"
+  },
+  1: {
+    icon: "http://192.168.5.165:10039/wps/wcm/connect/cc1f860e-f2ba-4def-b124-39bd91ea2f4f/icon-compras-internet.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-cc1f860e-f2ba-4def-b124-39bd91ea2f4f-nf4iSgD",
+    name: "internet"
+  },
+  2: {
+    icon: "/assets/img/minutos-sms.png",
+    name: "voz"
+  },
+  3: {
+    icon: "/assets/img/minutos-sms.png",
+    name: "smsmms"
+  },
+  11: {
+    icon: "/assets/img/velocidad.svg",
+    name: "velocidad"
+  },
+  5: {
+    icon: "/assets/img/roaming.png",
+    name: "roaming"
+  },
+  9: {
+    icon: "http://192.168.5.165:10039/wps/wcm/connect/694b91c4-8d7d-4587-a402-535d42649be8/icon-chevere.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-694b91c4-8d7d-4587-a402-535d42649be8-nf4ioyM",
+    name: "chevere"
+  },
+  80: {
+    icon: "/assets/img/gift-card.svg",
+    name: "giftCard"
+  },
+  15: {
+    icon: "/assets/img/claroclub.svg",
+    name: "canjeEventos"
+  },
+  10: {
+    icon: "/assets/img/redes.svg",
+    name: "sociales"
+  },
+  13: {
+    icon: "/assets/img/clarovideo.svg",
+    name: "videos"
+  },
+  22: {
+    icon: "http://192.168.5.165:10039/wps/wcm/connect/f4d6b71a-3873-4c66-b455-3f172d5938e3/icon-paquetes-exclusivos-online.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-f4d6b71a-3873-4c66-b455-3f172d5938e3-nf4uMgM",
+    name: "miniPlanes"
+  },
+  23: {
+    icon: "/wps/wcm/connect/cbc1d0fe-3e5a-48ee-98dc-51f83e3eb2f1/icon-paquete-prepagado.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE-cbc1d0fe-3e5a-48ee-98dc-51f83e3eb2f1-nf4uVrJ",
+    name: "prePagados"
+  },
+  24: {
+    icon: "/assets/img/velocidad.svg",
+    name: "IFI-LTE"
+  }
+}
+];

@@ -1,0 +1,42 @@
+<div class="modal-generico" style=" display: flex; justify-content: center; align-items: center">
+  <!--Pop up promociones -->
+  <div
+    id="popupRecomendacion"
+    style="padding: 9px 12px; position: absolute;
+    width: 344px;
+    background: #ffffff;
+    border-radius: 8px;"
+
+    *ngIf="nombrePopUp === 'Promociones'"
+    [ngClass]="{ promocion: infoPopUp.recomendacionModal.CallToAction !== '1' }"
+  >
+    <div style="display: flex;justify-content: flex-end;">
+        <div style="height: 24px;">
+            <div
+            class="cerrarNuevoPopUp"
+            (click)="cerrarPop()"
+            [ngClass]="{ closeCallNuevo: infoPopUp.recomendacionModal.CallToAction !== '1'}"
+            ></div>
+        </div>
+    </div>
+   
+    
+    <div style="min-width: 320px">
+        <img
+        class="image-publicidad-src "
+        [src]="infoPopUp.recomendacionModal.Imagen"
+      />
+    </div>
+    <div style="padding: 0px 33px;height: 40px;display: flex;justify-content: center;align-items: center"  
+        [ngClass]="{ cerrar: infoPopUp.recomendacionModal.CallToAction !== '1'}"
+        *ngIf="infoPopUp.recomendacionModal.CallToAction != '' && infoPopUp.callValido" >
+        <button
+        class="boton-verde"
+  
+        (click)="callToActionRecomendacion(infoPopUp.recomendacionModal)"
+    >
+        Comprar ahora
+    </button>
+    </div>
+  </div>
+</div>

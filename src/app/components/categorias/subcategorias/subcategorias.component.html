@@ -1,0 +1,43 @@
+<div class="subcategorias-box">
+    <p class="paso">Paso 2</p>
+    <p class="titulo">{{subtituloCategoria}}</p>
+
+    <div class="sub" *ngIf="categoriaEscogida">
+        <div #seleccionado class="sub-card" id="sub_{{i}}" *ngFor="let subcat of categoriaEscogida.listaSubCategorias; let i = index" (click)="escogerSub(subcat, i)">
+            <p>{{subcat.titulo}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="loading-box" *ngIf="isLoading">
+    <div class="loading"></div>
+</div>
+
+<div class="productos-box" id="prod_bo" *ngIf="mostrarProductos && !isLoading">
+    <app-productos 
+        [pasoNumero]="'3'" 
+        [colorCat]="categoriaEscogida.codCategoria" 
+        [listaProductos]="listaProductos" 
+        [idProductoElegido]="idProductoElegido"
+        (productoElegidoChange)="habilitarMetodoPago($event)" 
+        (compartirProductoElegidoChange)="compartirProdElegido($event)"
+        [isDeepLink]="isDeepLink"
+        >
+    </app-productos>
+</div>
+
+<div class="metodo-pago-box" id="paso_4_sub" *ngIf="mostrarMedioPagos">
+    <app-metodos-pago
+    [numPaso]="metodoPaso"
+    [metodosPago]='true'
+    [listaMetodosPago]='listaMetodosPago'
+    [tipoMetodoPagoStar]='tipoMetodoPagoStar'
+    [creditoSaldo]='creditoSaldo'
+    [categoriaElegida]='codigoCatOrSub'
+    [bloqueoFlag]='false'
+    [productoElegido]='productoElegido'
+    [idRespuesta]="obtenerMetodosPagoIdRespuesta"
+    [isDegradado]="isDegradado"
+    (mandarConfirmacion)="habilitarConfirmacion($event)"
+    ></app-metodos-pago >
+</div>

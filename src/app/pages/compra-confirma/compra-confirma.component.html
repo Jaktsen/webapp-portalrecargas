@@ -1,0 +1,272 @@
+<nav class="navbar" *ngIf="showFooter">
+    <div class="claro-logo"></div>
+</nav>
+
+<div class="confirma" *ngIf="(servicioCompartidoExito.esExito || servicioCompartidoExito.esExitoMP) && !mostrarLoading">
+    <div class="confirmacion-box">
+        <div class="exito-box">
+            <div class="imagen-exito"></div>
+            <div class="texto-exito">
+                <p class="titulo" *ngIf="!esPrestamo">Compra exitosa</p>
+                <p class="titulo" *ngIf="esPrestamo">Activación exitosa</p>
+                <p class="subtitulo" *ngIf="servicioCompartidoExito.idCategoria != 13 && !esGiftCard && !esPrestamo && !esEventos">Tu transacción se hará efectiva en un máximo de 24 horas.</p>
+                <p class="subtitulo" *ngIf="servicioCompartidoExito.idCategoria == 4">La transacción fue realizada con éxito.</p>
+                <p class="subtitulo" *ngIf="esPrestamo" [innerHTML]="mensajeCompraRecarga | safeHTML"></p>
+                <p class="subtitulo" *ngIf="esGiftCard">El código de activación se ha enviado a <b>{{servicioCompartidoExito.mailGiftCardPara}}</b></p>
+                <p class="subtitulo" *ngIf="esEventos">El sorteo se realizará el día <b>{{eventoCompra.sorteo}}</b></p>
+            </div>
+            <div class="imagen-imprimir" (click)="imprimirPagina()"></div>
+        </div>
+
+        <div class="top-box" *ngIf="!esPrestamo">
+            <ng-container *ngIf="servicioCompartidoExito.tipoMetodoPago == 3; else nonroop">
+                <div class="columnaizq">
+                    <p class="minititulos">Número de operación</p>
+                    <p class="miniinfo">{{numeroOperacion}}</p>
+                </div>
+                <div class="columnader">
+                    <p class="minititulos">Línea</p>
+                    <p class="miniinfo">{{numeroLinea}}</p>
+                </div>
+            </ng-container>
+            <ng-template #nonroop>
+                <div class="columnaunica">
+                    <p class="minititulos">Línea</p>
+                    <p class="miniinfo">{{numeroLinea}}</p>
+                </div>
+            </ng-template>
+        </div>
+
+        <div class="codigo-box" *ngIf="servicioCompartidoExito.idCategoria == 13">
+            <div class="alquiler-pelicula">
+                <p class="texto-normal">Tu código de alquiler de película es:</p>
+                <div class="codigo-div">
+                <input class="code" value="{{servicioCompartidoExito.pinCode}}" id="copyCode" readonly/>
+                <div class="copy" (click)="copiarCodigo()"></div>
+            </div>
+            </div>
+            <p class="info" (click)="comoVideo()">¿Cómo utilizo mi código?</p>
+        </div>
+
+        <div class="codigo-box" *ngIf="servicioCompartidoExito.idCategoria == 25">
+            <div class="alquiler-pelicula">
+                <p class="texto-normal">Tú código para acceder al plan es:</p>
+                <div class="codigo-div">
+                <input class="code" value="{{servicioCompartidoExito.pinCode}}" id="copyCode" readonly/>
+                <div class="copy" (click)="copiarCodigo()"></div>
+            </div>
+            </div>
+            <p class="info" (click)="comoMusica()">¿Cómo utilizo mi código?</p>
+        </div>
+
+        <div class="giftcard-box" *ngIf="esGiftCard">
+            <div class="icono"></div>
+            <p class="texto-normal">El gift card podrá activarse hasta el 31/12/{{year}}</p>
+        </div>
+
+
+        <div class="info-box" >
+            <div *ngIf="servicioCompartidoExito.idCategoria == 4">
+                <app-infobox [data]="infoBoxPairsFirstBox"></app-infobox>
+            </div>
+            <div *ngIf="servicioCompartidoExito.idCategoria != 4">
+                <div class="paquete-vigencia primera-fila" *ngIf="!esEventos">
+                    <div class="paquetesel">
+                        <p class="minititulos">Tipo de paquete</p>
+                        <p class="miniinfo" *ngIf="!esGiftCard && !esPrestamo">{{paqueteSeleccionado}}</p>
+                        <p class="miniinfo" *ngIf="esGiftCard">Gift Card</p>
+                        <p class="miniinfo" *ngIf="esPrestamo">Préstamo</p>
+                    </div>
+
+                    <div class="vigencia">
+                        <p class="minititulos">{{tipoFecha}}</p>
+                        <p class="miniinfo">{{paqueteFecha}}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia" *ngIf="servicioCompartidoExito.idCategoria != 13 && !esEventos">
+                    <div class="paquetesel columnaunica">
+                        <p class="minititulos">{{tipoProducto.replace(":","")}}</p>
+                        <p class="miniinfo">{{productoSeleccionado}}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia primera-fila" *ngIf="esEventos">
+                    <div class="paquetesel">
+                        <p class="minititulos">Nombre de evento</p>
+                        <p class="miniinfo">{{eventoCompra.nombre}}</p>
+                    </div>
+
+                    <div class="vigencia">
+                        <p class="minititulos">{{tipoFecha}}</p>
+                        <p class="miniinfo">{{paqueteFecha}}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia" *ngIf="esEventos">
+                    <div class="paquetesel">
+                        <p class="minititulos">Fecha del sorteo</p>
+                        <p class="miniinfo">{{eventoCompra.sorteo}}</p>
+                    </div>
+
+                    <div class="vigencia">
+                        <p class="minititulos">Fecha del evento</p>
+                        <p class="miniinfo">{{eventoCompra.fecha}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div *ngIf="servicioCompartidoExito.idCategoria == 4">
+                <app-infobox [data]="infoBoxPairs"></app-infobox>
+            </div>
+            <div *ngIf="servicioCompartidoExito.idCategoria != 4">
+                <div class="paquete-vigencia primera-fila" *ngIf="servicioCompartidoExito.tipoMetodoPago != 3">      
+                    <div class="paquetesel">
+                        <p class="minititulos">Método de pago</p>
+                        <p class="miniinfo" *ngIf="!esPrestamo">{{paqueteMetodo}}</p>
+                        <p class="miniinfo" *ngIf="esPrestamo">Se cobrará en tu próxima recarga</p>
+                    </div>
+                    <div class="vigencia">
+                        <p class="minititulos">{{tipoCosto.replace(":","")}}</p>
+                        <p class="miniinfo" *ngIf="servicioCompartidoExito.codigo == 1">
+                            {{servicioCompartidoExito.lblCosto}}</p>
+                        <p class="miniinfo"
+                            *ngIf="servicioCompartidoExito.codigo!=1">
+                            {{servicioCompartidoExito.simboloMoneda}} {{servicioCompartidoExito.precioMoneda |
+                            number:'1.2-2' }}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia" *ngIf="esEventos">
+                    <div class="paquetesel columnaunica">
+                        <p class="minititulos">Oportunidades canjeadas</p>
+                        <p class="miniinfo">{{servicioCompartidoExito.nombreProd}}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia primera-fila box-border" *ngIf="servicioCompartidoExito.tipoMetodoPago == 3">      
+                    <div class="paquetesel" style="width: 45%;">
+                        <p class="minititulos">Método de pago</p>
+                        <p class="miniinfo" *ngIf="!esPrestamo">{{paqueteMetodo}}</p>
+                        <p class="miniinfo" *ngIf="esPrestamo">Se cobrará en tu próxima recarga</p>
+                     </div>
+                    <div class="vigencia" style="width: 55%;">
+                        <p class="minititulos" *ngIf="servicioCompartidoExito.tipoMetodoPago == 3">Nro documento autorizado</p>
+                        <p class="miniinfo" *ngIf="servicioCompartidoExito.codigo!=1">{{servicioCompartidoExito.nroDocumentoAutorizado}}</p>
+                    </div>
+                </div>
+
+                <div class="paquete-vigencia primera-fila espacio-fila" *ngIf="servicioCompartidoExito.tipoMetodoPago == 3">      
+                    <div class="paquetesel">
+                        <p class="minititulos">{{tipoCosto.replace(":","")}}</p>
+                        <p class="miniinfo">{{servicioCompartidoExito.simboloMoneda}} {{fnSumarTotal(servicioCompartidoExito.valorVenta , servicioCompartidoExito.igv ) | number:'1.2-2'}}</p>
+                     </div>
+                    <div class="vigencia">
+                        <p class="minititulos">IGV</p>
+                        <p class="miniinfo">S/ {{servicioCompartidoExito.igv}}</p> 
+                     </div>
+                </div>
+
+                <div class="paquete-vigencia primera-fila espacio-fila" *ngIf="servicioCompartidoExito.tipoMetodoPago == 3">
+                    <div class="paquetesel">
+                        <p class="minititulos">Valor venta</p>
+                        <p class="miniinfo">S/ {{servicioCompartidoExito.valorVenta}}</p>
+                     </div>
+                    <div class="vigencia">
+                        <p class="minititulos">Descuento</p>
+                        <p class="miniinfo" >S/ 0.00</p> 
+                     </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info-box" *ngIf="servicioCompartidoExito.tipoMetodoPago == 3">
+            <div>
+                <div class="paquete-vigencia primera-fila">
+                    <div class="paquetesel" style="width: 35%;">
+                        <p class="minititulos">RUC</p>
+                        <p class="miniinfo">{{servicioCompartidoExito.ruc}}</p>
+                    </div>
+                    <div class="vigencia" style="width: 65%;">
+                        <p class="minititulos">&nbsp;</p>
+                        <p class="miniinfo">{{razonSocial}}</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+
+        <div class="numero-texto">
+
+            <div class="email-constancia" *ngIf="(correroUsuario != '' && correroUsuario != undefined) && !servicioCorreoActualizado">
+                <p class="texto">Hemos enviado la constancia a <b>{{correroUsuario}}</b></p>
+                <p class="link" *ngIf="correoActualizado" (click)="abrirPopupConstancia()">Cambiar</p>
+            </div>
+            <div class="email-constancia-edit" *ngIf="(correroUsuario == '' || correroUsuario == undefined) && correoNoConfirmado">
+                <p class="texto"><b>Ingresa un correo electrónico</b> para enviar la copia de ésta y futuras constancias: </p>
+
+                <form [formGroup]="emailForm" class="nuevo-correo-form">
+                    <mat-form-field class="input-correo">
+                        <input matInput placeholder="" type="text" name="mail"
+                        formControlName="mail" autocomplete="off" #mail maxlength="150" id="inputMail">
+                        <button class="enviar_boton" (click)="actualizarCorreo()" [disabled]="(!emailForm.valid || emailForm.controls.mail.disabled) && correroUsuario == ''">Enviar</button>
+                    </mat-form-field>
+        
+                    <mat-error class="error-input" *ngIf="emailForm.controls.mail.dirty && emailForm.controls.mail.touched && emailForm.controls.mail.invalid" id="errorLine">
+                        <mat-icon class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                        <p class="error-texto">Ingresar correo de forma correcta</p>
+                    </mat-error>
+                </form>
+            </div>
+            <div class="box_mensaje_correo" *ngIf="servicioCorreoActualizado && !correoNoConfirmado">
+                <div class="imagen_exito"></div>
+                <div class="mensa_correo">
+                    <p>{{correroUsuario}}</p>
+                    <p><b>Correo guardado</b></p>
+                </div>
+            </div>
+            <!--<p class="num" *ngIf="esEventos">Más información del evento: <a class="link" href="{{servicioCompartidoExito.linkCondicionesCanje}}">link</a></p>-->
+            <p class="num" *ngIf="servicioCompartidoExito.idCategoria == 4">Recuerda que puedes usar tu saldo de recarga para comprar paquetes o crecer tu recarga</p>
+        </div>
+
+        <div class="favoritos-check" *ngIf="puedeFavorito && !cambioPago">
+            <div class="check" [ngClass]="(esFav) ? 'lleno' : 'vacio'" (click)="estadoFav()"></div>
+            <div class="texto" *ngIf="esFav == false">Agregar esta compra como favorita</div>
+            <div class="texto" style="font-weight: bold;" *ngIf="esFav == true">Compra agregada a favoritos</div>
+        </div>
+
+        <div class="favoritos-check" *ngIf="puedeFavorito && cambioPago">
+            <div class="check" [ngClass]="(esFavAct) ? 'lleno' : 'vacio'" (click)="estadoFavAct()"></div>
+            <div class="texto extra" *ngIf="esFavAct == false">Actualizar el método de pago </div>
+            <div class="texto extra" style="font-weight: bold;" *ngIf="esFavAct == true">Método de pago actualizado</div>
+        </div>
+
+        <div class="botonCreditoDebito" *ngIf="servicioCompartidoExito.idCategoria != 4 ">
+            <button type="submit" class="buton-clarovideo" [disabled]="correoNoConfirmado && (correroUsuario == '' || correroUsuario == undefined)" *ngIf="servicioCompartidoExito.idCategoria == 13" (click)="irClaroVideo()">Ir a Claro Video</button>
+            <button type="submit" class="buton-clarovideo" [disabled]="correoNoConfirmado && (correroUsuario == '' || correroUsuario == undefined)" *ngIf="servicioCompartidoExito.idCategoria == 25" (click)="irClaroMusica()">Ir a Claro música</button>
+            <button id="btnFinalizarPC" type="submit" [ngClass]="(servicioCompartidoExito.idCategoria == 13 || servicioCompartidoExito.idCategoria == 25) ? 'buton-ingresar-alquiler' : 'buton-ingresar'" [disabled]="correoNoConfirmado && (correroUsuario == '' || correroUsuario == undefined)" (click)="irDeVuelta(false)">Volver a Inicio</button>
+        </div>
+
+        <div class="botonCreditoDebito" *ngIf="servicioCompartidoExito.idCategoria == 4">
+            <button id="btnFinalizarPC" type="submit" class="buton-ingresar" [disabled]="correoNoConfirmado && (correroUsuario == '' || correroUsuario == undefined)" (click)="irDeVuelta(true)">Finalizar</button>
+            <button type="submit" *ngIf="mostrar" class="buton-clarovideo" [disabled]="correoNoConfirmado && (correroUsuario == '' || correroUsuario == undefined)" (click)="irDeVuelta(false)">Comprar Paquetes</button>
+        </div>
+
+        <div class="mas-info" *ngIf="esPrestamo">
+            <p class="texto">Para más información ingresa a:</p>
+            <a class="link" href="https://www.claro.com.pe/personas/beneficios/movil/prestame-saldo/" target="_blank">www.claro.com.pe/prestamesaldo</a>
+        </div>
+    </div>
+</div>
+
+<app-footer [mostrarContenido]='showFooter'></app-footer>
+
+<app-popup-general *ngIf="popConstancia" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp" [nombrePopUp]="nombrePopUp"></app-popup-general>
+
+<div class="modal-generico" *ngIf="mostrarLoading || mostrarFavLoading">
+    <div class="modal-white loading">
+        <div class="loading"></div>
+    </div>
+</div>

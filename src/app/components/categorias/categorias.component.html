@@ -1,0 +1,103 @@
+<div class="categorias-home" [ngClass]="{'opacity': !disabled}">
+    <p class="paso">Paso 1</p>
+    <p class="titulo">Selecciona el paquete que necesitas</p>
+
+    <div class="categorias-box" *ngIf="todasCards">
+        <ng-container  *ngFor="let cat of listaCategorias; let i = index">
+            <div class="card-cat"   [ngClass]="{'ancho': cat.catcEstado == '1'}" *ngIf="isDisplayableCategory(cat) && cat.catcEstado == '1'">
+                <div class="card" [ngClass]="{ 'disabledClick': !disabled}" (click)="seleccionarCat(cat, disabled)">
+                    <div class="imagen img_{{cat.codCategoria}}"></div>
+                    <p class='categoria_titulo' [ngClass]="{ 'messageDisabled': !disabled }">{{cat.titulo}}</p>
+                </div>
+            </div>
+        </ng-container>
+        <div *ngIf="bannerTiendaClaro && servicioCompartido.canal != '3'" class="banner-visita-tienda-claro" id="bannerVisitaClaroBox">
+            <div class="tienda-claro-logo"></div>
+            <div class="tienda-claro-texto">Si deseas contratar nuestros servicios o comprar equipos</div>
+            <div class="tienda-claro-boton" (click)=visitTiendaClaro()>Visita Tienda Claro</div>
+            <div class="tienda-claro-cerrar" (click)=ocultarBannerTiendaClaro()></div>
+        </div>
+    </div>
+
+    <div class="una-categoria-box" *ngIf="!todasCards">
+        <div class="card-cat full">
+            <div class="card size color_{{categoriaEscogida.codCategoria}}" style="float: left;">
+                <div class="imagen img_{{categoriaEscogida.codCategoria}}"></div>
+                <p>{{categoriaEscogida.titulo}}</p>
+            </div>
+            <div class="cambio" (click)="regresarCategorias()">CAMBIAR</div>
+        </div>
+    </div>
+
+    <div class="loading-box" *ngIf="isLoadingCat">
+        <div class="loading"></div>
+    </div>
+    <div class="sin-subcategoria" id="sinSubCatBox" *ngIf="!todasCards && sinSubCategoria && !roaming && !eventos && listaProductos.length > 0">
+        <app-productos 
+        [pasoNumero]="'2'" 
+        [colorCat]="categoriaEscogida.codCategoria" 
+        [listaProductos]="listaProductos" 
+        [idProductoElegido]="idProductoElegido"
+        [categoriaEscogida]="categoriaEscogida"
+        (productoElegidoChange)="habilitarMetodoPago($event)"
+        (compartirProductoElegidoChange)="compartirProdElegido($event)"
+        [paqueteIlimitado]="paqueteIlimitado"
+        [isDeepLink]="isDeepLink"
+        >
+        </app-productos>
+    </div>
+
+    <div class="sin-subcategoria" id ="paso_3_prod" *ngIf="mostrarMedioPagos && carouselAbierto === 'categorias'  && sinSubCategoria">
+        <app-metodos-pago
+        [numPaso]="'3'"
+        [metodosPago]='true'
+        [listaMetodosPago]='listaMetodosPago'
+        [tipoMetodoPagoStar]='tipoMetodoPagoStar'
+        [creditoSaldo]='creditoSaldo'
+        [productoElegido]='productoElegido'
+        [categoriaElegida]='categoriaEscogida.codCategoria'
+        [bloqueoFlag]='false'
+        [idRespuesta]="obtenerMetodosPagoIdRespuesta"
+        [isDegradado]="isDegradado"
+        (mandarCarga) = "terminarLoading($event)"
+        (mandarConfirmacion)="habilitarConfirmacion($event)"
+        (metodoSeleccionado)="metodoSeleccionado($event)"
+        ></app-metodos-pago >
+    </div>
+
+    <div class="subcategoria" id="subCatBox" *ngIf="conSubCategoria">
+        <app-subcategorias 
+        (mostrarConfirma)="habilitarConfirmacion($event)" 
+        (comparteProd)="compartirProdElegidoSub($event)"
+        (comparteSubCat)="compartirSubCategoria($event)" 
+        [categoriaEscogida]="categoriaEscogida" 
+        [creditoSaldo]='creditoSaldo'
+        [subcategoria]="subcategoria"
+        [idProductoElegido]="idProductoElegido"
+        [isDegradado]="isDegradado"
+        [isDeepLink]="isDeepLink"
+        ></app-subcategorias>
+    </div>
+
+    <div class="roaming" id="roamingBox" *ngIf="roaming">
+        <app-roaming [categoriaEscogida]="categoriaEscogida"
+         (mostrarConfirma)="habilitarConfirmacion($event)"
+         (metodoSeleccionado)="metodoSeleccionado($event)"
+         (compartirProductoElegidoChange)="compartirProdElegidoRoaming($event)"
+         [creditoSaldo]='creditoSaldo'
+         (flagErrorService)="habilitarErrorServicio($event)">
+        </app-roaming>
+    </div>
+
+    <div class="eventos" id="eventosBox" *ngIf="eventos">
+        <app-eventos 
+        [categoriaEscogida]="categoriaEscogida" 
+        (mostrarConfirma)="habilitarConfirmacion($event)" 
+        (emitCanjeExceptionToParent)="regresarCategorias()" 
+        (compartirEvento)="compartirEventoPro($event)"
+        [creditoSaldo]='creditoSaldo'
+        ></app-eventos>
+    </div>
+</div>
+
+<app-popup-general *ngIf="popUpGeneral" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp" [nombrePopUp]="nombrePopUp"></app-popup-general>

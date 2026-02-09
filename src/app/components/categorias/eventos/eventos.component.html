@@ -1,0 +1,93 @@
+<div class="eventos-box">
+    <p class="paso">Paso 2</p>
+    <p class="titulo">Selecciona el evento Claro Club</p>
+
+    <div *ngIf="todasProd">
+        <div class="prod-card-eventos" id="prod_{{i}}" *ngFor="let product of listaEventosProd; let i = index">
+            <div class="imagen-eventos" (click)="escogerProd(product, i)">
+                <img src="{{product.wcm.urlCarrusel}}">
+            </div>
+            <div class="nombre-consideracion-box">
+                <div class="precio">
+                    <p class="titulo">{{product.wcm.nombreEvento}}</p>
+                    <p class="subtitu">{{product.wcm.fechaEvento}}</p>
+                </div>
+                <div class="conside" (click)="mostrarConEvent(product)">Más info</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="una-prod-box" *ngIf="!todasProd">
+        <div class="prod-card-eventos color_{{colorCat}}">
+            <div class="imagen-eventos">
+                <img src="{{productoEscogido.wcm.urlCarrusel}}">
+            </div>
+            <div class="nombre-consideracion-box">
+                <div class="precio">
+                    <p class="titulo">{{productoEscogido.wcm.nombreEvento}}</p>
+                    <p class="subtitu">{{productoEscogido.wcm.fechaEvento}}</p>
+                </div>
+                <div class="conside" (click)="mostrarConEvent(productoEscogido)">Más info</div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+<div class="eventos_productos" id="eventoProdBox" *ngIf="!todasProd">
+    <p class="paso">Paso 3</p>
+    <p class="titulo">Selecciona las oportunidades que desees canjear:</p>
+
+    <div *ngIf="todasCanje">
+        <div class="prod-card-canje" id="canje_{{i}}" (click)="escogerCanje(evento, i)" *ngFor="let evento of canjesEventos; let i = index">
+            <div class="texto">
+                <p class="titulo">{{evento.wcm.optionsText}}</p>
+                <p class="subtitu">{{evento.wcm.pointsText}}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="una-prod-box" *ngIf="!todasCanje">
+        <div class="prod-card-canje color_{{colorCat}}">
+            <div class="texto">
+                <p class="titulo">{{eventoEscogido.wcm.optionsText}}</p>
+                <p class="subtitu">{{eventoEscogido.wcm.pointsText}}</p>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarCanje()">CAMBIAR</div>
+    </div>
+</div>
+
+<div class="metodoEvento" id="metodoPagoBox" id="paso_4_sub" *ngIf="mostrarMedioPagoEvento">
+    <app-metodos-pago
+    [numPaso]="'4'"
+    [metodosPago]='mostrarMedioPagoEvento'
+    [productoElegido]='eventoEscogido'
+    [listaMetodosPago]='listaMetodosPago'
+    [tipoMetodoPagoStar]='tipoMetodoPagoStar'
+    [creditoSaldo]='creditoSaldo'
+    [categoriaElegida]='colorCat'
+    [idRespuesta]="obtenerMetodosPagoIdRespuesta"
+    (mandarConfirmacion)="habilitarConfirmacion($event)"
+    ></app-metodos-pago >
+</div>
+
+<div class="modal-generico" *ngIf="mostrarConsideracionesEvento">
+    <div class="modal-white">
+        <div class="titulo-cerrar">
+            <div class="titulo">Términos y Condiciones de {{mostrarConEventProduct.titulo}}</div>
+            <div class="cerrar"></div>
+        </div>
+        <div class="subti">Lee detenidamente los Términos y Condiciones de tu Compra.</div>
+        <div class="texto" [innerHTML]="terminosProducto | safeHTML"></div>
+        <button class="verde-blanco" (click)="cerrarPopup()">Listo</button>
+    </div>
+</div>
+
+<div class="loading" *ngIf="isLoading">
+    <label class="loader"></label>
+</div>

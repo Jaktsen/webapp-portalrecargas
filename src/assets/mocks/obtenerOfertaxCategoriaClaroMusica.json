@@ -1,0 +1,122 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "listaProductosDeCompra": [
+                    {
+                        "idTipoLinea": "1",
+                        "flagValidarSaldoPontis": "1",
+                        "nombreMetodoPago": "Saldo de Recarga",
+                        "iniVigencia": "2021-04-26 00:00:00.0",
+                        "codTipoLinea": "1",
+                        "tituloConfirma": "",
+                        "tipoVigencia": "DIAS",
+                        "idMetodoPago": "24",
+                        "subtituloConfirma": "",
+                        "moneda2": "",
+                        "precio": "4.9",
+                        "moneda1": "S\/",
+                        "subtitulo": "",
+                        "estadoMetodoPago": "1",
+                        "catvTitulo": "Claro M\u00fasica",
+                        "codigoPaquete": "D_CLAMUSSEMDummy",
+                        "idProductoDeCompraAsociado": "5713",
+                        "vigencia": "7",
+                        "finVigencia": "2099-12-30 00:00:00.0",
+                        "tituloProducto": "",
+                        "codigoProducto": "PRE_MUSICA_SEM001",
+                        "recomendadoCategoriaOrden": "9999",
+                        "idProductoDeCompra": "5713",
+                        "ordenMetodoPago": "1",
+                        "catnId": "884",
+                        "catvCodCategoria": "25",
+                        "cantidadFavoritos": "3",
+                        "listaCaracteristicasProducto": [
+                            {
+                                "idCaracteristica": "9905",
+                                "estilo": "titulo_rojo",
+                                "orden": "1",
+                                "idProducto": "5713",
+                                "nombre": "CLARO MUSICA SEMANAL"
+                            },
+                            {
+                                "idCaracteristica": "9906",
+                                "estilo": "titulo_gris",
+                                "orden": "3",
+                                "idProducto": "5713",
+                                "nombre": "S\/ 4.9"
+                            }
+                        ],
+                        "nombreProducto": "Claro Musica Semanal S\/ 4.90"
+                    },
+                    {
+                        "idTipoLinea": "1",
+                        "flagValidarSaldoPontis": "1",
+                        "nombreMetodoPago": "Saldo de Recarga",
+                        "iniVigencia": "2021-04-26 00:00:00.0",
+                        "codTipoLinea": "1",
+                        "tituloConfirma": "",
+                        "tipoVigencia": "DIAS",
+                        "idMetodoPago": "24",
+                        "subtituloConfirma": "",
+                        "moneda2": "",
+                        "precio": "16.9",
+                        "moneda1": "S\/",
+                        "subtitulo": "",
+                        "estadoMetodoPago": "1",
+                        "catvTitulo": "Claro M\u00fasica",
+                        "codigoPaquete": "D_CLAMUSMENDummy",
+                        "idProductoDeCompraAsociado": "5714",
+                        "vigencia": "30",
+                        "finVigencia": "2099-12-30 00:00:00.0",
+                        "tituloProducto": "",
+                        "codigoProducto": "PRE_MUSICA_MES001",
+                        "recomendadoCategoriaOrden": "9999",
+                        "idProductoDeCompra": "5714",
+                        "ordenMetodoPago": "1",
+                        "catnId": "884",
+                        "catvCodCategoria": "25",
+                        "cantidadFavoritos": "3",
+                        "listaCaracteristicasProducto": [
+                            {
+                                "idCaracteristica": "9907",
+                                "estilo": "titulo_rojo",
+                                "orden": "1",
+                                "idProducto": "5714",
+                                "nombre": "CLARO MUSICA MENSUAL"
+                            },
+                            {
+                                "idCaracteristica": "9908",
+                                "estilo": "titulo_gris",
+                                "orden": "3",
+                                "idProducto": "5714",
+                                "nombre": "S\/ 16.9"
+                            }
+                        ],
+                        "nombreProducto": "Claro Musica Mensual S\/ 16.90"
+                    }
+                ],
+                "defaultServiceResponse": {
+                    "idSesion": "a5d3bbd1-efd7-4b9c-a16a-311b909883c6",
+                    "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "idTransaccional": "cedccdbd-771b-4916-9e85-ed1a8e94ed9c",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-6cf57e7e-23c0-458d-a510-efc974d81638",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "1da3ca5a-dbd6-4518-a213-0acd2340e419",
+                    "consumer": "",
+                    "timestamp": "2021-05-17T11:23:10-05:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

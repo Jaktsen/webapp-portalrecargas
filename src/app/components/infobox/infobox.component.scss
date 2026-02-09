@@ -1,0 +1,50 @@
+.paquete-vigencia, .metodo-costo {
+        display: inline-block;
+        width: 100%;
+
+        .paquetesel,
+        .metodo {
+          float: left;
+
+          .minititulos {
+            font-size: 11px;
+            color: #595959;
+            margin-bottom: 0px;
+          }
+
+          .miniinfo {
+            font-size: 12px;
+            color: #212121;
+            margin-bottom: 0px;
+          }
+        }
+
+        .paquetesel {
+          .miniinfo {
+            width: 100%;
+          }
+        }
+
+        .vigencia,
+        .costo {
+          float: right;
+
+          .minititulos {
+            font-size: 11px;
+            color: #595959;
+            margin-bottom: 0px;
+            text-align: right;
+          }
+
+          .miniinfo {
+            font-size: 12px;
+            color: #212121;
+            margin-bottom: 0px;
+            text-align: right;
+          }
+        }
+      }
+
+.metodo-costo {
+margin-top: 16px;
+}

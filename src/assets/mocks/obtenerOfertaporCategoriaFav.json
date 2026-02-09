@@ -1,0 +1,197 @@
+{
+	"comunResponseType": {
+		"MessageResponse": {
+			"Body": {
+				"listaProductosDeCompra": [{
+					"idTipoLinea": "1",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Saldo de Recarga",
+					"codMetodoPagoFav": "1",
+					"iniVigencia": "2020-02-21 00:00:00.0",
+					"codTipoLinea": "1",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "1",
+					"subtituloConfirma": "",
+					"moneda2": "",
+					"precio": "5",
+					"moneda1": "S\/",
+					"subtitulo": "",
+					"catvTitulo": "Paquetes de Internet",
+					"estadoMetodoPago": "1",
+					"codigoPaquete": "ICP30D200MB",
+					"idProductoDeCompraAsociado": "509",
+					"vigencia": "5",
+					"finVigencia": "2099-12-31 00:00:00.0",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "MEGAS12",
+					"recomendadoCategoriaOrden": "4",
+					"idProductoDeCompra": "509",
+					"ordenMetodoPago": "1",
+					"catnId": "2",
+					"catvCodCategoria": "1",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "2384",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "509",
+						"nombre": "TRIPLE DE MB"
+					}, {
+						"idCaracteristica": "2385",
+						"estilo": "titulo_rojo",
+						"orden": "2",
+						"idProducto": "509",
+						"nombre": "1.95 GB"
+					}, {
+						"idCaracteristica": "2386",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "509",
+						"nombre": "x 5 d\u00edas"
+					}, {
+						"idCaracteristica": "2387",
+						"estilo": "titulo_gris",
+						"orden": "4",
+						"idProducto": "509",
+						"nombre": "a S\/ 5"
+					}],
+					"nombreProducto": "1.95 GB x 5 d\u00edas a S\/5"
+				}, {
+					"idTipoLinea": "1",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Saldo de Recarga",
+					"codMetodoPagoFav": "4",
+					"iniVigencia": "2020-02-21 00:00:00.0",
+					"codTipoLinea": "1",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "4",
+					"subtituloConfirma": "",
+					"moneda2": "",
+					"precio": "10",
+					"moneda1": "S\/",
+					"subtitulo": "",
+					"catvTitulo": "Paquetes de Internet",
+					"estadoMetodoPago": "1",
+					"codigoPaquete": "ICP30D500MB",
+					"idProductoDeCompraAsociado": "510",
+					"vigencia": "10",
+					"finVigencia": "2099-12-31 00:00:00.0",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "MEGAS13",
+					"recomendadoCategoriaOrden": "4",
+					"idProductoDeCompra": "510",
+					"ordenMetodoPago": "1",
+					"catnId": "2",
+					"catvCodCategoria": "1",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "2388",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "510",
+						"nombre": "TRIPLE DE MB"
+					}, {
+						"idCaracteristica": "2389",
+						"estilo": "titulo_rojo",
+						"orden": "2",
+						"idProducto": "510",
+						"nombre": "4.5GB"
+					}, {
+						"idCaracteristica": "2390",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "510",
+						"nombre": "x 10 d\u00edas"
+					}, {
+						"idCaracteristica": "2391",
+						"estilo": "titulo_gris",
+						"orden": "4",
+						"idProducto": "510",
+						"nombre": "a S\/ 10"
+					}],
+					"nombreProducto": "4.5GB x 10 d\u00edas a S\/10"
+				}, {
+					"idTipoLinea": "1",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Saldo de Recarga",
+					"codMetodoPagoFav": "4",
+					"iniVigencia": "2017-09-01 00:00:00.0",
+					"codTipoLinea": "1",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "4",
+					"subtituloConfirma": "",
+					"moneda2": "",
+					"precio": "5",
+					"moneda1": "S\/",
+					"subtitulo": "",
+					"catvTitulo": "Paquetes de Internet",
+					"estadoMetodoPago": "1",
+					"codigoPaquete": "D_TIKTOK10GB7D",
+					"idProductoDeCompraAsociado": "922",
+					"vigencia": "7",
+					"finVigencia": "2099-12-30 00:00:00.0",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "REDES2",
+					"recomendadoCategoriaOrden": "4",
+					"idProductoDeCompra": "922",
+					"ordenMetodoPago": "4",
+					"catnId": "2",
+					"catvCodCategoria": "1",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "2124",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "922",
+						"nombre": "Tik Tok"
+					}, {
+						"idCaracteristica": "2141",
+						"estilo": "titulo_rojo",
+						"orden": "2",
+						"idProducto": "922",
+						"nombre": "10GB"
+					}, {
+						"idCaracteristica": "2125",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "922",
+						"nombre": "x 7 d\u00edas"
+					}, {
+						"idCaracteristica": "2126",
+						"estilo": "titulo_gris",
+						"orden": "4",
+						"idProducto": "922",
+						"nombre": "a S\/ 5"
+					}],
+					"nombreProducto": "Tik Tok 10GB x 7 d\u00edas a S\/.5"
+				}],
+				"defaultServiceResponse": {
+					"idSesion": "b9f4d37c-546a-4160-be56-1e46364b7a4b",
+					"mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+					"idTransaccional": "d9c1c414-b3ef-492b-b874-115fb590bbd5",
+					"idRespuesta": "0"
+				}
+			},
+			"Header": {
+				"HeaderResponse": {
+					"status": {
+						"type": "0",
+						"code": "0",
+						"msgid": "DPS01-bdd906b5-7260-460e-9257-c017dfe1e7a7",
+						"message": "EJECUCI\u00d3N CON \u00c9XITO"
+					},
+					"pid": "c4c97f1a-2dc9-4b36-b84f-d095332714a3",
+					"consumer": "",
+					"timestamp": "2022-11-16T00:54:24-05:00",
+					"VarArg": ""
+				}
+			}
+		}
+	}
+}

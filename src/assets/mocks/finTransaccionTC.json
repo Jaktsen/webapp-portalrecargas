@@ -1,0 +1,53 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "paisTC": "",
+                "horaCompra": "2021-01-18T18:14:27.266-05:00",
+                "flagCopiaComprador": "0",
+                "valorVenta": "2.54",
+                "nombreTC": "",
+                "binTC": "45477",
+                "razonSocial": "Am&eacute;rica M&oacute;vil Per&uacute; S.A.C",
+                "simboloMoneda": "S\/",
+                "importePagado": "16",
+                "type": "registrarFinTransaccionPagoTCResponse",
+                "marcaTC": "visa",
+                "tiempoActualizacion": "",
+                "defaultServiceResponse": {
+                    "idSesion": "d7a4d383-0694-4d88-9297-9f2cea5c87a2",
+                    "mensaje": "Proceso Exitoso.",
+                    "idTransaccional": "30fc062b-a316-44b5-97d4-6f08472013cc",
+                    "idRespuesta": "0"
+                },
+                "emailNotificacion": "jav******1@gmail.com",
+                "apellidoTC": "",
+                "numeroTC": "454775******6006",
+                "idTransaccionCompra": "MzMxMDQ=",
+                "numeroOperacion": "8973307",
+                "igv": "0.46",
+                "nroDocumentoAutorizado": "MIC20049375",
+                "ruc": "20467534026",
+                "codigoAutorizacion": "154620",
+                "flagActivacion": "true",
+                "descripcionResultadoOperacion": "",
+                "codigoResultadoOperacion": "",
+                "emisorTC": ""
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-8f9486c1-15ba-4618-b57b-efc974d871b0",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "f71a023f-d7c8-4b3e-ade4-94e8d3528ba0",
+                    "consumer": "",
+                    "timestamp": "2021-01-18T17:14:27-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

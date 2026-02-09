@@ -1,0 +1,29 @@
+{
+    "comunResponseType": {
+      "MessageResponse": {
+        "Body": {
+          "saldoPrepago": "600",
+          "defaultServiceResponse": {
+            "idSesion": "11aac8e7-ae86-4d3b-8bce-68f393d8ba84",
+            "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+            "idTransaccional": "b82e9c2b-6fae-4681-8ee0-56114d9ae5b4",
+            "idRespuesta": "0"
+          }
+        },
+        "Header": {
+          "HeaderResponse": {
+            "status": {
+              "type": "0",
+              "code": "0",
+              "msgid": "DPS01-c4cbda40-d04e-4ba9-b07e-efc974d89be1",
+              "message": "EJECUCI\u00d3N CON \u00c9XITO"
+            },
+            "pid": "f44b593d-b464-4d0e-aba8-6288081d3168",
+            "consumer": "",
+            "timestamp": "2021-02-26T10:14:30-06:00",
+            "VarArg": ""
+          }
+        }
+      }
+    }
+  }

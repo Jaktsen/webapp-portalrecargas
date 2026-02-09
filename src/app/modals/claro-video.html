@@ -1,0 +1,64 @@
+<div class="claroVideo-title">
+    <img class="claroVideo-modal" 
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC/UlEQVRYR+2WwVHbUBCG/1/okBu2KSAymBlucQdABTEVQCqIqQCoAKeCQAWYCiAVIM4YLAoAOWeENvM/6WHhMAM4BC7WjGbk9552v939d2Xigy9+sH/MAGYZ+K8ZuG22jIb1ejI4rYo9jaJaPUlGWnt3gDRabhvthIYNgb0rgHdu4PHC8GLrUQa0CWAVyEfA/bFPURotu4P15OLgtTPjttk6pbFbTy7ip5w/ANwsLvVo/F5xMKJxW05lROuN4WDttQDV87JjYOIj93tMo1bXiH0j9oI86wGfasasD+ALLWwaMxe5AJQNowm0DaLPnHvaM9o+jYfao2Eb4MgC24FZG2RcnLtLfFarYLxttmIASWM46PgNqTQPwm6Q49SIXZcqC7eM2dDAw8DyvpE9ADENPSNOHIjbswMjjgD8NlqfRtmdp2VNBQdkn8cA4bUATNEvXA2co8nLl4CWdYA5lWEeYGREF8A5DbsC8DZuFlu7NOzQsroiTqOVyIETLlva8z60JgDV2BrDwfo4AysRkG0CPDaaIvUZOKtEJpiRB/D9XgDYZmN42fT2fJBBHh4AWVTJQMI0WuoYeVTUFHJWK9PepGWRMZQeRO4ilSMgi41zZwCvJwG8PSN6QY5+HqBDQ/epgfTQBaUQVYL5ku5atVP7jEvgNBADlhZnWC818ADmJ95kVxntx8LVpUr21/VoEKVRa00KluNxOdx80ByIVc8ihWEC3NeKM3cJELaVlarKi7litUl7kwRvNQkFLLUnpQPpQ7V+dni9FYCcS8zuAwO41hXEs8NrGgA52wcglUugun8CEqfLggaVQM7L35oROqvZ8K2EUysqW+vTAChCvaxvhIxLjBKmALwzCU7aEdwq4LpLzzqjVtY7WkumBdDLXwH8KkGsAiDjAlD6VRZlxbVyqYlh+TegmLBPtcYL1iQwGdoojXsAGdWzolcJBCIIlUhl8FpRxgS4MS2AGH2E/tm3rpx7MWpNsLpVNt1qX38m/heAFyTq+SMzgFkGZhn4A4jkifH3ntpyAAAAAElFTkSuQmCC">
+
+</div>
+<div class="list-number">
+    <div class="fila mb-24">
+        <div class="number-ball">
+            1
+        </div>
+        <div class="number-text">
+            <strong>Paga S/ 9.50</strong> con cualquier tarjeta de crédito o débito.
+        </div>
+    </div>
+    <div class="fila mb-24">
+        <div class="number-ball">
+            2
+        </div>
+        <div class="number-text">
+            <strong>Recibe</strong> el código de compra en tu correo electrónico.
+        </div>
+    </div>
+    <div class="fila mb-24">
+        <div class="number-ball">
+            3
+        </div>
+        <div class="number-text">
+            <strong>Usa</strong> el código en <strong>clarovideo.com</strong> para alquilar cualquier película por 48 horas.
+        </div>
+    </div>
+    <div class="linea-left"></div>
+    <div class="mb-16">
+        <strong class="number-text-2">Algunas películas disponibles para alquilar</strong>
+    </div>
+    <div class="mb-24">
+        <div class="recomendados-carousel">
+            <div class="container-fluid">
+                <div id="claro-video-car" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item" *ngFor="let itemPaquete of data; let k = index" [ngClass]="k == 0 ? 'carousel-item active' : 'carousel-item'">
+                            <div class="paquete-vermas-2 event-pack paquete-recomendados content">
+                                <div id="evento{{k}}" class="paquetes event-item paquete-recomendado" (click)="activar(k, 'evento'); select(itemPaquete, 4)">
+                                    <img class="event-img" src="{{itemPaquete.image}}" alt="Imagen">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#claro-video-car" role="button" data-slide="prev">
+                        <img class="carousel-btn" 
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAwCAYAAAACYxrZAAAECklEQVRYR7XYW28bRRQH8P/ZXcdpALVAQVBKiy9JE4WiQpEQEhevE6BQEgc+ABKQNOUD8MAX4IlHpPgSqFrBI147txZS4kq8E24lbeIkolBICBepIm5ce+egMRhh1/ZMHNeP3rPnN//dmfGuCbfg05lI9rguvceMJwjIAfgChvnOyujgFWq1F4g7LwqXPwGwq6I30WabxzjaUlBi7MJhsLdWECJKtQwMRNPHmEWqHvbPAOj3loDBeOoF4XK6MQYQ0c7vocRcIVJgtKvmg2HQ+ztKGIw5z7vMaR0MRKu7vXisadAXTT8HuBO6WLvVZi8MH/+hKdAfT/WzEJO6GJEZkmuwNG1U1736eAlzxcRN66x2oxUyLLuMbRv0R50+Zp7UxQyvEVp+Y+jH/49FO2EgMREWxeKUDkZEy9RGdjWmnbCEue4kmDtUt0BihukNZUde+qnmbqNqEIilbcFiSgsDZQ3La9fDlAmDY07IJUzrYhas0OJbA1cbhah7D4Px5LOuoBktjLBkscdWYXUT/ovJZLepLjltA6sJdkbTzxQhZDINjBY9HsO+/GbkZ9XAyscrLqkvkXoaLp+9VVhFwu1gAF1uN3bZC6PHftFNVpHQH0s+BYGzDNyubtA8VkoYGE8HueDOa2GESx1er33x9eNr6oHVriBf1EmBOaJs0AKslNAfdTaYeW9DsEVYCfSNOVcB3qdIuGZZCC+NvLqgvBKKAvJFk6fBeE3ViIjWTZPtnaIUOPPpvWIzN6+RUj51rRugcPbk0PeqAdY7Xlr4/niyi13KaKHArwYZdrPofztNaXkU3Qwz9qtGTxI1rXD2xOBFVW318YqtLRhzAkIgw+AHVY2aRW/6eTqUmPAVXPcCMx/QQDfI0xZeHn75O1Vtzc27/GX3mPNQHnwBwEFVIwI2YBh9K6ND36pqa/48lU/qGZ8+uFW8kQGzT9WIiH4DUVgHbfjU5o9NHGBRzMiJrIOyafStjkS+aVSrfEwMJmb2i2JeTqRgK1AlKJGusckHilSQS6ZThcp3QA9ZfYsnB76uVasFyhMPfZDeVyiIDDN36aCWif6lE6981XAdqhr1xM7dv8W5OTC6VbUyaS1UO2EZ6D01fV9u68YcwD1KlPCHaZn92eHIfMN1qGokN3zObc4xo1dViyp02wnLQPDDmXtEfmuOgYeVKOhP07D6s6MDXzYNlmZvbHJvURQ+Z+ARHdQD6/COQIl0n07enb9O58F8RIUS0Uc7BiXSO37urlzh+nmAH224yxCttwSUyOGPp+7cvFaYZfDRBuhay0CJHDnl7LmWxywzP14TJZxpKSgRf2x2N/Nf8v3kySp0rd3oaP5/mkb3Kjgz4xVX8u+CMQjCHcz4DJbx9upIZP1vXfrA7dU/5pgAAAAASUVORK5CYII=">
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#claro-video-car" role="button" data-slide="next">
+                        <img class="carousel-btn" 
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAwCAYAAAACYxrZAAAEHUlEQVRYR63Xy28bVRQH4HPujGvXQRXvllfAjpMQyqNlj4RDWxonfrIEFRViO5FYsuIfYMGSRewmpQL2cZxQKJDE4SEhhPoQJUqajJ22lFBBeFTQOI5n5qA7lQ00Y8+dsb20z5zv/u7ce2eMAAD+7HQn6NrbAPAcAXgR4VtJojdXk4kl/ns7P9h7Mt+7XdXPAlHHbY3LTMKXiqn4J20F/ZlcjohiZk0RsIISxNuJom8stwFA9zRKYaDIYsWR6Jl2JEV/JneFiDqbNeMokzCqpGKftopiVzb3rq7TG5aNELYkxmKtonjgVO7OGxU4D0SPCaGIUSUd/8yytkEB8u/7Jk4/uqVuF4DIZ9kIYQtAiqyNRD+3rDUpMMDaXiTSFkRRZCxcSsVm7aJ10DYKUEaJReyi/wM52vXe1CN6RV/gB5DA6MuIGC6NxOcEao2SHWANpW0qEFGXQKMyk+WhYjIyL1BrDvILA+MfP6xrlQUhFHGTSVJYBDVNWBupgaqVAgEFLEfPUWRDxXS00PwQsejUMzbzkArqgigqEQwqo3G+Bkw/TRPWrjBQrBaIoFskqcQopKQSX5jVCoH8QpvoTYnRoBkqDHK092T+wWpV56u3RyDpTRlYaHUk+uV/a22BTlCQcGAtGfuqhtoG+YV92TMPbOnlAgD1WiVFgL9JZqEa6gh0ggKDgVI68bVjkKP7T53et1mpFIDgcZGk6JIOtgTaRQEx3zJoB0XEjbaA3eOTfaoK/PDe13xqcb1lkGOahnxv7rW6j4DwQUtgIDP1hA40L4QBrrMOr/NFY2CkFwjgfstkgOsoUbCUSqw4Shg4Mb1f19R5EQwRrqEsBYvDUaXhE7/ZiG1hgD8yBkElHS86Otq6Jj56kqrbPNl9VtOIiFddkvT8pWRkzdHh7c9OPQW6PieCAeJlN0FweTR++faBCd1DAyNjNd5rlQwQ1zzyruDS8OAVRw9g33j+adT0OSEMoIRMDpbSkauOXjHsYAioMNkdVJKha81moeGU9mRmnqmSOtfsv2N95SGsyuQKroyGf7KaclOw+0TugKrBrBiGKy4XC156PbpuhZnuQzsYICx70Nu/lD76swi2AwxM5A9qqjYLBHdbN8Alr2dX/+LxwevWtf9W1KfUDoYIi+jt6C8ee/EXO1g9YSA786ymq/ye3WXVAAF+YG5Pv/Ja6FerWtN9yF9wq6BeFMS+l5nrhZV0eMMJZiT0Z3IfEtErlg0QL7h306HlVxO/WdY2KeDgdesHKJ73unYfWhw++nsrmJHQNzbJl3TDdxEEPNuxx3X44stDf7SK3QIzk+8DwbEGB+13ezx45MLx+J/twAzw1mv75rkdKRG/QbxjoJQ+fKNdWH1b+Mbze0HV30GEI0DwFyBMs073W0ooVGknxnv9Ax4G0yh8sVPzAAAAAElFTkSuQmCC">
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="example-full-width choose-btn" [mat-dialog-close]="1" mat-flat-button>Alquilar película</button>
+    <button class="example-full-width close-btn" (click)="close()" mat-flat-button>Volver</button>
+</div>

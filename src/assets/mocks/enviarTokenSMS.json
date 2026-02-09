@@ -1,0 +1,27 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "defaultServiceResponse": {
+                    "mensaje": "Operacion exitosa.",
+                    "idTransaccional": "065913a6-f5d0-4f26-a1ae-55c93e6f1228",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-63e63213-6093-4f96-a2c4-c017dfe17c17",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "9598282b-0dfa-490c-a26b-a7bdabd88304",
+                    "consumer": "",
+                    "timestamp": "2020-12-22T11:49:23-05:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<div id="metodosDiv" class="main-div" *ngIf="listaMetodosPago.length > 0 && metodosPago && isDegradado !='false'">
+    <div class="home-header">
+        Paso {{numPaso}}
+    </div>
+    <div class="home-title">
+        Elige tu método de pago
+    </div>
+    <div class="metodos-conditions" (click)=visitProductConditions()>
+        * {{mensajeRevisarCondiciones}}
+    </div>
+    <div *ngIf="isNotEnabledFavoritoMetodo" class='favorito-metodopago-mensaje-error'>
+        <div class="exclamacion"></div> 
+        <div class='message'><span class="bold">{{favoritosMetodoErrorMensaje}}</span>, por favor selecciona otro método de pago</div>
+    </div>        
+    <div class="row">
+        <div [ngClass]="checkPaymentMethod(esLineaPrepago)" *ngFor="let metodoPago of listaMetodosPago | filtraMetodos : esLineaPrepago" >
+                    <div class="fila metodo-pago-item" [id]="'metodoPagoItem-'+metodoPago.tipoMetodoPago"
+                *ngIf="metodoPago.nombre && !(metodoPago.tipoMetodoPago !=3 && portalRecargasFlag)"
+                [class.disabled]="metodoPago.estado==0"
+                (click)="seleccionarMedio(metodoPago)">
+                    <img class="center-horizontal" [src]="getIconoTipoPago(metodoPago)">
+                    <div class="metodo-text row w-100 center-horizontal" >
+                        <div class="metodo-title met_{{metodoPago.tipoMetodoPago}} col-12 col-lg-12" [ngStyle]="{'padding': metodoPago.tipoMetodoPago==1 || metodoPago.tipoMetodoPago==4 ? autenticado ? '0px' : '6px 0px' : '0px' }">
+                            {{metodoPago.nombre}} <span><img class="center-horizontal" style="margin-bottom: 5px;" [src]="srcIconStar" *ngIf="metodoPago.tipoMetodoPago == tipoMetodoPagoStar && metodoPago.estado!=0"></span>
+                        </div>
+                        <!-- <div class="metodo-subtitle col-12 offset-lg-1 col-lg-5 tarjetas" *ngIf="metodoPago.tipoMetodoPago==3 && metodoPago.estado!=0">
+                            <span class="icon-tarjeta icon-tipo-visa"></span>
+                            <span class="icon-tarjeta icon-tipo-mastercard" ></span>
+                            <span class="icon-tarjeta icon-tipo-express" ></span>
+                            <span class="icon-tarjeta icon-tipo-dinners"></span>
+                        </div> -->
+                        <div class="metodo-subtitle col-12 spaced"  *ngIf="metodoPago.tipoMetodoPago==1 && autenticado && !metodoPago.mostrarMensajeClaroPuntosInsuficiente">
+                            Tienes hasta {{metodoPago.totalClaroPuntos}} ptos
+                        </div>
+
+                        <div class="metodo-subtitle col-12 spaced"  *ngIf="metodoPago.tipoMetodoPago==1 && autenticado && metodoPago.mostrarMensajeClaroPuntosInsuficiente">
+                            No cuentas con suficientes puntos
+                        </div>
+
+                        <div class="metodo-subtitle col-12 spaced"  *ngIf="metodoPago.tipoMetodoPago==2">
+                            <span *ngIf='!esLineaPrepago' [innerHTML]="metodoPago.medioPagarRecibo.mensaje"></span>
+                        </div>
+                        <div class="metodo-subtitle col-12 spaced" *ngIf="metodoPago.tipoMetodoPago==4 && autenticado">
+                            <span class="pagos-saldo" *ngIf="autenticado && !metodoPago.mostrarMensajeSaldoPrepagoInsuficiente">Tienes
+                                {{creditoSaldo.lblSimboloMonedaSaldoPrep}}{{creditoSaldo.lblSaldoPrepago}}
+                                de saldo</span>
+                                <!-- <br> -->
+                                <span class="pagos-saldo" *ngIf="autenticado && metodoPago.mostrarMensajeSaldoPrepagoInsuficiente">No cuentas con suficiente saldo</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="listaMetodosPago.length == 0" class="loading-box" >
+    <div class="loading"></div>
+</div>
+
+<app-popup-general *ngIf="showPopup" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp"
+    [nombrePopUp]="nombrePopUp"></app-popup-general>

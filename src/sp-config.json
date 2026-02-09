@@ -1,0 +1,6 @@
+{
+   "wcmContentName": "PortalRecargas",
+   "angularCompilerOptions": {
+      "enableIvy": true
+   } 
+}

@@ -1,0 +1,11 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ErrorComponent } from './error.component';
+
+describe('ErrorComponent', () => {
+  it('Debe de crear', () => {
+    const mockMethodsService = jasmine.createSpyObj(['isValueContainedInArray', 'isFlowPortalRecargas']);
+    const component: ErrorComponent = new ErrorComponent(mockMethodsService);
+    expect(component).toBeTruthy();
+  });
+});

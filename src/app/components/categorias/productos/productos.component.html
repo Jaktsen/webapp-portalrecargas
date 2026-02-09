@@ -1,0 +1,450 @@
+<div class="productos-caja" *ngIf="colorCat !== '80' && colorCat !== '13' && colorCat !== '25' && colorCat !== '95'">
+    <p class="paso">Paso {{pasoNumero}}</p>
+    <p class="titulo">{{subTitulo}}</p>
+
+    <div class="d-flex caja_recupera_2 mb-3" *ngIf="colorCat =='26'">
+        <div class="info_box" >
+            <mat-icon class="error-icon info_icon" aria-hidden="false" aria-label="Example home icon">info</mat-icon>
+        </div>
+        <div class=" texto_box pl-1" >
+            <p class="text_bold">Los paquetes USA + Perú no necesitan roaming</p>
+            <p class="text_norm">Podrás usar los gigas de estos paquetes en USA y Perú.</p>
+        </div>
+    </div>
+
+    <div class="caja_recupera" *ngIf="colorCat == '24' || colorCat == '50'">
+        <div class="info_box">
+            <mat-icon class="error-icon info_icon" aria-hidden="false" aria-label="Example home icon">info</mat-icon>
+        </div>
+        <div class="texto_box">
+            <p class="text_bold">
+                <span *ngIf="colorCat == '24'">Los paquetes de velocidad </span>
+                <span *ngIf="colorCat == '50'">Los paquetes de internet inalámbrico </span>
+                vencen al finalizar tu ciclo de facturación
+            </p>
+            <p class="text_norm">Revisa tu fecha de fin de ciclo en el app Mi Claro antes de realizar la compra</p>
+        </div>
+    </div>
+
+    <div *ngIf="todasProd && listaProductosCaraOrdenado.length > 0">
+        <div class="prod-card" id="prod_{{product.idProductoDeCompra}}" *ngFor="let product of listaProductos; index as i" (click)="escogerProd(product)">
+            
+            <div class="tag" *ngIf="ValidarEtiquetado(product.idProductoDeCompra)" >
+                
+                <div style="position: relative; border-radius: 12px;" *ngIf="etiquetado">
+                    
+                    <div class="tag_title" [ngStyle]="{'background': etiquetado.color_titulo }">
+                        <span style="font-style: strong !important">{{info[0]}} </span> 
+                        <span class="unidad">{{info[1]}}</span>
+                    </div>
+                    
+                    <div class="tag_type" [ngStyle]="{'background': etiquetado.color_subtitulo }"  >
+                        <div class="tag_subtitle_1">{{info2[0]}} </div> 
+                        <div class="tag_subtitle_2">{{info2[1]}}</div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            <p *ngIf="listaProductosCaraOrdenado[i].listaCaracteristicasProducto" class="{{listaProductosCaraOrdenado[i].listaCaracteristicasProducto[0].estilo}}">{{listaProductosCaraOrdenado[i].listaCaracteristicasProducto[0].nombre}}</p>
+            <div *ngIf="listaProductosCaraOrdenado[i].listaCaracteristicasProducto" class="bottom-items">
+                <div class="item-box" *ngFor="let item of listaProductosCaraOrdenado[i].listaCaracteristicasProducto, first as isFirst" >       
+                    <div *ngIf="!isFirst" class="{{item.estilo}}">
+                        {{item.nombre}}
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="una-prod-box" *ngIf="!todasProd">
+        <div class="d-flex caja_recupera_1 mb-3" *ngIf="paqueteIlimitado">
+            <div class="info_box" >
+                <mat-icon class="error-icon info_icon" aria-hidden="false" aria-label="Example home icon">info</mat-icon>
+            </div>
+            <div class=" texto_box pl-1" >
+                <p class="text_bold">Tus compras se activarán a media noche</p>
+                <p class="text_norm">Tu Paquete de Internet Ilimitado está vigente, los paquetes que compres se activarán después de las 23:59 del día de hoy. Los Paquetes de Claro Video, Claro Música y Gift Card no tienen esta limitación.</p>
+            </div>
+        </div>
+        <div class="prod-card color_{{colorCat}}">
+            <div class="tag" *ngIf="ValidarEtiquetado(productoEscogido.idProductoDeCompra)"  >
+                <div style="position: relative; border-radius: 12px;" *ngIf="etiquetado">
+                    
+                    <div class="tag_title" [ngStyle]="{'background': etiquetado.color_titulo }">
+                        <span style="font-style: strong !important">{{info[0]}} </span> 
+                        <span class="unidad">{{info[1]}}</span>
+                    </div>
+                    
+                    <div class="tag_type" [ngStyle]="{'background': etiquetado.color_subtitulo }"  >
+                        <div class="tag_subtitle_1">{{info2[0]}} </div> 
+                        <div class="tag_subtitle_2">{{info2[1]}}</div>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            <p *ngIf="productoEscogidoCaraOrdenado.listaCaracteristicasProducto" class="{{productoEscogidoCaraOrdenado.listaCaracteristicasProducto[0].estilo}}">{{productoEscogidoCaraOrdenado.listaCaracteristicasProducto[0].nombre}}</p>
+            <div *ngIf="productoEscogidoCaraOrdenado.listaCaracteristicasProducto" class="bottom-items">
+                <div class="item-box" *ngFor="let item of productoEscogidoCaraOrdenado.listaCaracteristicasProducto, first as isFirst, last as isLast" >       
+                    <div *ngIf="!isFirst" [ngClass]="obtenerEstiloCat(item)">
+                        {{item.nombre}}
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+<div id="gift-card-prod" class="productos-caja" *ngIf="colorCat === '80'">
+    <p class="paso">Paso {{pasoNumero}}</p>
+    <p class="titulo">{{subTitulo}}</p>
+    <div *ngIf="todasProd">
+        <div class="prod-card-gift" id="prod_{{product.idProductoDeCompra}}" *ngFor="let product of listaProductos">
+            <div class="imagen-gift" (click)="escogerProd(product)">
+                <img src="{{product.wcm.urlCarrusel}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio">{{product.wcm.tipoMoneda}} {{product.wcm.costo}}</div>
+                <div class="conside" (click)="mostrarConGift(product.wcm)">Consideraciones</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="una-prod-box" *ngIf="!todasProd">
+        <div class="prod-card-gift color_{{colorCat}}">
+            <div class="imagen-gift">
+                <img src="{{productoEscogido.wcm.urlCarrusel}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio">{{productoEscogido.wcm.tipoMoneda}} {{productoEscogido.wcm.costo}}</div>
+                <div class="conside" (click)="mostrarConGift(productoEscogido.wcm)">Consideraciones</div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+<div id="gift-card-info" class="productos-caja" *ngIf="mostrarInfoGift">
+    <p class="paso">Paso 4</p>
+    <p class="titulo">Personaliza tu gift card</p>
+
+    <div class="form-info">
+        <form #dedicatoriaGiftcardForm="ngForm">
+            <div class="form-group">
+                <div class="titulo">De:</div> 
+                <mat-form-field class="input-class">
+                    <input matInput placeholder="Ingresa tu nombre" type="text" inputmode="text"
+                        name="nombre_solicitante"  autocomplete="off"  maxlength="150"
+                        id="inputNomSol" appBlockCopyPaste [(ngModel)]="productoEscogido.dedicatoria.nombre_solicitante">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <div class="titulo">Para(*):</div> 
+                <mat-form-field class="input-class">
+                    <input matInput placeholder="Ingresa el correo electrónico del destinatario" type="text"
+                        inputmode="text" name="nombre_destinatario"  autocomplete="off"
+                         maxlength="150" id="inputNomDes" appBlockCopyPaste email required  
+                         [pattern]= 'VALID_MAIL_REGEX'
+                         [(ngModel)]="productoEscogido.dedicatoria.nombre_destinatario"
+                         >
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <div class="titulo">Mensaje:</div> 
+                <mat-form-field class="input-class">
+                    <textarea matInput placeholder="Ingresa un mensaje (opcional)" type="text" inputmode="text"
+                        name="mensaje_opc"  autocomplete="off"  [maxlength]="MENSAJE_GIFTCARD_MAXLENGTH"  [(ngModel)]="productoEscogido.dedicatoria.mensaje_opc"
+                        id="inputMensaje" appBlockCopyPaste></textarea>
+                        <div class="contador" >                                                
+                            <span>{{productoEscogido.dedicatoria.mensaje_opc.length}}</span>&#47;{{MENSAJE_GIFTCARD_MAXLENGTH}}
+                        </div>                         
+                </mat-form-field>
+            </div>
+        </form>
+        <div class="mini-texto">(*) valores obligados</div>
+    </div>
+</div>
+
+<div class="modal-generico" *ngIf="mostrarConsideracionesGift">
+    <div class="modal-white">
+        <div class="titulo-cerrar">
+            <div class="titulo">Términos y Condiciones de GiftCard</div>
+            <div class="cerrar"></div>
+        </div>
+        <div class="subti">Lee detenidamente los Términos y Condiciones de tu Compra.</div>
+        <div class="texto" [innerHTML]="terminosProducto | safeHTML"></div>
+        <button class="verde-blanco" (click)="cerrarPopUp()">Listo</button>
+    </div>
+</div>
+
+<div id="claro-video-prod" class="productos-caja" *ngIf="colorCat === '13'">
+    <p class="paso">Paso 2</p>
+    <p class="titulo">Alquila los mejores estrenos <a class="verde">a sólo S/{{precioPelicula | number : '1.2-2'}}</a></p>
+
+    <div *ngIf="todasPelis">
+        <div class="prod-card-pelicula" id="prod_{{pelicula.idProductoDeCompra}}" *ngFor="let pelicula of listaPeliculasWCM">
+            <div class="imagen-pelicula" (click)="escogerProd(pelicula)">
+                <img src="{{pelicula.wcm.urlImagenCarrusel}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio">{{pelicula.wcm.costo}}</div>
+                <div class="conside" (click)="mostrarConPelicula(pelicula)">Ver más</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="una-prod-box" *ngIf="!todasPelis">
+        <div class="prod-card-pelicula color_{{colorCat}}">
+            <div class="imagen-pelicula">
+                <img src="{{productoEscogido.wcm.urlImagenCarrusel}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio">{{productoEscogido.costo}}</div>
+                <div class="conside" (click)="mostrarConPelicula(productoEscogido)">Ver más</div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+<div class="modal-generico" *ngIf="mostrarVerMasPeliculas">
+    <div class="modal-white" id="modalPeliculasDesk">
+        <div class="cerrar" (click)="cerrarPopUp()"></div>
+        <div class="imagen-pop">
+            <img src="{{pelicularPop.wcm.detalleVideo.urlBanner}}">
+        </div>
+        <div class="info-pop">
+            <p class="titulo-1">{{pelicularPop.wcm.detalleVideo.tiutlo}}</p>
+            <p class="titulo-2">{{pelicularPop.wcm.detalleVideo.duracion}}</p>
+
+            <p class="texto">{{pelicularPop.wcm.detalleVideo.descripcion}}</p>
+
+            <div class="tabla">
+                <tr>
+                    <td class="izq">Género:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.genero}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Director:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.director}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Elenco:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.elenco}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Titulo Original:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.tituloOriginal}}</td>
+                </tr>
+            </div>
+
+            <button class="verde-blanco" (click)="escogerPeli()">Adquirir por {{pelicularPop.wcm.costo}}</button>
+        </div>
+    </div>
+
+    <div class="modal-white" id="modalPeliculasMobile">
+        <div class="cerrar" (click)="cerrarPopUp()"></div>
+        <div class="imagen-pop">
+            <img src="{{pelicularPop.wcm.detalleVideo.urlBannerMobile}}">
+        </div>
+        <div class="info-pop">
+            <p class="titulo-1">{{pelicularPop.wcm.detalleVideo.tiutlo}}</p>
+            <p class="titulo-2">{{pelicularPop.wcm.detalleVideo.duracion}}</p>
+
+            <p class="texto">{{pelicularPop.wcm.detalleVideo.descripcionMobile}}</p>
+
+            <p class="verde" *ngIf="!verMasMobile" (click)="verMasMo()">Ver más</p>
+
+            <div class="tabla" *ngIf="verMasMobile">
+                <tr>
+                    <td class="izq">Género:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.genero}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Director:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.director}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Elenco:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.elenco}}</td>
+                </tr>
+                <tr>
+                    <td class="izq">Titulo Original:</td>
+                    <td class="der">{{pelicularPop.wcm.detalleVideo.tituloOriginal}}</td>
+                </tr>
+            </div>
+
+            <button class="verde-blanco" (click)="escogerPeli()">Adquirir por {{pelicularPop.wcm.costo}}</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="claro-musica-prod" class="productos-caja" *ngIf="colorCat === '95'">
+    <p class="paso">Paso 2</p>
+    <p class="titulo">Selecciona el plan de suscripción que más se adapte a ti</p>
+
+    <div *ngIf="todasGamer">
+        <div class="prod-card-musica1" id="prod_{{Gamer.idProductoDeCompra}}" *ngFor="let Gamer of listaProductos">
+            <div class="imagen-musica1" (click)="escogerProd(Gamer)">
+                <img *ngIf="isDesktop()" class="desktop" src="{{Gamer.wcmItem.ImagenDesktop}}">
+                <img *ngIf="!(isDesktop())" class="mobile" src="{{Gamer.wcmItem.ImagenMobile}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio"><p>{{Gamer.listaCaracteristicasProducto[3].nombre | precioDecimal}}</p><p class="not-bold">x {{Gamer.vigencia}} días</p></div>
+                <div class="conside" (click)="mostrarGamer(Gamer)">Ver más</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="una-prod-box" *ngIf="!todasGamer">
+        <div class="prod-card-musica color_{{colorCat}}">
+            <div class="imagen-musica">
+                <img *ngIf="isDesktop()" class="desktop" src="{{productoEscogido.wcmItem.ImagenDesktop}}">
+                <img *ngIf="!(isDesktop())" class="mobile" src="{{productoEscogido.wcmItem.ImagenMobile}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio"><p>{{productoEscogido.listaCaracteristicasProducto[3].nombre | precioDecimal}}</p><p class="not-bold">x {{productoEscogido.vigencia}} días</p></div>
+                <div class="conside" (click)="mostrarGamer(productoEscogido)">Ver más</div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+
+<div class="modal-generico" *ngIf="mostrarVerMasGamer">
+    <div *ngIf="isDesktop()" class="modal-white" id="modalGamerDesk">
+        <div class="imagenMobile">
+            <img src="{{gamerPop.wcmItem.imgDesktop}}">
+        </div>
+        <div class="info">
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+            <p class="titulo">{{gamerPop.wcmItem.titulo}}</p>
+            <p class="subtitulo">{{gamerPop.wcmItem.days}} días</p>
+            <div class="parrafo">
+                <p class="primero" [innerHTML]="gamerPop.wcmItem.detailFirstParagraph | safeHTML"></p>
+                <p class="segundo" [innerHTML]="gamerPop.wcmItem.detailFirstParagraph2 | safeHTML"></p>
+                <div class="especifico" *ngFor="let item of gamerPop.wcmItem.detailFeatures">
+                    <span class="check"></span>
+                    <p class="linea" [innerHTML]="item | safeHTML"></p>
+                </div>
+                <!-- <p class="ultimo" [innerHTML]="gamerPop.wcmItem.detailLastParagraph | safeHTML"></p> -->
+            </div>
+            <button class="botonAdquirir" (click)="escogerGamer()">Adquirir por S/ {{gamerPop.wcmItem.precio}}</button>
+            <!-- <p class="foot">Más información en <a class="verde" target="_blank" href="{{gamerPop.wcmItem.linkClaroMusica}}">{{gamerPop.wcmItem.linkClaroMusicaLabel}}</a></p> -->
+        </div>
+    </div>
+
+    <div *ngIf="!(isDesktop())" class="modal-white" id="modalGamerMobile">
+        <div class="imagenMobile">
+            <img src="{{gamerPop.wcmItem.imgMobile}}">
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+        </div>
+        <div class="info">
+            <p class="titulo">{{gamerPop.nombreProducto}}</p>
+            <p class="subtitulo">{{gamerPop.wcmItem.days}} días</p>
+            <div class="parrafo">
+                <p class="primero" [innerHTML]="gamerPop.wcmItem.detailFirstParagraph | safeHTML"></p>
+                <p class="segundo" [innerHTML]="gamerPop.wcmItem.detailFirstParagraph2 | safeHTML"></p>
+                <div class="especifico" *ngFor="let item of gamerPop.wcmItem.detailFeatures">
+                    <span class="check"></span>
+                    <p class="linea" [innerHTML]="item | safeHTML"></p>
+                </div>
+                <!-- <p class="ultimo" [innerHTML]="gamerPop.wcmItem.detailLastParagraph | safeHTML"></p> -->
+            </div>
+            <button class="botonAdquirir" (click)="escogerGamer()">Adquirir por S/ {{gamerPop.wcmItem.precio}}</button>
+            <!-- <p class="foot">Más información en <a class="verde" target="_blank" href="{{gamerPop.wcmItem.linkClaroMusica}}">{{gamerPop.wcmItem.linkClaroMusicaLabel}}</a></p> -->
+        </div>
+    </div>
+</div>
+
+<div id="claro-musica-prod" class="productos-caja" *ngIf="colorCat === '25'">
+    <p class="paso">Paso 2</p>
+    <p class="titulo">Selecciona el plan de suscripción que más se adapte a ti</p>
+
+    <div *ngIf="todasMusica">
+        <div class="prod-card-musica" id="prod_{{musica.idProductoDeCompra}}" *ngFor="let musica of listaProductos">
+            <div class="imagen-musica" (click)="escogerProd(musica)">
+                <img *ngIf="isDesktop()" class="desktop" src="{{musica.wcmItem.imgBannerDesktop}}">
+                <img *ngIf="!(isDesktop())" class="mobile" src="{{musica.wcmItem.imgBannerMobile}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio"><p>S/ {{musica.precio | precioDecimal}}</p><p class="not-bold">x {{musica.vigencia}} días</p></div>
+                <div class="conside" (click)="mostrarConMusica(musica)">Ver más</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="una-prod-box" *ngIf="!todasMusica">
+        <div class="prod-card-musica color_{{colorCat}}">
+            <div class="imagen-musica">
+                <img *ngIf="isDesktop()" class="desktop" src="{{productoEscogido.wcmItem.imgBannerDesktop}}">
+                <img *ngIf="!(isDesktop())" class="mobile" src="{{productoEscogido.wcmItem.imgBannerMobile}}">
+            </div>
+            <div class="precio-consideracion-box">
+                <div class="precio"><p>S/ {{productoEscogido.precio | precioDecimal}}</p><p class="not-bold">x {{productoEscogido.vigencia}} días</p></div>
+                <div class="conside" (click)="mostrarConMusica(productoEscogido)">Ver más</div>
+            </div>
+        </div>
+
+        <div class="cambio" (click)="regresarProductos()">CAMBIAR</div>
+    </div>
+</div>
+
+<div class="modal-generico" *ngIf="mostrarVerMasMusica">
+    <div *ngIf="isDesktop()" class="modal-white" id="modalMusicaDesk">
+        <div class="imagenMobile">
+            <img src="{{musicaPop.wcmItem.imgDetailDesktop}}">
+        </div>
+        <div class="info">
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+            <p class="titulo">{{musicaPop.nombreProducto}}</p>
+            <p class="subtitulo">{{musicaPop.wcmItem.days}} días</p>
+            <div class="parrafo">
+                <p class="primero" [innerHTML]="musicaPop.wcmItem.detailFirstParagraph | safeHTML"></p>
+                <div class="especifico" *ngFor="let item of musicaPop.wcmItem.detailFeatures">
+                    <span class="check"></span>
+                    <p class="linea" [innerHTML]="item | safeHTML"></p>
+                </div>
+                <p class="ultimo" [innerHTML]="musicaPop.wcmItem.detailLastParagraph | safeHTML"></p>
+            </div>
+            <button class="botonAdquirir" (click)="escogerMusica()">Adquirir por {{musicaPop.moneda1}} {{musicaPop.precio | precioDecimal}}</button>
+            <p class="foot">Más información en <a class="verde" target="_blank" href="{{musicaPop.wcmItem.linkClaroMusica}}">{{musicaPop.wcmItem.linkClaroMusicaLabel}}</a></p>
+        </div>
+    </div>
+
+    <div *ngIf="!(isDesktop())" class="modal-white" id="modalMusicaMobile">
+        <div class="imagenMobile">
+            <img src="{{musicaPop.wcmItem.imgDetailMobile}}">
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+        </div>
+        <div class="info">
+            <p class="titulo">{{musicaPop.nombreProducto}}</p>
+            <p class="subtitulo">{{musicaPop.wcmItem.days}} días</p>
+            <div class="parrafo">
+                <p class="primero" [innerHTML]="musicaPop.wcmItem.detailFirstParagraph | safeHTML"></p>
+                <div class="especifico" *ngFor="let item of musicaPop.wcmItem.detailFeatures">
+                    <span class="check"></span>
+                    <p class="linea" [innerHTML]="item | safeHTML"></p>
+                </div>
+                <p class="ultimo" [innerHTML]="musicaPop.wcmItem.detailLastParagraph | safeHTML"></p>
+            </div>
+            <button class="botonAdquirir" (click)="escogerMusica()">Adquirir por {{musicaPop.moneda1}} {{musicaPop.precio | precioDecimal}}</button>
+            <p class="foot">Más información en <a class="verde" target="_blank" href="{{musicaPop.wcmItem.linkClaroMusica}}">{{musicaPop.wcmItem.linkClaroMusicaLabel}}</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="loading" *ngIf="isLoading">
+    <label class="loader"></label>
+</div>

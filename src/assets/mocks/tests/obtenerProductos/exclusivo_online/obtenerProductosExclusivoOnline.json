@@ -1,0 +1,557 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": [
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "24",
+            "precio": "3",
+            "moneda1": "S/",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Recomendados",
+            "codigoPaquete": "92002523;PONTIS_PQT_SMSVOZILIM_3S",
+            "idProductoDeCompraAsociado": "140",
+            "vigencia": "1",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "Pontis_CP_Chevere_3s",
+            "codigoProducto": "2_040_UC_Dev_Prob_Spend_MinSMS_1stTime_1d",
+            "recomendadoCategoriaOrden": "2",
+            "idProductoDeCompra": "4509",
+            "ordenMetodoPago": "1",
+            "catnId": "622",
+            "catvCodCategoria": "97",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+            {
+              "idCaracteristica": "6485",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "4509",
+              "nombre": "Ilimitado"
+            },
+            {
+              "idCaracteristica": "6486",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "4509",
+              "nombre": "x 1 día"
+            }
+           
+            ],
+            "nombreProducto": "Llamadas Ilimitadas x1 día a S/3"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-07-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "24",
+            "precio": "10",
+            "moneda1": "S/",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Recomendados",
+            "codigoPaquete": "BundlePaqRec10",
+            "idProductoDeCompraAsociado": "35555556",
+            "vigencia": "8",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "1",
+            "idProductoDeCompra": "356",
+            "ordenMetodoPago": "1",
+            "catnId": "89",
+            "catvCodCategoria": "990",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+            {
+              "idCaracteristica": "546",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "356",
+              "nombre": "Por S/ 10 = 10 Días"
+            },
+            {
+              "idCaracteristica": "547",
+              "estilo": "titulo_rojo",
+              "orden": "2",
+              "idProducto": "356",
+              "nombre": "ILIMITADO"
+            },
+            {
+              "idCaracteristica": "548",
+              "estilo": "titulo_rojo",
+              "orden": "3",
+              "idProducto": "356",
+              "nombre": "Llamadas, Facebook"
+            },
+            {
+              "idCaracteristica": "549",
+              "estilo": "titulo_rojo",
+              "orden": "4",
+              "idProducto": "356",
+              "nombre": "Messenger, Twitter, Whatsapp"
+            },
+            {
+              "idCaracteristica": "550",
+              "estilo": "titulo_rojo",
+              "orden": "5",
+              "idProducto": "356",
+              "nombre": "xx"
+            },
+            {
+              "idCaracteristica": "548",
+              "estilo": "titulo_rojo",
+              "orden": "3",
+              "idProducto": "356",
+              "nombre": "Llamadas, Facebook"
+            },
+            {
+              "idCaracteristica": "549",
+              "estilo": "titulo_rojo",
+              "orden": "4",
+              "idProducto": "356",
+              "nombre": "Messenger, Twitter, Whatsapp"
+            },
+            {
+              "idCaracteristica": "550",
+              "estilo": "titulo_rojo",
+              "orden": "5",
+              "idProducto": "356",
+              "nombre": "xx"
+            },
+            {
+              "idCaracteristica": "548",
+              "estilo": "titulo_rojo",
+              "orden": "3",
+              "idProducto": "356",
+              "nombre": "Llamadas, Facebook"
+            },
+            {
+              "idCaracteristica": "549",
+              "estilo": "titulo_rojo",
+              "orden": "4",
+              "idProducto": "356",
+              "nombre": "Messenger, Twitter, Whatsapp"
+            },
+            {
+              "idCaracteristica": "550",
+              "estilo": "titulo_rojo",
+              "orden": "5",
+              "idProducto": "356",
+              "nombre": "xx"
+            }
+            ],
+            "nombreProducto": "10 Días ILIMITADO Llamadas, Facebook, Messenger, Twitter, Whatsapp"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2019-10-22 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "precio": "64",
+            "moneda2": "Claro Puntos",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Exclusivos Online",
+            "codigoPaquete": "RCM1",
+            "idProductoDeCompraAsociado": "321",
+            "vigencia": "2",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "321",
+            "ordenMetodoPago": "1",
+            "catnId": "141",
+            "catvCodCategoria": "22",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "421",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "321",
+                "nombre": "FB, Snapchat, Twitter, Waze,"
+              },
+              {
+                "idCaracteristica": "422",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "321",
+                "nombre": "WhatsApp + ClaroVideo +"
+              },
+              {
+                "idCaracteristica": "423",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "321",
+                "nombre": "150MB + SMS ilimitados"
+              },
+              {
+                "idCaracteristica": "424",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "321",
+                "nombre": "x 2 d\u00edas"
+              },
+              {
+                "idCaracteristica": "425",
+                "estilo": "titulo_gris",
+                "orden": "5",
+                "idProducto": "321",
+                "nombre": "a S/ 3"
+              }
+            ],
+            "nombreProducto": "Mini Plan x2 d\u00eda a S/3"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-07-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "24",
+            "precio": "10",
+            "moneda1": "S/",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Recomendados",
+            "codigoPaquete": "BundlePaqRec10",
+            "idProductoDeCompraAsociado": "356",
+            "vigencia": "8",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "1",
+            "idProductoDeCompra": "356",
+            "ordenMetodoPago": "1",
+            "catnId": "89",
+            "catvCodCategoria": "99",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+            {
+              "idCaracteristica": "546",
+              "estilo": "titulo_blanco_recomendado_22",
+              "orden": "1",
+              "idProducto": "356",
+              "nombre": "Por S/ 10 = 10 Días"
+            },
+            {
+              "idCaracteristica": "547",
+              "estilo": "titulo_blanco_recomendado_22",
+              "orden": "2",
+              "idProducto": "356",
+              "nombre": "ILIMITADO"
+            },
+            {
+              "idCaracteristica": "548",
+              "estilo": "titulo_blanco_recomendado_22",
+              "orden": "3",
+              "idProducto": "356",
+              "nombre": "Llamadas, Facebook"
+            },
+            {
+              "idCaracteristica": "549",
+              "estilo": "titulo_blanco_recomendado_20",
+              "orden": "4",
+              "idProducto": "356",
+              "nombre": "Messenger, Twitter, Whatsapp"
+            },
+            {
+              "idCaracteristica": "550",
+              "estilo": "titulo_blanco_recomendado_20",
+              "orden": "5",
+              "idProducto": "356",
+              "nombre": ""
+            }
+            ],
+            "nombreProducto": "10 Días ILIMITADO Llamadas, Facebook, Messenger, Twitter, Whatsapp"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2019-10-22 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "precio": "106",
+            "moneda2": "Claro Puntos",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Exclusivos Online",
+            "codigoPaquete": "RC2",
+            "idProductoDeCompraAsociado": "322",
+            "vigencia": "4",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "322",
+            "ordenMetodoPago": "1",
+            "catnId": "141",
+            "catvCodCategoria": "22",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "426",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "322",
+                "nombre": "FB, Snapchat, Twitter, Waze,"
+              },
+              {
+                "idCaracteristica": "427",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "322",
+                "nombre": "WhatsApp + ClaroVideo +"
+              },
+              {
+                "idCaracteristica": "428",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "322",
+                "nombre": "300MB + RPC y SMS ilimitados"
+              },
+              {
+                "idCaracteristica": "429",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "322",
+                "nombre": "x 4 d\u00edas"
+              },
+              {
+                "idCaracteristica": "430",
+                "estilo": "titulo_gris",
+                "orden": "5",
+                "idProducto": "322",
+                "nombre": "a S/ 5"
+              }
+            ],
+            "nombreProducto": "Mini Plan x4 d\u00eda a S/5"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2019-10-22 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "precio": "211",
+            "moneda2": "Claro Puntos",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Exclusivos Online",
+            "codigoPaquete": "RC5",
+            "idProductoDeCompraAsociado": "323",
+            "vigencia": "7",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "323",
+            "ordenMetodoPago": "1",
+            "catnId": "141",
+            "catvCodCategoria": "22",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "431",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "323",
+                "nombre": "FB, Snapchat, Twitter, Waze,"
+              },
+              {
+                "idCaracteristica": "432",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "323",
+                "nombre": "WhatsApp + ClaroVideo +"
+              },
+              {
+                "idCaracteristica": "433",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "323",
+                "nombre": "1GB + RPC y SMS ilimitados"
+              },
+              {
+                "idCaracteristica": "434",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "323",
+                "nombre": "x 7 d\u00edas"
+              },
+              {
+                "idCaracteristica": "435",
+                "estilo": "titulo_gris",
+                "orden": "5",
+                "idProducto": "323",
+                "nombre": "a S/ 10"
+              }
+            ],
+            "nombreProducto": "Mini Plan x7 d\u00eda a S/10"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2019-10-22 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "precio": "422",
+            "moneda2": "Claro Puntos",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Exclusivos Online",
+            "codigoPaquete": "RC12",
+            "idProductoDeCompraAsociado": "324",
+            "vigencia": "12",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "324",
+            "ordenMetodoPago": "1",
+            "catnId": "141",
+            "catvCodCategoria": "22",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "436",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "324",
+                "nombre": "FB, Snapchat, Twitter, Waze,"
+              },
+              {
+                "idCaracteristica": "437",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "324",
+                "nombre": "WhatsApp + ClaroVideo +"
+              },
+              {
+                "idCaracteristica": "438",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "324",
+                "nombre": "2GB + RPC y SMS ilimitados"
+              },
+              {
+                "idCaracteristica": "439",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "324",
+                "nombre": "x 12 d\u00edas"
+              },
+              {
+                "idCaracteristica": "440",
+                "estilo": "titulo_gris",
+                "orden": "5",
+                "idProducto": "324",
+                "nombre": "a S/ 20"
+              }
+            ],
+            "nombreProducto": "Mini Plan x12 d\u00eda a S/20"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2019-10-22 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "precio": "633",
+            "moneda2": "Claro Puntos",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Exclusivos Online",
+            "codigoPaquete": "RC20",
+            "idProductoDeCompraAsociado": "325",
+            "vigencia": "20",
+            "finVigencia": "2099-07-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "325",
+            "ordenMetodoPago": "1",
+            "catnId": "141",
+            "catvCodCategoria": "22",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "441",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "325",
+                "nombre": "FB, Snapchat, Twitter, Waze,"
+              },
+              {
+                "idCaracteristica": "442",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "325",
+                "nombre": "WhatsApp + ClaroVideo +"
+              },
+              {
+                "idCaracteristica": "443",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "325",
+                "nombre": "3GB + RPC y SMS ilimitados"
+              },
+              {
+                "idCaracteristica": "444",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "325",
+                "nombre": "x 20 d\u00edas"
+              },
+              {
+                "idCaracteristica": "445",
+                "estilo": "titulo_gris",
+                "orden": "5",
+                "idProducto": "325",
+                "nombre": "a S/ 30"
+              }
+            ],
+            "nombreProducto": "Mini Plan x20 d\u00eda a S/30"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "6bfff60f-d5a9-4a16-a97a-91b64a60bac3",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "4ce3842a-897e-4154-8d02-32448fb24130",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS02-5b11c789-f778-484a-9f4f-fe2fe26bfefb",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "d295ce88-d6dc-4e04-9f84-6af5ff797888",
+          "consumer": "",
+          "timestamp": "2020-12-23T17:26:53-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

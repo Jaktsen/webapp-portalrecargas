@@ -1,0 +1,311 @@
+.romaing-box {
+    padding-top: 24px;
+
+    .loading-box {
+        width: 100%;
+        height: 30px;
+        margin: 24px 0px;
+        max-width: 776px;
+        text-align: center;
+    
+        .loading {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%232197AE' d='M10 19a9 9 0 1 1 0-18 9 9 0 0 1 0 18zm0-2.7a6.3 6.3 0 1 0 0-12.6 6.3 6.3 0 0 0 0 12.6z' opacity='.32'/%3E%3Cpath fill='%23FFF' d='M10 19a9 9 0 1 1 0-18 9 9 0 0 1 0 18zm0-2.7a6.3 6.3 0 1 0 0-12.6 6.3 6.3 0 0 0 0 12.6z' opacity='.316'/%3E%3Cpath fill='%232197AE' d='M19 10h-2.7a6.3 6.3 0 0 0-3.6-5.694V1.412A9.004 9.004 0 0 1 19 10z'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat;
+            background-size: 30px;
+        }
+    
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+          
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    }
+
+    .paso {
+        font-size: 12px;
+        font-weight: bold;
+        color: #abafb0;
+        margin: 0 0 4px 0;
+    }
+
+    .paises-input {
+        margin-top: 24px;
+        padding-bottom: 12px;
+        border-bottom: solid 1px #d5d9df;
+
+        .mensaje-pais {
+            font-size: 16px !important;
+            margin-top: 12px;
+    
+            .subrayado {
+                font-weight: bold;
+                    color: #212529 !important;
+            }
+    
+            .paises-mapa {
+                display: inline-block;
+
+                .mensajeRoaming {
+                    text-align: center;
+                    margin-top: 32px;
+                }
+    
+                .paises-box {
+                    width: 50%;
+                    float: left;
+                    max-height: 420px;
+                    overflow-y: scroll;
+    
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                        height: 8px;
+                        border-radius: 8px;
+                    }
+    
+                    &::-webkit-scrollbar-thumb {
+                        background: #a8a8a8; 
+                        border-radius: 8px;
+                    }                
+            
+                    scrollbar-width: thin; 
+    
+                    table {
+                        margin-left: 32px;
+    
+                        @media screen and (max-width: 600px) {
+                            margin-left: 20px;
+                        }
+    
+                        .pais-zona {
+                            min-width: 112px;
+                            float: left;
+                            display: list-item;
+                            margin-right: 8px;
+    
+                            p { width: 100px; }
+                        }
+                    }
+                }
+    
+                .map {
+                    width: 50%;
+                    float: left;
+    
+                }
+    
+                @media screen and (max-width: 780px) {
+                    .paises-box {
+                        width: 100%;
+                        float: unset;
+                    }
+    
+                    .map {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .subcategorias-roaming {
+        display: inline-block;
+        width: 100%;
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: solid 1px #d5d9df;
+
+        .paso {
+            font-size: 12px;
+            font-weight: bold;
+            color: #abafb0;
+            margin: 0 0 4px 0;
+        }
+
+        .titulo {
+            font-size: 17px;
+            // color: #595959 !important;
+            margin: 0 0 16px 0;
+        }
+
+        .sub_diario, .sub_mensual, .sub_mensual_mundial {
+            width: 47.5%;
+            height: 208px;
+            cursor: pointer;
+            box-shadow: 0 1px 10px 0 rgba(167, 167, 167, 0.3);
+            float: left;
+            padding: 38px 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 4px !important;
+
+            .mensaje_nohover {
+                display: inline-block;
+
+                .titulo {
+                    font-size: 28px;
+                    color: #fff;
+                    margin: 0px;
+                    font-weight: bold;
+                }
+
+                .men {
+                    color: #fff;
+                    margin: 0px;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+
+            .mensaje_hover {
+                color: #fff !important;
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) { 
+                height: 180px;
+                padding: 18px 14px;
+
+                .mensaje_nohover {
+                    margin-top: 20px;
+
+                    .titulo {
+                        font-size: 15px;
+                    }
+                    .men {
+                        font-size: 14px;
+                    }
+                }
+
+                .mensaje_hover {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .sub_diario {
+            margin-right: 5%;
+            background-repeat: no-repeat;
+            background-size: 120% auto;
+            background-image: url(../../../../assets/img/bloque_diario.png);
+
+            &:hover {
+                background: #2197ae;
+
+                .mensaje_nohover {
+                    display: none;
+                }
+
+                .mensaje_hover {
+                    display: inline-block;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                background-repeat: no-repeat;
+                background-size: 244px 180px;
+
+                & .mensaje_hover{
+                    font-size: 10px;
+                    &  p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .sub_mensual {
+            background-repeat: no-repeat;
+            background-size: 120% auto;
+            background-image: url(../../../../assets/img/bloque_mensual.png);
+
+            &:hover {
+                padding: 69px 30px;
+                background: #2197ae;
+
+                .mensaje_nohover {
+                    display: none;
+                }
+
+                .mensaje_hover {
+                    display: inline-block;
+                }
+
+                @media screen and (max-width: 600px) { 
+                    padding: 43px 14px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                background-repeat: no-repeat;
+                background-size: 244px 180px;
+            }
+        }
+
+        .sub_mensual_mundial {
+            background-repeat: no-repeat;
+            background-size: 120% auto;
+            background-image: url(../../../../assets/img/bloque_mundial.png);
+
+            &:hover {
+                padding: 69px 30px;
+                background: #2197ae;
+
+                .mensaje_nohover {
+                    display: none;
+                }
+
+                .mensaje_hover {
+                    display: inline-block;
+                }
+
+                @media screen and (max-width: 600px) { 
+                    padding: 43px 14px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                background-repeat: no-repeat;
+                background-size: 244px 180px;
+            }
+        }
+    }
+
+    .productos-roaming {
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: solid 1px #d5d9df;
+    }
+
+    .metodopago-roaming {
+        margin-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: solid 1px #d5d9df;
+    }
+}
+
+.modal-generico {
+    margin-left: -32px;
+
+    .modal-white {
+        max-width: 776px;
+        min-height: 100px;
+    }
+}
+
+.zona {
+    width: 100%;
+    height: 220px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

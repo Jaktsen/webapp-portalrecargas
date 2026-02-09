@@ -1,0 +1,11 @@
+#gulp files
+gulp-config/data.js
+logs/commands.log
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules

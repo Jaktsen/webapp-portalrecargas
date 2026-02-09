@@ -1,0 +1,30 @@
+{
+  "comunResponseType":{
+     "MessageResponse":{
+        "Body":{
+           "idTransaccionCompra":"MzM4NDk=",
+           "emailNotificacion":"",
+           "defaultServiceResponse":{
+              "idSesion":"fb897ff4-b15c-4195-9697-637155bfaaaf",
+              "mensaje":"El proceso se realizo con exito",
+              "idTransaccional":"2e8461c7-51e2-4338-9c57-388f07747698",
+              "idRespuesta":"0"
+           }
+        },
+        "Header":{
+           "HeaderResponse":{
+              "status":{
+                 "type":"0",
+                 "code":"0",
+                 "msgid":"DPS01-81f004d1-408f-4293-bc4c-efc974d8f462",
+                 "message":"EJECUCI\u00d3N CON \u00c9XITO"
+              },
+              "pid":"48590458-334c-4237-803c-7d815ae49961",
+              "consumer":"",
+              "timestamp":"2021-02-25T14:00:39-06:00",
+              "VarArg":""
+           }
+        }
+     }
+  }
+}

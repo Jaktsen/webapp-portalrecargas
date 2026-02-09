@@ -1,0 +1,22 @@
+<h3 *ngIf="listaCarrouselOfertas.length > 0">Productos y servicios para ti</h3>
+<div class="carrousel_ofertas_p">
+</div>
+
+<div class="carrousel-container">
+    <div class="boton-box" *ngIf="limit">
+        <div class="boton-previous">
+            <a (click)="move(false)"><img [src]="previousArrow" alt=""></a>
+        </div>
+    </div>
+    <div class="carousel-ofertas" id="carrousel">
+        <a [href]="d.urlOferta" target="_blank" rel="noopener noreferrer" *ngFor="let d of listaCarrouselOfertas">
+            <img (click)="clickEventCarrousel(d.nombre, d.Imagen_desktop)" class="carrousel-ofertas_img" src="{{ d['Imagen_desktop'] }}" alt="">
+        </a>
+    </div>
+    <div class="boton-box" *ngIf="limit">
+        <div class="boton-next">
+
+            <a (click)="move(true)"><img [src]="nextArrow" alt=""></a>
+        </div>
+    </div>
+</div>

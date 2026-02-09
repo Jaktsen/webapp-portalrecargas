@@ -1,0 +1,55 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "listaProductosDeCompra": {
+                    "idTipoLinea": "1",
+                    "flagValidarSaldoPontis": "1",
+                    "nombreMetodoPago": "Saldo de Recarga",
+                    "iniVigencia": "2019-04-01 00:00:00.0",
+                    "codTipoLinea": "1",
+                    "tipoVigencia": "7",
+                    "idMetodoPago": "24",
+                    "precio": "0",
+                    "moneda1": "S\/",
+                    "subtitulo": "",
+                    "estadoMetodoPago": "0",
+                    "catvTitulo": "Evento 2",
+                    "codigoPaquete": "SIN CODIGO",
+                    "idProductoDeCompraAsociado": "986",
+                    "vigencia": "1",
+                    "finVigencia": "2099-07-30 00:00:00.0",
+                    "tituloProducto": "",
+                    "codigoProducto": "CANJE-1",
+                    "recomendadoCategoriaOrden": "9999",
+                    "idProductoDeCompra": "986",
+                    "ordenMetodoPago": "1",
+                    "catnId": "529",
+                    "catvCodCategoria": "17",
+                    "cantidadFavoritos": "3",
+                    "nombreProducto": "1 oportunidad"
+                },
+                "defaultServiceResponse": {
+                    "idSesion": "63830110-c92b-4ddc-a5af-dacb765766b7",
+                    "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "idTransaccional": "f63252a6-919b-463f-9fe5-13973031cc3a",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-2260606b-2f66-4425-b10b-efc974d811cf",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "c07c765d-6038-4059-bcce-69b588c842c0",
+                    "consumer": "",
+                    "timestamp": "2021-02-08T15:53:10-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": {
+          "idTipoLinea": "2",
+          "flagValidarSaldoPontis": "1",
+          "nombreMetodoPago": "Claro Puntos",
+          "iniVigencia": "2017-09-01 00:00:00.0",
+          "codTipoLinea": "2",
+          "tipoVigencia": "DIAS",
+          "idMetodoPago": "21",
+          "precio": "64",
+          "moneda2": "Claro Puntos",
+          "estadoMetodoPago": "1",
+          "catvTitulo": "Paquetes de Megas",
+          "codigoPaquete": "D_PQT100MB",
+          "idProductoDeCompraAsociado": "128",
+          "vigencia": "2",
+          "finVigencia": "2099-09-30 00:00:00.0",
+          "tituloProducto": "",
+          "codigoProducto": "",
+          "recomendadoCategoriaOrden": "9999",
+          "idProductoDeCompra": "128",
+          "ordenMetodoPago": "1",
+          "catnId": "2",
+          "catvCodCategoria": "1",
+          "cantidadFavoritos": "3",
+          "listaCaracteristicasProducto": [
+            {
+              "idCaracteristica": "159",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "128",
+              "nombre": "200MB"
+            },
+            {
+              "idCaracteristica": "160",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "128",
+              "nombre": "x 2 d\u00edas"
+            },
+            {
+              "idCaracteristica": "161",
+              "estilo": "titulo_gris",
+              "orden": "3",
+              "idProducto": "128",
+              "nombre": "a S/ 3"
+            }
+          ],
+          "nombreProducto": "200MB x 2 d\u00edas a S/3"
+        },
+        "defaultServiceResponse": {
+          "idSesion": "6cf09690-e65e-4d9d-92c0-4d3deae0b1e7",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "357b6a9a-f5b5-4954-b67a-ed1bdf05a210",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-9111357d-ebdc-43dd-9b61-efc974d80190",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "402c9e20-9b2e-4fd2-88c0-c81b58d52eba",
+          "consumer": "",
+          "timestamp": "2020-12-03T15:49:11-06:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

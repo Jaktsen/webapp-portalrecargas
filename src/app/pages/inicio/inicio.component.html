@@ -1,0 +1,81 @@
+<div class="contenedor"  [hidden]="!mostrarContenido || notRootOrigin">
+    <div class="background-inicio">
+        <div class="container">
+
+            <header class="sec_header">
+                <div class="row">
+                    <div class="col img-header">
+                        <div class="claro_logo"></div>
+                    </div>
+                    <div class="col text-header claro_compras">
+                        Compras
+                    </div>
+                </div>
+            </header>
+
+            <div class="login-box">
+                <app-numero-capcha [tipoLogin]="'loginInicio'" [numeroTel]="''" (mostrarContenidoEvent)="habilitarContenido($event)" [isAuthenticated]="autenticado"></app-numero-capcha>
+            </div>
+
+            <div class="claro-partes">
+                <div class="cards-box">
+                    <div class="carta izq">
+                        <div class="compra-img"></div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                Compra
+                            </div>
+                            <div class="text-subtitle">
+                                Paquetes de megas,
+                                <br>
+                                redes sociales y minutos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta cen">
+                        <div class="hogar-img"></div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                Hogar
+                            </div>
+                            <div class="text-subtitle">
+                                Ahora puedes comprar
+                                <br>
+                                mayor velocidad de internet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta der">
+                        <div class="claro-img"></div>
+                        <div class="text-box">
+                            <div class="text-title">
+                                Claro puntos
+                            </div>
+                            <div class="text-subtitle">
+                                Canjéalos por paquetes y
+                                <br>
+                                servicios adicionales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sepa_box">
+                <div class="separador_linea"></div>
+            </div>
+
+
+            <div class="div_servicios">
+                <p class="texto_servicio">Si deseas contratar nuevos servicios o comprar equipos</p>
+                <button class="button button1" (click)="goToLink()">Visita Tienda Claro</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<app-footer [mostrarContenido]='mostrarContenido && !notRootOrigin'></app-footer>

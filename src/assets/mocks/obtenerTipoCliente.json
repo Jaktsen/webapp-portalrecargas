@@ -1,0 +1,23 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "defaultServiceResponse": {
+                    "planRoaming": "3661",
+                    "codigoBloqueo": "NULL",
+                    "codigoPlanTarifario": "MaxIlim189_90SY_One",
+                    "mensaje": "Transacci\ufffdn Exitosa",
+                    "msisdn": "992798943",
+                    "tipoCliente": "1",
+                    "idRespuesta": "0",
+                    "tipoLinea": "2",
+                    "codigoPlanComercial": "",
+                    "emailClaro": "true",
+                    "csIdPub": "",
+                    "pivot":"1"
+                }
+            },
+            "Header": ""
+        }
+    }
+}

@@ -1,0 +1,731 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+@import 'base/variables';
+
+@font-face {
+    font-family: 'AMX-Bold';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-Black';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Black.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-BlackItalic';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-BlackItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-BoldItalic';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-Italic';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-Light';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-LightItalic';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-LightItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-Medium';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-MediumItalic';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-MediumItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMX-Regular';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMX-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'AMXClaro-Brands';
+    src: url("/WP85PortalRecargas8Static/assets/img/AMXClaro-Brands.ttf") format('truetype');
+}
+.tienda-claro-texto{
+    font-family: AMX-Bold !important;
+}
+
+.tienda-claro-boton{
+    font-family: AMX-Bold !important;
+
+}
+.wptheme1Col .wpthemeCol {
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+
+body,html{
+    background-color: white;
+    height: 100%;
+    text-align: center !important;
+}
+
+body {
+    text-align: center !important;
+    width: 100%;
+    height: 98vh;
+}
+
+body { margin: 0; font-family: Roboto, "Roboto", sans-serif !important; }
+.example-full-width{
+    width: 100%;
+}
+
+button{
+    outline:  unset !important;
+}
+
+.mat-form-field-disabled .mat-form-field-underline {
+    background-image: unset !important;
+}
+
+.cellphone .mat-form-field-wrapper .mat-form-field-underline, .cellphone .mat-form-field-wrapper .mat-form-field-underline .mat-form-field-ripple {
+    background-color: transparent !important;
+}
+
+@import 'bootstrap'; 
+@import '~@angular/material/theming';
+@include mat-core();
+
+$my-custom-color: (
+    50 : #e4f3f5,
+    100 : #bce0e7,
+    200 : #90cbd7,
+    300 : #64b6c6,
+    400 : #42a7ba,
+    500 : #2197ae,
+    600 : #1d8fa7,
+    700 : #18849d,
+    800 : #147a94,
+    900 : #0b6984,
+    A100 : #b4ecff,
+    A200 : #81dfff,
+    A400 : #4ed2ff,
+    A700 : #35ccff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$my-custom-primary: mat-palette($my-custom-color);
+$my-custom-accent : mat-palette($mat-pink, A200, A100, A400);
+$my-custom-warn : mat-palette($mat-red);
+
+$my-custom-theme: mat-light-theme($my-custom-primary, $my-custom-accent, $my-custom-warn);
+
+@include angular-material-theme($my-custom-theme);
+/* clase para centrar*/
+.center{
+    text-align: center !important;
+}
+.vert-center{
+    display: contents;
+}
+.right{
+    text-align: right;
+}
+.mat-form-field{
+    font-size: 14px;
+}
+.navbar{
+    padding-top: unset;
+    padding-bottom: unset;
+    padding-left: 16px;
+    height: 34px;
+    background-color: #ef3829;
+}
+.footer{
+   // position: fixed !important;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    width: 100%;
+    background-color: $numero_captcha_label;
+    position: fixed;
+}
+.mat-form-field-label{
+    font-family: Roboto !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    letter-spacing: normal;
+    text-align: left;
+    color: $numero_captcha_label !important;
+}
+.capcha.mat-focused {
+    .mat-form-field-label {
+        display: none !important;
+    }
+}
+.btn{
+    font-size: 16px;
+    padding:4px !important;
+    border-radius: 100px !important;
+}
+.full-container{
+    background-color: #eef3f5 !important;
+    height: 100%;
+}
+.footer-container{
+    font-size: 10px;
+    padding: 5px;
+}
+.detail{
+    border-radius: 10px;
+    border: solid 1px #d2d9e1;
+    background-color: #ffffff;
+    padding: 19px 16px 17px 16px;
+}
+.detail-2{
+    @extend .detail;
+    padding-top: 16px;
+}
+.detail-title{
+    font-size: 11px;
+    color: #595959;
+}
+.detail-subtitle{
+    font-size: 12px;
+    color: #212121;
+}
+.second-row{
+    padding-top: 20px;
+}
+
+.code-message{
+    padding: 24px 40px 0px 40px;
+}
+.code-text{
+    font-size: 12px;
+    color: #595959;
+}
+
+@media(max-width:760px){
+    .confirmation-box{
+        padding: 32px 24px 0px 24px !important;
+    }
+    .detail{
+        margin: 16px 16px 0px 16px !important;    
+    }
+    .code-message{
+        padding: 24px 23vw 0px 23vw !important;
+    }
+    .succesful-div{
+        margin-left: 19.5vw !important;
+        margin-right: 19.5vw !important;
+    }
+    .operation-number{
+        margin-right: 17.5vw !important;
+        margin-left: 18.5vw !important;
+    }
+    .col-center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width:760px)and(max-width:1100px){
+    .confirmation-box{
+        padding: 32px 30vw 0px 30vw !important;
+    }
+    .detail{
+        margin: 16px 29.5vw 0px 29.5vw !important;    
+    }
+    .code-message{
+        padding: 24px 33vw 0px 33vw !important;
+    }
+    .succesful-div{
+        margin-left: 29.5vw !important;
+        margin-right: 29.5vw !important;
+    }
+    .operation-number{
+        margin-right: 27.5vw !important;
+        margin-left: 28.5vw !important;
+    }
+    .col-center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width:1100px){
+    .confirmation-box{
+        padding: 32px 37vw 0px 37vw !important;
+    }
+    .detail{
+        margin: 16px 36.5vw 0px 36.5vw !important;    
+    }
+    .code-message{
+        padding: 24px 40vw 0px 40vw !important;
+    }
+    .succesful-div{
+        margin-left: 36.5vw !important;
+        margin-right: 36.5vw !important;
+    }
+    .operation-number{
+        margin-right: 34.5vw !important;
+        margin-left: 35.5vw !important;
+    }
+    .col-center{
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+.favorite-icon{
+    height: 22px;
+    width: 22px;
+}
+.fila{
+    display: flex;
+}
+
+.btn-change{
+    position:absolute;
+    bottom:0;
+    right:16px;
+    font-size: 10px;
+    text-align: right;
+    color: #2197ae;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/* Dialog SCSS */
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.ver-mas-title{
+    font-weight: bold;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.ver-mas-box{
+    border-radius: 4px;
+    background-color: #f6f8fa;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ver-mas-text-bg{
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: #595959;
+}
+.ver-mas-text-sm{
+    letter-spacing: 0.17px;
+    color: #595959;
+}
+.ver-mas-incluye{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: #212121;
+}
+.ver-mas-list{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.ver-mas-list-text{
+    font-size: 11px;
+    color: #595959;
+    margin-left: 4px;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.ver-mas-info{
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    color: #2197ae;
+}
+
+.list-number{
+    position: relative;
+}
+
+@media(max-width:768px){
+    .ver-mas-text-sm, .ver-mas-incluye {
+        font-size: 12px;
+    }
+    .ver-mas-text-bg{
+        font-size: 22px;
+    }
+    .ver-mas-title{
+        font-size: 16px;
+    }
+	.choose-btn, .close-btn{
+		margin-left: unset;
+		margin-right: unset;
+    }
+    .claroVideo-modal{
+        height: 48px;
+    }
+    .list-number{
+        padding: 24px;
+    }
+    .linea-left{
+        left: 36px;
+        top: 36px;
+        height: 120px;
+    }
+}
+	
+@media(min-width:768px){
+    .ver-mas-list-text{
+        font-size: 12px;
+    }
+    .ver-mas-text-sm, .ver-mas-incluye{
+        font-size: 14px;
+    }
+    .ver-mas-text-bg{
+        font-size: 32px;
+    }
+    .ver-mas-title{
+        font-size: 24px;
+    }
+	.choose-btn, .close-btn{
+		margin-left: 46px !important;
+		margin-right: 46px !important;
+    }
+    .claroVideo-modal{
+        height: 64px;
+    }
+    .list-number{
+        padding: 24px 40px;
+    }
+    .linea-left{
+        left: 52px;
+        top: 36px;
+        height: 108px;
+    }
+}
+
+.number-ball{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    text-align: center;
+    border-radius: 40px;
+    color: white;
+    background-color: #d2d9e1;
+    z-index: 1;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.number-text{
+    color: #595959;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+.number-text-2{
+    color: #595959;
+    font-size: 12px;
+}
+
+.claroVideo-title{
+    text-align: center;
+    border-bottom: 1px solid #d5d9df;
+}
+
+.linea-left{
+    position: absolute;
+    width: 1px;
+    background: #d2d9e1;
+    z-index: 0;
+}
+
+.alquilar-btn{
+    margin-top: 24px !important;
+    border-radius: 20px !important;
+    background-color: #2197ae;
+    color: white;
+    width:	-webkit-fill-available !important;
+}
+
+.choose-btn {
+    margin-top: 24px !important;
+    border-radius: 20px !important;
+    background-color: #2197ae;
+    border: solid 2px #2197ae !important;
+    color: white;
+    width: -webkit-fill-available !important;
+}
+
+.close-btn {
+    width: -webkit-fill-available !important;
+    margin-top: 16px !important;
+    border-radius: 100px !important;
+    border: solid 2px #2197ae !important;
+    background-color: white;
+    color: #2197ae;
+  }
+
+/*terminos y condiciones modal*/
+.terms-title{
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.46px;
+    color: #212121;
+}
+.terms-text-title{
+    font-size: 12px;
+    color: #212121;
+}
+
+.terms-sub{
+    white-space: break-spaces;
+    margin-top: 12px;
+    height: 282px;
+    overflow: auto;
+    font-size: 11px;
+    color: #212121;
+}
+
+.term-close-btn{
+    width: -moz-available;
+    margin-top: 16px !important;
+    border-radius: 100px !important;
+    border: solid 2px #00aacf !important; 
+    background-color: white;
+    color: #00aacf;
+}
+
+/*carousel modal*/
+.paquete-2{
+    @extend .paquete;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-btn{
+    width: 14px;
+    height: 24px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: auto;
+}
+
+.paquetes, .paquete{
+    cursor: pointer;
+}
+
+.paquete-recomendados{
+    margin-left: auto;
+    margin-right: auto;
+    width: 156px;
+}
+.paquete-recomendado-active{
+    border-color: black;
+}
+.paquete-ver-mas{
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.paquete-vermas-2{
+    @extend .paquete-vermas;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content !important;
+}
+
+.paquete{
+    width: max-content;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 #d2d9e1;
+    border: solid 1px rgba(33, 33, 33, 0.03);
+    background-color: #ffffff;
+}
+.paquetes{
+    width: unset;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 #d2d9e1;
+    border: solid 1px rgba(33, 33, 33, 0.03);
+    background-color: #ffffff;
+    text-align: left;
+}
+.paquete-vermas{
+    text-align: center;
+    padding: 2px;
+    width: unset;
+    border-radius: 10px;
+    background-color: #f6f8fa;
+    font-size: 13px;
+    color: #2197ae;
+}
+.subpaquete{
+    padding: 16px 12px 16px 12px;
+}
+.paquete:hover{
+    cursor: pointer;
+}
+
+.paquete:active{
+    border: solid 1.5px #595959;
+    box-shadow: none;
+}
+.paquete-bg-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+}
+.paquete-title{
+    font-size: 11px;
+    color: #595959;
+}
+.paquete-price{
+    margin-top: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121;
+}
+.paquete-time{
+    font-size: 14px;
+    color: #595959;
+}
+
+/* Claro Eventos */
+
+.event-content{
+    width: inherit;
+}
+
+.event-img{
+  width: inherit;
+  height: auto;
+  border-radius: 8px;
+}
+
+.event-pack{ 
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: unset;
+}
+.event-pack2{
+  @extend .event-pack;
+  width: inherit;
+  padding-bottom: unset;
+}
+
+.event-item{
+  padding: unset !important;
+  width: inherit;
+  border: unset;
+}
+
+/* Common SCSS */
+
+.max-content{
+    width: max-content;
+}
+
+
+.wpthemeOverflowAuto{
+    // overflow: hidden !important;
+}
+
+.modal-generico {
+    z-index: 1000;
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    display: block;
+
+    .modal-white {
+        background: #fff;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+}
+
+.backdropBackground {
+    background-color: rgba(33, 33, 33, 0.8);
+  }
+  
+  .estilo_caja_fav {
+      width: 288px !important;
+      height: 64px;
+      background-color: #CFF6EB;
+      border: 1px solid rgba(#0FD299,.15);
+      min-width: 288px !important;
+      min-height: 64px !important;
+      border-radius: 10px !important;
+  }
+  
+  .mat-snack-bar-container {
+    padding: 8px !important;
+    box-shadow: none !important;
+    position: absolute;
+    right: 8px;
+    top: 42px;
+  
+    @media (min-width: 768px) {
+  
+    }
+  }
+
+  .app-full-bleed-dialog .mat-dialog-container {
+    padding: 44px 28px 24px;
+    border-radius: 6px;
+  }
+  .backdropBackground {
+    background-color: rgba(33,33,33,0.8);
+  }

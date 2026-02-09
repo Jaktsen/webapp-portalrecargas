@@ -1,0 +1,37 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "nombreComercio": "Compra de paquetes a trav\u00e9s de Portal Compras",
+                "descripcionPago": "Compra",
+                "codigoMoneda": "PEN",
+                "montoFacturar": "3",
+                "defaultServiceResponse": {
+                    "idSesion": "a1e3a7c4-8427-47d0-a592-83dc18d2f988",
+                    "mensaje": "Proceso Exitoso.",
+                    "idTransaccional": "c76a4582-3902-4342-aaf8-e4a81973db86",
+                    "idRespuesta": "0",
+                    "categoria": "1"
+                },
+                "guardarToken": "false",
+                "numeroOrden": "10113120",
+                "idComercio": "live_jdhzY1R9giY2",
+                "motorPagosToken": "0c099965130825fbae1b9d31ab086626c1edbec596bcec8be2bae84e456f9f95f381e18da8d37dabb66f7a61190edffc5e92ac2f75b9c9aa9e121c5b655da7227a3b503d8a96dc3af8ad3b36bfa20b2a4aa08f15cb2a8373b9c60563fe0650fa9af2cef1ef1c2e4201f5d5dccb69374f93bb0c5450d1557856e7eaae5f030446a30e80692b72b0620bd495cc847a67ef"
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS02-224a7f77-5fa8-4bb7-900f-fe2fe26b32aa",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "fc98e18d-d6a0-4805-a6fc-9e900bc93650",
+                    "consumer": "",
+                    "timestamp": "2021-01-15T15:00:46-05:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

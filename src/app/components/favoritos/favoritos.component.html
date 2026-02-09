@@ -1,0 +1,46 @@
+<div class="carousel-box" [ngClass]="{'opacity': !disabled}">
+    <div class="titulo"><p>{{tituloCarousel}}</p></div>
+
+    <div class="esqueleto">
+        <div id="{{nombre}}_espacio" class="espacio-box">
+            <div id="{{nombre}}_slide" class="cards-box">
+                <div class="card" [ngClass]="{'disabledClick' : !disabled}" id="fav_{{k}}" *ngFor="let prod of listProductos; let k = index">
+                    <div class="subtitulo color_{{prod.catvCodCategoria}}" [ngClass]="{'backgroundDisabled': !disabled }">
+                        <div class="icono imagen_{{prod.catvCodCategoria}}"></div>
+                        <p>{{prod.catvTitulo | filtrarNombrePaquete}}</p>
+                        <div class="estrella" (click)="eliminarFavorito($event, prod, disabled)"></div>
+                    </div>
+                    <div class="{{nombre}}" (click)="escogerCard(prod, k, disabled)">
+                        <div class="titulo-fav" [ngClass]="{ 'messageDisabled': !disabled }" [ngStyle]="{'font-size':prod.nombreCompleto.length >= minimaCantidadCaracteres ? '12px' : '18px' }">
+                            <p>{{prod.nombreCompleto}}</p>
+                        </div>
+                        <p class="tiempo" *ngIf="prod.tiempoCompleto != null && prod.tiempoCompleto != undefined && this.servicioCompartido.isIFILTE" [ngStyle]="{'padding-top': tamanoTiempo(prod.tiempoCompleto) ? '0px' : '0px' }">{{prod.tiempoCompleto}}</p>
+                        <div class="precio_fecha_metodo">
+                            <div class="precio_fecha" [ngClass]="{ 'messageDisabled': !disabled }">
+                                <p class="precio" [class.smaller]="shouldReducePriceSize(prod)">{{prod.precioCompleto}}</p>
+                                <p class="tiempo" *ngIf="prod.tiempoCompleto != null && prod.tiempoCompleto != undefined && !this.servicioCompartido.isIFILTE" [ngStyle]="{'padding-top': tamanoTiempo(prod.tiempoCompleto) ? '5px' : '10px' }">{{prod.tiempoCompleto}}</p>
+                            </div>
+                        </div>
+
+                        <div class="metodo_pago">
+                            <p class="metodo"[ngClass]="{ 'messageDisabled': !disabled }">Método de pago</p>
+                            <p class="tipo"[ngClass]="{ 'messageDisabled': !disabled }">{{prod.codMetodoPagoFav | tipoPago}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boton-box"><div *ngIf="btnNext" class="boton-next" id="{{nombre}}_next" (click)="move('2')"></div></div>
+    </div>
+</div>
+
+<div class="modal-generico" *ngIf="mostrarBorrarFav">
+    <div class="modal-white">
+        <div style="height: 16px;"><span class="box_cerrar" (click)="closePopUpFav('1')"></span></div>
+        <p class="titulo">¿Deseas eliminar esta compra de tus favoritos?</p>
+        <div class="caja_botones">
+            <button class="choose-btn" (click)="closePopUpFav('2')">Sí, eliminar</button>
+            <button class="close-btn" (click)="closePopUpFav('1')">No, volver</button>
+        </div>   
+    </div>
+</div>

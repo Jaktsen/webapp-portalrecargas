@@ -1,0 +1,10 @@
+<div class="paquete-vigencia" *ngFor="let infoPair of data">
+    <div class="paquetesel" *ngIf="infoPair[0]">
+        <p class="minititulos">{{infoPair[0].label}}</p>
+        <p class="miniinfo" [innerHTML]="infoPair[0].value | safeHTML"></p>
+    </div>
+    <div class="vigencia" *ngIf="infoPair[1]">
+        <p class="minititulos">{{infoPair[1].label}}</p>
+        <p class="miniinfo" [innerHTML]="infoPair[1].value | safeHTML"></p>
+    </div>
+</div>

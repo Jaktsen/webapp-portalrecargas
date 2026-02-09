@@ -1,0 +1,124 @@
+<div class="paquetes-habilitados" *ngIf="!activarRecargas">
+    <p class="paso ">Paso 1</p>
+    <p class="titulo mb-4 ">Selecciona o ingresa el monto</p>
+    <div id="input-paquete" class="input-box mb-4 text-disabled">
+        <p class="texto-input text-disabled">Ingresar otro monto</p>
+        <div class="left-box input-icon text-disabled" >
+            <input id="inputMonto" class="input-num border-disabled" maxlength="3" (input)="onInput($event)" autocomplete="false" disabled>
+            <i>S/</i>
+            <button class="buton-ingresar button-disabled" (click)="confirmarMonto()">Confirmar</button>
+        </div>
+        <p class="texto-input" id="minMaxMonto">Monto minímo: S/ 3.00</p>
+    </div>
+
+    <div class="row">
+        <div  *ngFor="let monto of montosMock" class="col-6 col-lg-4 mb-4 disabled">
+            <div class="new-card-price" >
+                <div class="new-box" >
+                    <input type="checkbox" class="nuevo-boton"  [id]="monto.monto">
+                    <!-- <label  class="nuevo-boton" ></label> -->
+                    <div>
+                        <p class="new-title" [ngClass]="{'text1': monto.monto > 9}">Recarga</p>                   
+                    </div>
+                    <div style="display: flex; color: white;height: 67px;">
+                        <p class="simbolo-precio">S/</p>
+                        <p class="nuevo-precio"  [ngClass]="{'text': monto.monto > 9}">{{monto.monto}}</p>
+                    </div>
+                    
+                </div>
+                <div  class="new-description" > 
+                    <div class="vigencia">Vigencia</div>
+                    <div class="cantidad-vigencia" *ngIf="monto.vigencia === '1'">x {{monto.vigencia}} día</div>
+                    <div class="cantidad-vigencia" *ngIf="monto.vigencia !== '1'">x {{monto.vigencia}} días</div>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+<div class="paquetes-habilitados" *ngIf="activarRecargas && listaProductos.length > 0">
+    <p class="paso">Paso 1</p>
+    <p class="titulo mb-4">Selecciona o ingresa el monto</p>
+    <div id="input-paquete" class="input-box mb-4" >
+        <p class="texto-input">Ingresar otro monto</p>
+        <div class="left-box input-icon"   >
+            <input (click)="input()"  id="inputMonto" class="input-num" maxlength="3" (input)="onInput($event)" autocomplete="false">
+            <i>S/</i>
+            <button class="buton-ingresar" (click)="confirmarMonto()">Confirmar</button>
+        </div>
+        <p class="texto-input" id="minMaxMonto">Monto minímo: S/ 3.00</p>
+    </div>
+
+    <div class="row">
+        <div  *ngFor="let listPaquete of listaProductos | filtraOtros ; index as i " class="col-6 col-lg-4 mb-4">
+            <div  *ngIf="servicioCompartido.tipoLinea == '2'" class="new-card-price"  id="prod_{{listPaquete.idProductoDeCompra}}" >
+                <div class="new-box" (click)="escogerCard(listPaquete, i)" [ngStyle]="{'backgroundImage': getObtenerFondoRecomendados(imagen_fondo) }" style="cursor: pointer" >
+                    <input type="checkbox" class="nuevo-boton"  [id]="listPaquete.idProductoDeCompra" (change)="data(i)" [checked]="listCheck[i]" disabled>
+                    <!-- <label [for]="listPaquete.idProductoDeCompra" class="nuevo-boton" ></label> -->
+                    <div>
+                        <p class="new-title" [ngClass]="{'text1': listPaquete.codigoPaquete > 9}">Recarga</p>                   
+                    </div>
+                    <div style="display: flex; color: white;height: 67px;">
+                        <p class="simbolo-precio">S/</p>
+                        <p class="nuevo-precio"  [ngClass]="{'text': listPaquete.codigoPaquete > 9}">{{listPaquete.codigoPaquete}}</p>
+                    </div>
+                    
+                </div>
+                <div  class="new-description" > 
+                    <div class="vigencia">Vigencia</div>
+                    <div class="cantidad-vigencia"> {{listPaquete.listaCaracteristicasProducto[2].nombre}} 
+                        <!-- <p class="conside" *ngIf="this.servicioCompartido.tipoLinea == '1'" (click)="mostrarConPelicula(listPaquete)">Ver más</p> -->
+                        
+                 </div>
+                    
+                </div>
+                
+            </div> 
+
+            <div  *ngIf="servicioCompartido.tipoLinea == '1'" class="new-card-price"  id="prod_{{listPaquete.idProductoDeCompra}}" >
+                <div class="new-box" (click)="escogerCard(listPaquete, i)"  style="cursor: pointer" >
+                    <img *ngIf="isDesktop()" class="new-box1" src="{{listPaquete.wcm.Imagen_desktop}}">
+                    <img *ngIf="!(isDesktop())" class="new-box1" src="{{listPaquete.wcm.Imagen_mobile}}">
+                    <input type="checkbox" class="nuevo-boton"  [id]="listPaquete.idProductoDeCompra"  (change)="data(i)" [checked]="listCheck[i]" disabled>
+                    <!-- <label [for]="listPaquete.idProductoDeCompra" class="nuevo-boton" ></label> -->
+                    
+                </div>
+                <div  class="new-description" > 
+                    <div class="vigencia">Vigencia</div>
+                    <div class="cantidad-vigencia"> {{listPaquete.listaCaracteristicasProducto[2].nombre}} 
+                        <p class="conside" *ngIf="this.servicioCompartido.tipoLinea == '1'" (click)="mostrarConPelicula(listPaquete)">Ver más</p>
+                        
+                 </div>
+                    
+                </div>
+                
+            </div> 
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="modal-generico" *ngIf="mostrarVerMasPeliculas">
+    <div class="modal-white" id="modalGamerDesk">
+      
+        <div class="imagen-pop">
+            <img src="{{pelicularPop.wcm.Imagen}}">
+            <div class="cerrar1"></div>
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+        </div>
+       
+    </div>
+    <div class="modal-white" id="modalGamerMobile">
+        <div class="imagenMobile">
+            <img src="{{pelicularPop.wcm.Imagen}}">
+            <div class="cerrar1"></div>
+            <div class="cerrar" (click)="cerrarPopUp()"></div>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,136 @@
+<div class="romaing-box">
+    <p class="paso" id="paso2_titulo">Paso 2</p>
+
+    <div class="paises-input">
+        <form class="roaming-form">
+            <mat-form-field class="roaming-input">
+                <mat-label>Ingresa el país de destino:</mat-label>
+                <input type="text" matInput [formControl]="paisElegido" [matAutocomplete]="auto"
+                    (keyup)="keyPressFun($event)">
+                <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                    <mat-option *ngFor="let pais of opcionesPaises | async" [value]="pais" (click)="paisElegidoFun()">
+                        {{pais.country}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </form>
+
+        <div class="mensaje-pais" *ngIf="paisInputLleno">
+            
+            <p *ngIf="sinFronterasMsg == false && zonaRoaming.country_code != '23' && zonaRoaming.country_code != '32' && zonaRoaming.country_code != '41'">Escogiste un país de la <b>Zona {{zonaClaro}}</b>
+                <span *ngIf="zonaRoaming.zone_code!=0">, también podrás usar este paquete en los <a class="subrayado">siguientes países:</a></span>
+            </p>
+<!-- 
+            <p *ngIf="sinFronterasMsg == false && (zonaRoaming.country_code == '122' ||  zonaRoaming.country_code == '44' )">Para los países de Qatar y Emiratos Árabes Unidos, por el periodo del 08 de Junio de 2022 al 04 de Enero de 2023 se aplicarán tarifas, topes y beneficios de la <b>Zona {{zonaClaro}}.</b>
+               <br> <span *ngIf="zonaRoaming.zone_code!=0">También podrás usar este paquete en los <a class="subrayado">siguientes países:</a></span>
+            </p> -->
+            
+          
+            
+            <p *ngIf="sinFronterasMsg == true">Tu plan cuenta con Cobertura Internacional,
+                para conocer los países a los que aplica este beneficio desliza hacia abajo.
+            </p>
+            
+            <p *ngIf="sinFronterasMsg == false  && (zonaRoaming.country_code == '32' || zonaRoaming.country_code == '23' || zonaRoaming.country_code == '41')  ">Tu plan cuenta con Cobertura Internacional para Bolivia, Colombia y Ecuador.</p>
+            
+            <!-- <p *ngIf="sinFronterasMsgMundial == true">Tu plan cuenta con Cobertura Internacional también para Qatar y Emiratos Árabes Unidos por el periodo del 08 de Junio de 2022 al 04 de Enero de 2023.</p> -->
+
+            <div class="paises-mapa" *ngIf="hideMapa">
+
+                <div class="mensajeRoaming">
+                    <p class="mapaSub" *ngIf="sinFronterasMsg == false && (servicioCompartido.planRoaming == '3661' || this.servicioCompartido.planRoaming == 'Beneficio_BSF') && zonaRoaming.country_code == '48'">
+                        El paquete que escojas será válido sólo para <strong>Estados Unidos</strong>.
+                        <br>
+                        Recuerda usar tu cobertura <strong>Internacional</strong> para los demás países:
+                    </p>
+                </div>
+
+                <div class="paises-box">
+                    <table>
+                        <td class="pais-zona" *ngFor="let pais of opcionesPaisesZona">
+                            <p>{{pais.country}}</p>
+                        </td>
+                    </table>
+                </div>
+
+                <div class="map">
+                    <div class="zona"><img src="{{mapaPais}}" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subcategorias-roaming" id="paso_3_roaming" *ngIf="paisInputLleno && showContentDiarioMensual">
+        <p class="paso">Paso 3</p>
+        <p class="titulo">Selecciona cómo deseas usar tu roaming</p>
+
+        <div class="sub_diario" *ngIf="hideDiario" (click)="sortProductos('DIARIA')">
+            <div class="mensaje_nohover">
+                <p class="titulo">Por día</p>
+                <p class="men">Recibe megas diarios y paga sólo los días que los uses.</p>
+            </div>
+            <div class="mensaje_hover">
+                <p>En tu recibo sólo se te cargará el costo de los días que usaste tu paquete de roaming.</p>
+                <p>Desactiva este paquete cuando desees llamando al 123 o si estás en el extranjero, comunícate al +51997990123.</p>
+            </div>
+        </div>
+
+        <div class="sub_mensual"  *ngIf="hideMensual" (click)="sortProductos('DIAS')">
+            <div class="mensaje_nohover">
+                <p class="titulo">Por mes</p>
+                <p class="men">Recibe megas y SMS para usarlos durante 30 días.</p>
+            </div>
+            <div class="mensaje_hover">
+                <p>En tu recibo se cargará automáticamente el costo del paquete, así no lo consumas.</p>
+            </div>
+        </div>
+
+        <!-- <div class="sub_mensual_mundial"  *ngIf="hideMensualMundial" (click)="sortProductos('MUNDIAL')">
+            <div class="mensaje_nohover">
+                <p class="titulo">RI Hinchada Bicolor</p>
+                <p class="men">Recibe megas y SMS para usarlos durante 30 días.</p>
+            </div>
+            <div class="mensaje_hover">
+                <p>En tu recibo se cargará automáticamente el costo del paquete, así no lo consumas.</p>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="productos-roaming" id="paso_4_roaming" *ngIf="mostrarProductosDiarios">
+        <app-productos [pasoNumero]="'4'" [colorCat]="categoriaEscogida.codCategoria"
+            [listaProductos]="listaProductosFiltrados" (productoElegidoChange)="habilitarMetodoPago($event)" (compartirProductoElegidoChange)="compartirProdElegido($event)">
+        </app-productos>
+    </div>
+
+    <div class="productos-roaming" id="paso_4_roaming" *ngIf="mostrarProductosDias">
+        <app-productos [pasoNumero]="'4'" [colorCat]="categoriaEscogida.codCategoria"
+            [listaProductos]="listaProductosFiltrados" (productoElegidoChange)="habilitarMetodoPago($event)" (compartirProductoElegidoChange)="compartirProdElegido($event)">
+        </app-productos>
+    </div>
+
+    <!-- <div class="productos-roaming" id="paso_4_roaming" *ngIf="mostrarProductosDiasMundial">
+        <app-productos [pasoNumero]="'4'" [colorCat]="categoriaEscogida.codCategoria"
+            [listaProductos]="listaProductosFiltrados" (productoElegidoChange)="habilitarMetodoPago($event)" (compartirProductoElegidoChange)="compartirProdElegido($event)">
+        </app-productos>
+    </div> -->
+
+    <div class="metodopago-roaming" id="paso_5_roaming" *ngIf="mostrarMedioPagos">
+        <app-metodos-pago
+        [numPaso]="'5'"
+        [metodosPago]='mostrarMedioPagos'
+        [listaMetodosPago]='listaMetodosPago'
+        [tipoMetodoPagoStar]='tipoMetodoPagoStar'
+        [creditoSaldo]='creditoSaldo'
+        [categoriaElegida]='categoriaEscogida.codCategoria'
+        [productoElegido]='productoElegido'
+        [idRespuesta]="obtenerMetodosPagoIdRespuesta"
+        (mandarConfirmacion)="habilitarConfirmacion($event)"
+        (metodoSeleccionado)="selectionMetodo($event)"
+        (compartirProductoElegidoChange)="compartirProdElegido($event)"
+        ></app-metodos-pago >
+
+    </div>
+</div>
+
+<app-popup-general *ngIf="popUpGeneral" (popupAbierto)="cerrarPopUp($event)" [infoPopUp]="infoPopUp"
+    [nombrePopUp]="nombrePopUp"></app-popup-general>

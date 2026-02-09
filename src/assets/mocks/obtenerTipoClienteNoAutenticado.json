@@ -1,0 +1,25 @@
+{
+	"comunResponseType": {
+		"MessageResponse": {
+			"Body": {
+				"defaultServiceResponse": {
+					"planRoaming": "",
+					"codigoBloqueo": "",
+					"codigoPlanTarifario": "Claro60_5",
+					"mensaje": "Transacci\u00ef\u00bf\u00bdn Exitosa",
+					"codigoTipoPlan": "0",
+					"msisdn": "934710644",
+					"tipoCliente": "1",
+					"idRespuesta": "0",
+					"tipoLinea": "1",
+					"codigoPlanComercial": "317",
+					"pivot": "0",
+					"emailClaro": "false",
+					"csIdPub": "",
+					"codigoTipoLinea": "1"
+				}
+			},
+			"Header": ""
+		}
+	}
+}

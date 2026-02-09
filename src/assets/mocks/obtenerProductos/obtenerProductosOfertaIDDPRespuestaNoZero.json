@@ -1,0 +1,28 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "defaultServiceResponse": {
+          "idSesion": "1374d49e-f65a-4f7c-b48e-837c84eccfea",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "d20fd534-a23c-44d1-9d2c-66b89cd97506",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "8",
+            "code": "0",
+            "msgid": "DPS01-c45a5e00-1979-4e85-9642-c017dfe165f4",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "aa521709-6c3f-4e67-8477-0a10f18b1ab7",
+          "consumer": "",
+          "timestamp": "2020-12-11T12:46:50-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

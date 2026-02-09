@@ -1,0 +1,30 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "defaultServiceResponse": {
+                    "idSesion": "472d487b-a633-46ce-8b2e-115956538bbc",
+                    "mensaje2": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "mensaje": "Tu paquete <strong>$paq</strong> est&aacute; vigente o con saldo, si deseas contratar otro por favor comun&iacute;cate al 123.",
+                    "idTransaccional": "7aa229d0-7ab6-489a-8eac-e0391556bc06",
+                    "idRespuesta": "0",
+                    "categoria": "1"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-bcadc926-656f-4616-b5d4-efc974d8676b",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "d4c661bf-c997-404f-8873-9cc4184f1869",
+                    "consumer": "",
+                    "timestamp": "2021-01-26T14:33:14-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

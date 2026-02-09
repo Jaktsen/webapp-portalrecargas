@@ -1,0 +1,20 @@
+var mensajeDegradaciones = 
+[
+   {
+      0:{
+         titulo1Error:"No es posible comprar",
+         titulo2Error:"un paquete de alta velocidad",
+         descripcionError:"Para comprar un paquete, primero debes haber consumido los megas en alta velocidad de tu plan"
+      },
+      1:{
+         titulo1Error:"No es posible comprar",
+         titulo2Error:"un paquete de recupera tu velocidad",
+         descripcionError:"Recuerda que para comprar debes haber consumido los GB en alta velocidad"
+      },
+      2:{
+         titulo1Error:"No es posible comprar",
+         titulo2Error:"un paquete de internet inalámbrico",
+         descripcionError:"Para comprar un paquete, primero debes haber consumido los GB de tu plan contratado"
+      }
+   }
+];

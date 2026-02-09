@@ -1,0 +1,258 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": [
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "moneda2": "Claro Puntos",
+            "precio": "64",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "AGRURSMB1DCC",
+            "idProductoDeCompraAsociado": "121",
+            "vigencia": "1",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "CHEVERE1",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "121",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "7142",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "121",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "7143",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "121",
+                "nombre": "+ 150 MB"
+              },
+              {
+                "idCaracteristica": "7144",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "121",
+                "nombre": "x 1 d\u00eda"
+              },
+              {
+                "idCaracteristica": "7145",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "121",
+                "nombre": "a S\/ 3"
+              }
+            ],
+            "nombreProducto": "5 D\u00edas ILIMITADO Llamadas, Facebook, Messenger, Twitter, Whatsapp a S\/5"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "moneda2": "Claro Puntos",
+            "precio": "106",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "AGRURSMB2DCC",
+            "idProductoDeCompraAsociado": "122",
+            "vigencia": "2",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "CHEVERE2",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "122",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "7191",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "122",
+                "nombre": "DOBLE DE MB"
+              },
+              {
+                "idCaracteristica": "7192",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "122",
+                "nombre": "600MB"
+              },
+              {
+                "idCaracteristica": "7193",
+                "estilo": "titulo_rojo",
+                "orden": "3",
+                "idProducto": "122",
+                "nombre": "+ redes sociales"
+              },
+              {
+                "idCaracteristica": "7194",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "122",
+                "nombre": "x 2 d\u00edas a S\/5"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 610MB x2 dias a S\/5"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "moneda2": "Claro Puntos",
+            "precio": "422",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "AGRURSMB12DCC",
+            "idProductoDeCompraAsociado": "124",
+            "vigencia": "12",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "124",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "145",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "124",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "146",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "124",
+                "nombre": "+ 1.8 GB"
+              },
+              {
+                "idCaracteristica": "147",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "124",
+                "nombre": "x 12 d\u00edas"
+              },
+              {
+                "idCaracteristica": "148",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "124",
+                "nombre": "a S\/ 20"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 1.8GB x12 d\u00edas a S\/20"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-03-08 00:00:00.0",
+            "codTipoLinea": "1",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "21",
+            "moneda2": "Claro Puntos",
+            "precio": "633",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes Ch\u00e9veres",
+            "codigoPaquete": "AGRURSMB20DCC",
+            "idProductoDeCompraAsociado": "125",
+            "vigencia": "20",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "125",
+            "ordenMetodoPago": "1",
+            "catnId": "1",
+            "catvCodCategoria": "9",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "149",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "125",
+                "nombre": "Redes Sociales"
+              },
+              {
+                "idCaracteristica": "150",
+                "estilo": "titulo_rojo",
+                "orden": "2",
+                "idProducto": "125",
+                "nombre": "+ 3 GB"
+              },
+              {
+                "idCaracteristica": "151",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "125",
+                "nombre": "x 20 d\u00edas"
+              },
+              {
+                "idCaracteristica": "152",
+                "estilo": "titulo_gris",
+                "orden": "4",
+                "idProducto": "125",
+                "nombre": "a S\/ 30"
+              }
+            ],
+            "nombreProducto": "Redes Sociales + 3GB x20 d\u00edas a S\/30"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "5e759b64-eb5f-4c11-8629-286ae6b4ba75",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "188f3196-ca19-49ae-adff-2098184a5d7c",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-523cb7b7-59f1-4f72-bcf0-efc974d8d0c6",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "6bf40054-cf3d-4fd3-aed0-c8af7487d5df",
+          "consumer": "",
+          "timestamp": "2021-01-26T13:20:19-06:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

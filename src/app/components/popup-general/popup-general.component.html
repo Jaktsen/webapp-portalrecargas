@@ -1,0 +1,186 @@
+<div class="modal-generico">
+
+    <!--Pop up Linea Boqueada-->
+    <div class="popBloq" id="popUpLineaBloqueada" *ngIf="nombrePopUp === 'Linea Bloqueada'">
+        <button class="close" (click)="cerrarPop()">&times;</button>
+        <div class="centrado">
+        <p class="titulo_bloq" style="margin-left: 0px;">{{infoPopUp.titulo}}</p>
+        <p class="cuerpo_bloq" [innerHTML]="infoPopUp.mensaje | safeHTML"></p>
+        <button class="verde-blanco" (click)="cerrarPop()">Entendido</button>
+    </div>
+    </div>
+
+    <!--Pop up Actualizar Correo de constancia-->
+    <div class="popCons" id="popUpConstancia" *ngIf="nombrePopUp === 'Constancia'">
+        <button class="close" (click)="cerrarPopEmail()">&times;</button>
+        <h3 class="titulo-constancia">Actualiza tu correo electrónico</h3>
+        <p class="texto-negro">Con el fin de tener nuestra base de datos al día, ingresa tu correo<br>electrónico actualizado para futuras transacciones en Claro Compras.</p>
+
+        <form [formGroup]="correoForm" (ngSubmit)="actualizarEmail()" class="nuevo-correo-form">
+            <mat-form-field class="input-correo">
+                <input matInput placeholder="Ingresa tu correo electrónico" type="text" name="correo"
+                formControlName="correo" autocomplete="off" #correo maxlength="150" id="inputCorreo">
+            </mat-form-field>
+
+            <mat-error class="error-input" *ngIf="correoForm.controls.correo.dirty && correoForm.controls.correo.touched && correoForm.controls.correo.invalid" id="errorLine">
+                <mat-icon class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                <p class="error-texto">Ingresar correo de forma correcta</p>
+            </mat-error>
+
+            <button type="submit" class="botonC" [disabled]="!correoForm.valid || correoForm.controls.correo.disabled">Entendido</button>
+        </form>
+    </div>
+
+    <!--Pop up Descativar Temporalmente Roaming-->
+    <div class="modal-white" id="popActivarRoamingTemp" *ngIf="nombrePopUp === 'Temp Roaming'">
+        <div class="cerrar" (click)="cerrarPop()"></div>
+        <div class="texto-body">
+            <div class="titulo-rojo">La compra de paquetes <strong>roaming</strong> se encuentra en <strong>mantenimiento</strong> </div>
+            <!--<div class="img-fluid" alt="Roaming under construction"></div>-->
+            <img src="assets/img/robot.png" alt="" class="img-fluid" style=" width: 120px;height:120px;text-align:center;margin:5px 0px"/>
+            <p class="texto-negro"> Por el momento, para comprar un <strong>paquete comunícate con nosotros desde tu móvil Claro al 123 o al 135</strong> si tu línea es corporativa. Si Te encuentras en el extranjero llama gratis al +51997990123.<br></p>
+        </div>
+    </div>
+
+    <!--Pop up Activar Roaming Manual-->
+    <div class="modal-white" id="popActivarRoaming" *ngIf="nombrePopUp === 'Act Roaming'">
+        <div class="cerrar" (click)="cerrarPop()"></div>
+        <div class="texto-body">
+            <h3 class="titulo-rojo">Activación Roaming</h3>
+            <p class="texto-negro">Para poder seleccionar este paquete debes
+                <span class="red">
+                    <strong>Activar</strong>
+                </span>
+                el servicio de Roaming llamando 123 o si estás en el extranjero, comunícate al +51997990123.<br>
+            </p>
+        </div>
+    </div>
+
+        <!--Pop up paquete aun vigente Mapeado -->
+        <div class="modal-white" id="popPaqueteVigenteRoaming" *ngIf="nombrePopUp === 'Paquete Vigente Roaming'">
+            <div class="cerrar" (click)="cerrarPop()"></div>
+            <div class="texto-body">
+                <h3 class="titulo-rojo">¡Lo sentimos!</h3>
+                <p class="texto-negro" [innerHTML]="(infoPopUp!=null && infoPopUp!=''?infoPopUp:'Ocurrió un problema.  Vuelve a intentarlo más tarde') | safeHTML"></p>
+                <br>
+                <br>
+            </div>
+        </div>
+
+    <!--Pop up cobertura Sin Fronteras-->
+    <div class="modal-white" id="popSinFronteras" *ngIf="nombrePopUp === 'Sin Fronteras'">
+        <div class="texto-body">
+            <h3 class="titulo-rojo" style="margin-left: 0px;">¡FELICITACIONES!</h3>
+            <div class="col1">
+                <div class="imagen-sin"></div>
+            </div>
+            <div class="col2">
+                <p class="texto-negro">¡Tu plan cuenta con <span class="red">Cobertura Internacional</span>! Puedes utilizar tus MEGAS, MINUTOS y SMS en tu viaje sin necesidad de contratar este paquete.</p>
+            </div>
+        </div>
+        <button class="verde-blanco" (click)="cerrarPop()">Aceptar</button>
+    </div>
+
+    <!--Pop up paquete ya programado -->
+    <div class="modal-white" id="popPaqueteProgramado" *ngIf="nombrePopUp === 'Paquete Programado'">
+        <div class="cerrar" (click)="cerrarPop()"></div>
+        <div class="texto-body">
+            <h3 class="titulo-rojo">¡Lo sentimos!</h3>
+            <p class="texto-negro">Ya tienes un paquete programado, si deseas cancelarlo por favor comunícate al 123 o si estás en el extranjero, comunícate al +51997990123.</p>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <!--Pop up paquete aun vigente -->
+    <div class="modal-white" id="popPaqueteVigente" *ngIf="nombrePopUp === 'Paquete Vigente'">
+        <div class="cerrar" (click)="cerrarPop()"></div>
+        <div class="texto-body">
+            <h3 class="titulo-rojo">¡Lo sentimos!</h3>
+            <p class="texto-negro">Ya tienes un paquete vigente o con saldo, si deseas cancelarlo por favor comunícate al 123 o si estás en el extranjero, comunícate al +51997990123.</p>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+
+    <!--Pop up de degradaciones-->
+    <div class="modal-white" id="popDegradaciones" *ngIf="nombrePopUp === 'Degradaciones'">
+        <div class="texto-body">
+            <p class="titulo-negro" [innerHTML]="infoPopUp.titulo1Degradaciones | safeHTML"></p>
+            <p class="titulo-negro " [innerHTML]="infoPopUp.titulo2Degradaciones | safeHTML"></p>
+            <p class="texto-negro" style="margin-top: 16px;" [innerHTML]="infoPopUp.descripcionDegradaciones | safeHTML"></p>
+            <button class="verde-blanco" (click)="cerrarPop()">Listo</button>
+        </div>
+    </div>
+
+    <!--Pop up error mensaje customizado-->
+    <div class="modal-white" id="popErrorProgresoCustomMessage" *ngIf="nombrePopUp === 'Error Mensaje'">
+        <h3 class="titulo-rojo1" style="margin: 8px 0px 20px 0px">
+            <strong>{{infoPopUp.mensaje_upps_titulo}}</strong>
+        </h3>
+        <p id="customMessageError" class="customMessageError" [innerHTML]="infoPopUp.customMessageError | safeHTML">
+        </p>
+
+        <button class="verde-blanco" (click)="cerrarMessagePop()">Aceptar</button>
+    </div>
+
+    <!--Pop up error mensaje customizado-->
+    <div class="modal-white" id="popErrorMotorPagoExito" *ngIf="nombrePopUp === 'Error Motor Pago Exito'">
+        <h3 class="titulo-rojo" style="margin: 8px 0px 20px 0px">
+            <strong>!Uppsss!!</strong>
+        </h3>
+        <p>
+            Tuvimos un problema
+        </p>
+        <p id="customMessageError" class="customMessageError" [innerHTML]="infoPopUp.customMessageError | safeHTML"></p>
+    
+        <button class="verde-blanco" (click)="finalizarError()">Aceptar</button>
+    </div>
+
+
+    <!--Pop up error general-->
+    <div class="modal-white" id="popErrorProgreso" *ngIf="nombrePopUp === 'Error Progreso'">
+        <h3 class="titulo-rojo" style="margin-left: 0px;">
+            <strong [innerHTML]="infoPopUp.mensaje_upps_titulo | safeHTML"></strong>
+        </h3>
+        <p class="texto-negro">
+            <br>La transacción no pudo ser completada.
+            <br>Por favor vuelve a intentarlo más tarde.
+            <br>
+        </p>
+
+        <button class="verde-blanco" (click)="finalizarError()">Aceptar</button>
+    </div>
+
+    <!--Pop up promociones -->
+    <div id="popupRecomendacion" class="popConss" *ngIf="nombrePopUp === 'Promociones'" [ngClass]="{'promo':infoPopUp.recomendacionModal.CallToAction!=='1'}">
+        <div class="close1" (click)="cerrarPop()" [ngClass]="{'closeCall':infoPopUp.recomendacionModal.CallToAction !=='1'}"></div>
+        <div class="publicidad-pop pop" style="position:relative" [ngClass]="{'promopub':infoPopUp.recomendacionModal.CallToAction!=='1'}">
+            
+           <div class="publicidad-div" id="id" style="position:relative" [ngClass]="{'promopubs':infoPopUp.recomendacionModal.CallToAction!=='1'}">
+            <img class="image-publicidad"  [src]="infoPopUp.recomendacionModal.Imagen"  >
+           </div>           
+        </div>
+        <div class="btn-action-div" [ngClass]="{'promopubss':infoPopUp.recomendacionModal.CallToAction!=='1'}">
+                <button class="verde-blanco pub" 
+                *ngIf="infoPopUp.recomendacionModal.CallToAction!='' && infoPopUp.callValido"
+            (click)="callToActionRecomendacion(infoPopUp.recomendacionModal)">
+                Comprar ahora
+            </button>
+            </div>
+           </div>
+
+    <!--Pop up suspension -->
+    <div class="popSus" id="popupSuspension" *ngIf="nombrePopUp ==='codigoSuspendido'">
+        <button class="close" (click)="cerrarPop()">&times;</button>
+        <div class="centrado">
+        
+        <p class="titulo" [innerHTML]="infoPopUp.titulo | safeHTML"></p>
+        <p class="cuerpo" [innerHTML]="infoPopUp.mensaje | safeHTML"></p>
+        <button class="botonS" (click)="cerrarPop()">Entendido</button>
+        </div>
+    </div>
+
+
+</div>

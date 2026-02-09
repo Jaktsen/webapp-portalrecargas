@@ -1,0 +1,78 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "listaProductosDeCompra": [{
+                    "idTipoLinea": "81",
+                    "flagValidarSaldoPontis": "1",
+                    "nombreMetodoPago": "Claro Puntos",
+                    "iniVigencia": "2020-08-02 00:00:00.0",
+                    "codTipoLinea": "6",
+                    "tipoVigencia": "FINAL_CICLO",
+                    "idMetodoPago": "21",
+                    "precio": "0",
+                    "moneda2": "Claro Puntos",
+                    "estadoMetodoPago": "0",
+                    "catvTitulo": "Recupera tu velocidad",
+                    "codigoPaquete": "SIN CODIGO",
+                    "idProductoDeCompraAsociado": "5421",
+                    "vigencia": "0",
+                    "finVigencia": "2099-12-30 00:00:00.0",
+                    "tituloProducto": "",
+                    "codigoProducto": "PROD_IFI15_001",
+                    "recomendadoCategoriaOrden": "9999",
+                    "idProductoDeCompra": "5421",
+                    "ordenMetodoPago": "1",
+                    "catnId": "801",
+                    "catvCodCategoria": "24",
+                    "cantidadFavoritos": "3",
+                    "listaCaracteristicasProducto": [
+                        {
+                            "idCaracteristica": "8901",
+                            "estilo": "titulo_rojo",
+                            "orden": "1",
+                            "idProducto": "5421",
+                            "nombre": "100 GB ADICIONALES"
+                        },
+                        {
+                            "idCaracteristica": "8902",
+                            "estilo": "titulo_gris",
+                            "orden": "2",
+                            "idProducto": "5421",
+                            "nombre": "Hasta tu próximo ciclo de facturación"
+                        },
+                        {
+                            "idCaracteristica": "8903",
+                            "estilo": "titulo_gris",
+                            "orden": "3",
+                            "idProducto": "5421",
+                            "nombre": "S/ 15"
+                        }
+                    ],
+                    "nombreProducto": "100 GB ADICIONALES x S/ 15"
+                }],
+                "defaultServiceResponse": {
+                    "idSesion": "3947e03d-59a6-49ce-ba89-b1a404d503da",
+                    "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "idTransaccional": "6ffb3410-288c-42db-9b3e-40610f42f09d",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-c46c6216-ff96-495e-9921-efc974d85a65",
+                        "message": "EJECUCIÓN CON ÉXITO"
+                    },
+                    "pid": "bae3f4b8-e372-4a23-94fe-5a568279e834",
+                    "consumer": "",
+                    "timestamp": "2021-03-23T00:36:35-05:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+
+}

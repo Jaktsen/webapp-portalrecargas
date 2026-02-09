@@ -1,0 +1,77 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": {
+          "idTipoLinea": "81",
+          "flagValidarSaldoPontis": "1",
+          "nombreMetodoPago": "Claro Puntos",
+          "iniVigencia": "2020-08-02 00:00:00.0",
+          "codTipoLinea": "6",
+          "tipoVigencia": "FINAL_CICLO",
+          "idMetodoPago": "21",
+          "precio": "0",
+          "moneda2": "Claro Puntos",
+          "estadoMetodoPago": "0",
+          "catvTitulo": "Recupera tu velocidad",
+          "codigoPaquete": "SIN CODIGO",
+          "idProductoDeCompraAsociado": "5421",
+          "vigencia": "0",
+          "finVigencia": "2099-12-30 00:00:00.0",
+          "tituloProducto": "",
+          "codigoProducto": "PROD_IFI15_001",
+          "recomendadoCategoriaOrden": "9999",
+          "idProductoDeCompra": "5421",
+          "ordenMetodoPago": "1",
+          "catnId": "801",
+          "catvCodCategoria": "24",
+          "cantidadFavoritos": "3",
+          "listaCaracteristicasProducto": [
+            {
+              "idCaracteristica": "8901",
+              "estilo": "titulo_rojo",
+              "orden": "1",
+              "idProducto": "5421",
+              "nombre": "100 GB ADICIONALES"
+            },
+            {
+              "idCaracteristica": "8902",
+              "estilo": "titulo_gris",
+              "orden": "2",
+              "idProducto": "5421",
+              "nombre": "Hasta tu pr\u00f3ximo ciclo de facturaci\u00f3n"
+            },
+            {
+              "idCaracteristica": "8903",
+              "estilo": "titulo_gris",
+              "orden": "3",
+              "idProducto": "5421",
+              "nombre": "S/ 15"
+            }
+          ],
+          "nombreProducto": "100 GB ADICIONALES x S/ 15"
+        },
+        "defaultServiceResponse": {
+          "idSesion": "89a59305-121b-4bc8-a3c3-2254482773e0",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "b5a43be2-c3c6-43ea-ba15-bbf66120ff1b",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-d006f652-28ce-43ca-879e-efc974d87a50",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "c638fbb5-35e9-4886-aed6-5e66b7b9a516",
+          "consumer": "",
+          "timestamp": "2021-02-17T11:43:35-06:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

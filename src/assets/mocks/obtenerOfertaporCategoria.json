@@ -1,0 +1,323 @@
+{
+	"comunResponseType": {
+		"MessageResponse": {
+			"Body": {
+				"listaProductosDeCompra": [{
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI C.Extendida 250 MB",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6343",
+					"vigencia": "30",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_011",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6343",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12152",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6343",
+						"nombre": "250 MB y 250 SMS"
+					}, {
+						"idCaracteristica": "12153",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6343",
+						"nombre": "por 30 d\u00edas"
+					}, {
+						"idCaracteristica": "12154",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6343",
+						"nombre": "a S\/ 60"
+					}],
+					"nombreProducto": "250 MB y 250 SMS por 30 d\u00edas a S\/60"
+				}, {
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIARIA",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI Claro 25 Diario",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6391",
+					"vigencia": "1",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_EXT_034",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6391",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12311",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6391",
+						"nombre": "150 MB"
+					}, {
+						"idCaracteristica": "12312",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6391",
+						"nombre": "diarios"
+					}, {
+						"idCaracteristica": "12313",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6391",
+						"nombre": "a S\/ 25"
+					}],
+					"nombreProducto": "150 MB diarios S\/25"
+				}, {
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI C.Extendida 1 GB",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6344",
+					"vigencia": "30",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_012",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6344",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12155",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6344",
+						"nombre": "1 GB y 1000 SMS"
+					}, {
+						"idCaracteristica": "12156",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6344",
+						"nombre": "por 30 d\u00edas"
+					}, {
+						"idCaracteristica": "12157",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6344",
+						"nombre": "a S\/ 120"
+					}],
+					"nombreProducto": "1 GB y 1000 SMS por 30 d\u00edas a S\/120"
+				}, {
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIARIA",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI Claro 40 Diario",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6392",
+					"vigencia": "1",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_EXT_035",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6392",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12314",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6392",
+						"nombre": "250 MB"
+					}, {
+						"idCaracteristica": "12315",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6392",
+						"nombre": "diarios"
+					}, {
+						"idCaracteristica": "12316",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6392",
+						"nombre": "a S\/ 40"
+					}],
+					"nombreProducto": "250 MB diarios S\/40"
+				}, {
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI C.Extendida 2 GB",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6345",
+					"vigencia": "30",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_013",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6345",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12158",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6345",
+						"nombre": "2 GB y 1000 SMS"
+					}, {
+						"idCaracteristica": "12159",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6345",
+						"nombre": "por 30 d\u00edas"
+					}, {
+						"idCaracteristica": "12160",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6345",
+						"nombre": "a S\/ 220"
+					}],
+					"nombreProducto": "2 GB y 1000 SMS por 30 d\u00edas a S\/220"
+				}, {
+					"idTipoLinea": "2",
+					"flagValidarSaldoPontis": "1",
+					"nombreMetodoPago": "Claro Puntos",
+					"iniVigencia": "2020-05-13 00:00:00",
+					"codTipoLinea": "2",
+					"tituloConfirma": "",
+					"tipoVigencia": "DIAS",
+					"idMetodoPago": "21",
+					"subtituloConfirma": "",
+					"moneda2": "Claro Puntos",
+					"precio": "0",
+					"moneda1": "",
+					"subtitulo": "RI C.Extendida 4 GB",
+					"estadoMetodoPago": "0",
+					"catvTitulo": "Zona Extendida",
+					"codigoPaquete": "SIN CODIGO",
+					"idProductoDeCompraAsociado": "6346",
+					"vigencia": "30",
+					"finVigencia": "2099-12-31 00:00:00",
+					"tituloProducto": "",
+					"flagPontis": "0",
+					"codigoProducto": "ROAMING_MASIVO_014",
+					"recomendadoCategoriaOrden": "9999",
+					"idProductoDeCompra": "6346",
+					"ordenMetodoPago": "1",
+					"catnId": "17",
+					"catvCodCategoria": "7",
+					"cantidadFavoritos": "3",
+					"listaCaracteristicasProducto": [{
+						"idCaracteristica": "12161",
+						"estilo": "titulo_rojo",
+						"orden": "1",
+						"idProducto": "6346",
+						"nombre": "4 GB y 1000 SMS"
+					}, {
+						"idCaracteristica": "12162",
+						"estilo": "titulo_gris",
+						"orden": "2",
+						"idProducto": "6346",
+						"nombre": "por 30 d\u00edas"
+					}, {
+						"idCaracteristica": "12163",
+						"estilo": "titulo_gris",
+						"orden": "3",
+						"idProducto": "6346",
+						"nombre": "a S\/ 420"
+					}],
+					"nombreProducto": "4 GB y 1000 SMS por 30 d\u00edas a S\/420"
+				}],
+				"defaultServiceResponse": {
+					"idSesion": "89a825e5-8472-4405-b08c-86d1c873ded7",
+					"mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+					"idTransaccional": "cf097cc1-6af1-4a1d-9af4-c29d9843b68a",
+					"idRespuesta": "0"
+				}
+			},
+			"Header": {
+				"HeaderResponse": {
+					"status": {
+						"type": "0",
+						"code": "0",
+						"msgid": "DPS01-14b58da6-0684-4b2f-82c5-efc974d8bb3f",
+						"message": "EJECUCI\u00d3N CON \u00c9XITO"
+					},
+					"pid": "656695a3-32c6-4494-8f5c-04d652137676",
+					"consumer": "",
+					"timestamp": "2023-01-29T22:26:17-06:00",
+					"VarArg": ""
+				}
+			}
+		}
+	}
+}

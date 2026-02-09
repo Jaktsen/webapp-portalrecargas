@@ -1,0 +1,36 @@
+{
+    "comunResponseType": {
+      "MessageResponse": {
+        "Body": {
+          "defaultServiceResponse":       {
+             "idRespuesta": "0",
+             "idSesion": "13",
+             "idTransaccional": "123213213213",
+             "mensaje": "avasfas Consulta con ?xito, se proces? correctamente la solicitud."
+          },
+          "degradacion": {
+
+            "degradado": "true",
+            "identificadorUsuarioToBeRequest": {
+              "idRespuesta" : "0",
+              "coIdPub": "P"
+            }
+          }
+       },
+        "Header": {
+          "HeaderResponse": {
+            "consumer": "",
+            "pid": "14112018163500",
+            "timestamp": "2022-03-31T10:40:15-05:00",
+            "VarArg": "",
+            "status":       {
+               "type": "0",
+               "code": "0",
+               "message": "EJECUCIÃ“N CON Ã‰XITO",
+               "msgid": "DPS01-cdddfc6b-187f-4a94-ba9b-efc974d840d8"
+            }
+         }
+        }
+      }
+    }
+  }

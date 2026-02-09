@@ -1,0 +1,33 @@
+
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "categoriasXproduto": {
+                    "cod_categoria": "41",
+                    "cod_categoria_padre": "2"
+                },
+                "defaultServiceResponse": {
+                    "idSesion": "11aac8e7-ae86-4d3b-8bce-68f393d8ba84",
+                    "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+                    "idTransaccional": "1b1beb7a-a927-4502-9a56-8336e4c65601",
+                    "idRespuesta": "0"
+                }
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-63e63213-6093-4f96-a2c4-c017dfe17c17",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "9598282b-0dfa-490c-a26b-a7bdabd88304",
+                    "consumer": "",
+                    "timestamp": "2020-12-22T11:49:23-05:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

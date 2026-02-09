@@ -1,0 +1,192 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "listaProductosDeCompra": [
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Saldo de Recarga",
+            "iniVigencia": "2018-06-15 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "HORAS",
+            "idMetodoPago": "4",
+            "subtituloConfirma": "",
+            "moneda2": "",
+            "precio": "3",
+            "moneda1": "S/",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes USA + Perú",
+            "codigoPaquete": "ICPSNPYOU3HR",
+            "idProductoDeCompraAsociado": "6",
+            "codMetodoPagoFav":"4",
+            "vigencia": "3",
+            "finVigencia": "2099-06-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "VIDEOILIM",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "6",
+            "ordenMetodoPago": "1",
+            "catnId": "2",
+            "catvCodCategoria": "26",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "1",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "6",
+                "nombre": "10 GB"
+              },
+              {
+                "idCaracteristica": "2",
+                "estilo": "titulo_gris",
+                "orden": "2",
+                "idProducto": "6",
+                "nombre": "x 30 días"
+              },
+              {
+                "idCaracteristica": "3",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "6",
+                "nombre": "a S/ 65"
+              }
+            ],
+            "nombreProducto": "10 GB x 30 días a S./ 65"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2018-06-15 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "FINAL_DIA",
+            "idMetodoPago": "1",
+            "codMetodoPagoFav":"1",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "127",
+            "moneda1": "",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes USA + Perú",
+            "codigoPaquete": "D_PQTILIM1D",
+            "idProductoDeCompraAsociado": "7",
+            "vigencia": "",
+            "finVigencia": "2099-09-30 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "INT_ILIM_6",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "7",
+            "ordenMetodoPago": "1",
+            "catnId": "2",
+            "catvCodCategoria": "26",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "16",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "7",
+                "nombre": "20GB"
+              },
+              {
+                "idCaracteristica": "17",
+                "estilo": "titulo_gris",
+                "orden": "2",
+                "idProducto": "7",
+                "nombre": "x 30 días"
+              },
+              {
+                "idCaracteristica": "18",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "7",
+                "nombre": "a S/ 120"
+              }
+            ],
+            "nombreProducto": "20GB x 30 días a S/ 120"
+          },
+          {
+            "idTipoLinea": "1",
+            "flagValidarSaldoPontis": "1",
+            "nombreMetodoPago": "Claro Puntos",
+            "iniVigencia": "2017-09-01 00:00:00.0",
+            "codTipoLinea": "1",
+            "tituloConfirma": "",
+            "tipoVigencia": "DIAS",
+            "idMetodoPago": "1",
+            "codMetodoPagoFav":"3",
+            "subtituloConfirma": "",
+            "moneda2": "Claro Puntos",
+            "precio": "64",
+            "moneda1": "",
+            "subtitulo": "",
+            "estadoMetodoPago": "1",
+            "catvTitulo": "Paquetes USA + Perú",
+            "codigoPaquete": "D_PQT100MB",
+            "idProductoDeCompraAsociado": "581",
+            "vigencia": "2",
+            "finVigencia": "2099-12-31 00:00:00.0",
+            "tituloProducto": "",
+            "codigoProducto": "MEGAS14",
+            "recomendadoCategoriaOrden": "9999",
+            "idProductoDeCompra": "581",
+            "ordenMetodoPago": "1",
+            "catnId": "2",
+            "catvCodCategoria": "26",
+            "cantidadFavoritos": "3",
+            "listaCaracteristicasProducto": [
+              {
+                "idCaracteristica": "1061",
+                "estilo": "titulo_rojo",
+                "orden": "1",
+                "idProducto": "581",
+                "nombre": "40GB"
+              },
+              {
+                "idCaracteristica": "1062",
+                "estilo": "titulo_gris",
+                "orden": "2",
+                "idProducto": "581",
+                "nombre": "x 30 días"
+              },
+              {
+                "idCaracteristica": "1063",
+                "estilo": "titulo_gris",
+                "orden": "3",
+                "idProducto": "581",
+                "nombre": "a S/ 190"
+              }
+            ],
+            "nombreProducto": "40GB x días a S/ 190"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "d3e628ee-03db-4e82-8821-e8ffb70e66a0",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "dbbf66b5-dc23-4380-accf-477d3a674e8d",
+          "idRespuesta": "0"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS02-35e274f5-92b5-4d66-917d-fe2fe26b17a2",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "ac954760-762f-472a-bfb5-c24846911e5a",
+          "consumer": "",
+          "timestamp": "2021-06-07T12:06:56-05:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<div class="snack_bar_pop">
+    <div class="caja_cerrar"><span (click)="sbRef.dismiss()" class="cerrar"></span></div>
+    <div class="dibujo_texto">
+        <div class="dibujo"></div>
+        <div class="texto" [ngStyle]="{'margin-top':data.lineas === '2' ? '-8px' : '0px' }" [innerHTML]="data.mensaje | safeHTML"></div>
+    </div>
+</div>

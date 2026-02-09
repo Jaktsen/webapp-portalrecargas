@@ -1,0 +1,41 @@
+<div class="d-flex" style="height: 60vh">
+  <div class="container" style="align-self: center">
+    <div class="d-flex justify-content-center mobile">
+      <p class="d-none title title-mobile" *ngIf="errorService">
+        Ocurrió un error al cargar los paquetes
+      </p>
+      <p class="d-none title title-mobile" *ngIf="errorSinPaquetes">
+        Tu servicio no tiene paquetes de compra
+      </p>
+
+      <div [ngClass]="{ robot: errorService, robot2: errorSinPaquetes }" class="mx-4" ></div>
+
+      <div class="">
+        <p *ngIf="errorService" class="title">
+          Ocurrió un error al cargar los paquetes
+        </p>
+        <p *ngIf="errorSinPaquetes" class="title">
+          Tu servicio no tiene paquetes de compra
+        </p>
+        <p class="subtitle" *ngIf="errorSinPaquetes" >Por favor, inténtalo con otro número.</p>
+        <p class="subtitle" *ngIf="errorService" >Por favor, inténtalo de nuevo.</p>
+        <div class="wrapper-button">
+          <button
+            *ngIf="errorSinPaquetes"
+            class="button"
+            (click)="cambiarNumero()"
+          >
+            Cambiar número
+          </button>
+          <button
+            *ngIf="errorService"
+            class="button"
+            (click)="irDeVuelta(true)"
+          >
+            Volver a cargar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

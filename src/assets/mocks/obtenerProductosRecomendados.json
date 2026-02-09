@@ -1,0 +1,674 @@
+{
+	"comunResponseType": {
+	  "MessageResponse": {
+		"Body": {
+		  "listaProductosDeCompra": [
+			{
+				"idTipoLinea": "1",
+				"flagValidarSaldoPontis": "1",
+				"nombreMetodoPago": "Saldo de Recarga",
+				"iniVigencia": "2018-06-15 00:00:00.0",
+				"codTipoLinea": "1",
+				"tituloConfirma": "",
+				"tipoVigencia": "HORAS",
+				"idMetodoPago": "4",
+				"subtituloConfirma": "",
+				"moneda2": "",
+				"precio": "3",
+				"moneda1": "S/",
+				"subtitulo": "",
+				"estadoMetodoPago": "1",
+				"catvTitulo": "Paquetes USA + Perú",
+				"codigoPaquete": "ICPSNPYOU3HR",
+				"idProductoDeCompraAsociado": "6",
+				"codMetodoPagoFav":"4",
+				"vigencia": "3",
+				"finVigencia": "2099-06-30 00:00:00.0",
+				"tituloProducto": "",
+				"codigoProducto": "VIDEOILIM",
+				"recomendadoCategoriaOrden": "9999",
+				"idProductoDeCompra": "6",
+				"ordenMetodoPago": "1",
+				"catnId": "2",
+				"catvCodCategoria": "73",
+				"cantidadFavoritos": "3",
+				"listaCaracteristicasProducto": [
+				  {
+					"idCaracteristica": "1",
+					"estilo": "titulo_rojo",
+					"orden": "1",
+					"idProducto": "6",
+					"nombre": "10 GB"
+				  },
+				  {
+					"idCaracteristica": "2",
+					"estilo": "titulo_gris",
+					"orden": "2",
+					"idProducto": "6",
+					"nombre": "x 30 días"
+				  },
+				  {
+					"idCaracteristica": "3",
+					"estilo": "titulo_gris",
+					"orden": "3",
+					"idProducto": "6",
+					"nombre": "a S/ 65"
+				  }
+				],
+				"nombreProducto": "10 GB x 30 días a S./ 65"
+			  },
+			  {
+				"idTipoLinea": "1",
+				"flagValidarSaldoPontis": "1",
+				"nombreMetodoPago": "Claro Puntos",
+				"iniVigencia": "2018-06-15 00:00:00.0",
+				"codTipoLinea": "1",
+				"tituloConfirma": "",
+				"tipoVigencia": "FINAL_DIA",
+				"idMetodoPago": "1",
+				"codMetodoPagoFav":"1",
+				"subtituloConfirma": "",
+				"moneda2": "Claro Puntos",
+				"precio": "127",
+				"moneda1": "",
+				"subtitulo": "",
+				"estadoMetodoPago": "1",
+				"catvTitulo": "Paquetes USA + Perú",
+				"codigoPaquete": "D_PQTILIM1D",
+				"idProductoDeCompraAsociado": "7",
+				"vigencia": "",
+				"finVigencia": "2099-09-30 00:00:00.0",
+				"tituloProducto": "",
+				"codigoProducto": "INT_ILIM_6",
+				"recomendadoCategoriaOrden": "9999",
+				"idProductoDeCompra": "7",
+				"ordenMetodoPago": "1",
+				"catnId": "2",
+				"catvCodCategoria": "73",
+				"cantidadFavoritos": "3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto": [
+				  {
+					"idCaracteristica": "16",
+					"estilo": "titulo_rojo",
+					"orden": "1",
+					"idProducto": "7",
+					"nombre": "20GB"
+				  },
+				  {
+					"idCaracteristica": "17",
+					"estilo": "titulo_gris",
+					"orden": "2",
+					"idProducto": "7",
+					"nombre": "x 30 días"
+				  },
+				  {
+					"idCaracteristica": "18",
+					"estilo": "titulo_gris",
+					"orden": "3",
+					"idProducto": "7",
+					"nombre": "a S/ 120"
+				  }
+				],
+				"nombreProducto": "20GB x 30 días a S/ 120"
+			  },
+			  {
+				"idTipoLinea": "1",
+				"flagValidarSaldoPontis": "1",
+				"nombreMetodoPago": "Claro Puntos",
+				"iniVigencia": "2018-06-15 00:00:00.0",
+				"codTipoLinea": "1",
+				"tituloConfirma": "",
+				"tipoVigencia": "FINAL_DIA",
+				"idMetodoPago": "1",
+				"codMetodoPagoFav":"1",
+				"subtituloConfirma": "",
+				"moneda2": "Claro Puntos",
+				"precio": "127",
+				"moneda1": "",
+				"subtitulo": "",
+				"estadoMetodoPago": "1",
+				"catvTitulo": "Paquetes USA + Perú",
+				"codigoPaquete": "D_PQTILIM1D",
+				"idProductoDeCompraAsociado": "7",
+				"vigencia": "",
+				"finVigencia": "2099-09-30 00:00:00.0",
+				"tituloProducto": "",
+				"codigoProducto": "INT_ILIM_6",
+				"recomendadoCategoriaOrden": "9999",
+				"idProductoDeCompra": "7",
+				"ordenMetodoPago": "1",
+				"catnId": "2",
+				"catvCodCategoria": "73",
+				"cantidadFavoritos": "3",
+				"flagPontis":"1",
+				"listaCaracteristicasProducto": [
+				  {
+					"idCaracteristica": "16",
+					"estilo": "titulo_rojo",
+					"orden": "1",
+					"idProducto": "7",
+					"nombre": "20GB"
+				  },
+				  {
+					"idCaracteristica": "17",
+					"estilo": "titulo_gris",
+					"orden": "2",
+					"idProducto": "7",
+					"nombre": "x 30 días"
+				  },
+				  {
+					"idCaracteristica": "18",
+					"estilo": "titulo_gris",
+					"orden": "3",
+					"idProducto": "7",
+					"nombre": "a S/ 120"
+				  }
+				],
+				"nombreProducto": "20GB x 30 días a S/ 120"
+			  },
+			  {
+				"idTipoLinea": "1",
+				"flagValidarSaldoPontis": "1",
+				"nombreMetodoPago": "Claro Puntos",
+				"iniVigencia": "2017-09-01 00:00:00.0",
+				"codTipoLinea": "1",
+				"tituloConfirma": "",
+				"tipoVigencia": "DIAS",
+				"idMetodoPago": "1",
+				"codMetodoPagoFav":"3",
+				"subtituloConfirma": "",
+				"moneda2": "Claro Puntos",
+				"precio": "64",
+				"moneda1": "",
+				"subtitulo": "",
+				"estadoMetodoPago": "1",
+				"catvTitulo": "Paquetes USA + Perú",
+				"codigoPaquete": "D_PQT100MB",
+				"idProductoDeCompraAsociado": "581",
+				"vigencia": "2",
+				"finVigencia": "2099-12-31 00:00:00.0",
+				"tituloProducto": "",
+				"codigoProducto": "MEGAS14",
+				"recomendadoCategoriaOrden": "9999",
+				"idProductoDeCompra": "581",
+				"ordenMetodoPago": "1",
+				"catnId": "2",
+				"catvCodCategoria": "73",
+				"cantidadFavoritos": "3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto": [
+				  {
+					"idCaracteristica": "1061",
+					"estilo": "titulo_rojo",
+					"orden": "1",
+					"idProducto": "581",
+					"nombre": "40GB"
+				  },
+				  {
+					"idCaracteristica": "1062",
+					"estilo": "titulo_gris",
+					"orden": "2",
+					"idProducto": "581",
+					"nombre": "x 30 días"
+				  },
+				  {
+					"idCaracteristica": "1063",
+					"estilo": "titulo_gris",
+					"orden": "3",
+					"idProducto": "581",
+					"nombre": "a S/ 190"
+				  }
+				],
+				"nombreProducto": "40GB x días a S/ 190"
+			  },
+			 {
+				"idTipoLinea":"1",
+				"flagValidarSaldoPontis":"1",
+				"nombreMetodoPago":"Saldo de Recarga",
+				"iniVigencia":"2018-03-08 00:00:00.0",
+				"codTipoLinea":"1",
+				"tituloConfirma":"Ahora Claro te Presta 50 megas para que sigas navegando",
+				"tipoVigencia":"DIAS",
+				"idMetodoPago":"24",
+				"subtituloConfirma":"\u00a1Tu Pr\u00e9stamo de 50 MB fue activado con \u00e9xito!",
+				"precio":"2.5",
+				"moneda1":"S\/",
+				"subtitulo":"",
+				"estadoMetodoPago":"1",
+				"catvTitulo":"Prestame",
+				"codigoPaquete":"SIN CODIGO",
+				"idProductoDeCompraAsociado":"261",
+				"vigencia":"2",
+				"finVigencia":"2099-09-30 00:00:00.0",
+				"tituloProducto":"",
+				"codigoProducto":"PRESTAME-3",
+				"recomendadoCategoriaOrden":"3",
+				"idProductoDeCompra":"261",
+				"ordenMetodoPago":"1",
+				"catnId":"545",
+				"catvCodCategoria":"98",
+				"cantidadFavoritos":"3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto":[
+				   {
+					  "idCaracteristica":"501",
+					  "estilo":"titulo_rojo",
+					  "orden":"1",
+					  "idProducto":"261",
+					  "nombre":"Claro te PRESTA 50 MB x"
+				   },
+				   {
+					  "idCaracteristica":"502",
+					  "estilo":"titulo_gris",
+					  "orden":"2",
+					  "idProducto":"261",
+					  "nombre":"x 30 d\u00eda"
+				   }
+				],
+				"nombreProducto":"Pr\u00e9stamo de 50 MB a S\/2.50"
+			 },
+			 {
+				"idTipoLinea": "2",
+				"flagValidarSaldoPontis": "1",
+				"nombreMetodoPago": "Claro Puntos",
+				"iniVigencia": "2017-09-01 00:00:00.0",
+				"codTipoLinea": "2",
+				"tipoVigencia": "DIAS",
+				"idMetodoPago": "21",
+				"moneda2": "Claro Puntos",
+				"precio": "22",
+				"subtitulo": "",
+				"estadoMetodoPago": "1",
+				"catvTitulo": "Redes Sociales",
+				"codigoPaquete": "R_SOCIAL1D",
+				"idProductoDeCompraAsociado": "137",
+				"vigencia": "1",
+				"finVigencia": "2099-09-30 00:00:00.0",
+				"tituloProducto": "",
+				"codigoProducto": "",
+				"recomendadoCategoriaOrden": "9999",
+				"idProductoDeCompra": "137",
+				"ordenMetodoPago": "1",
+				"catnId": "3",
+				"catvCodCategoria": "10",
+				"cantidadFavoritos": "3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto": [
+				  {
+					"idCaracteristica": "281",
+					"estilo": "titulo_rojo",
+					"orden": "1",
+					"idProducto": "137",
+					"nombre": "Facebook, Twitter"
+				  },
+				  {
+					"idCaracteristica": "198",
+					"estilo": "titulo_rojo",
+					"orden": "2",
+					"idProducto": "137",
+					"nombre": "y Whatsapp"
+				  },
+				  {
+					"idCaracteristica": "199",
+					"estilo": "titulo_gris",
+					"orden": "3",
+					"idProducto": "137",
+					"nombre": "x 1 d\u00eda"
+				  },
+				  {
+					"idCaracteristica": "200",
+					"estilo": "titulo_gris",
+					"orden": "4",
+					"idProducto": "137",
+					"nombre": "a S/ 1"
+				  }
+				],
+				"nombreProducto": "Facebook, Twitter y Whatsapp x1 d\u00eda a S/1"
+			  },
+			 {
+				"idTipoLinea":"1",
+				"flagValidarSaldoPontis":"1",
+				"nombreMetodoPago":"Saldo de Recarga",
+				"iniVigencia":"2020-11-30 00:00:00.0",
+				"codTipoLinea":"1",
+				"tituloConfirma":"Ahora Claro te Presta 2 soles",
+				"tipoVigencia":"DIAS",
+				"idMetodoPago":"24",
+				"subtituloConfirma":"\u00a1Tu Pr\u00e9stamo de 2 soles fue activado con \u00e9xito!",
+				"precio":"2.5",
+				"moneda1":"S\/",
+				"estadoMetodoPago":"1",
+				"catvTitulo":"Prestame",
+				"codigoPaquete":"SIN CODIGO",
+				"idProductoDeCompraAsociado":"5582",
+				"vigencia":"30",
+				"finVigencia":"2099-12-30 00:00:00.0",
+				"tituloProducto":"",
+				"codigoProducto":"PRESTAME-2",
+				"recomendadoCategoriaOrden":"3",
+				"idProductoDeCompra":"5582",
+				"ordenMetodoPago":"1",
+				"catnId":"545",
+				"catvCodCategoria":"98",
+				"cantidadFavoritos":"3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto":[
+				   {
+					  "idCaracteristica":"9143",
+					  "estilo":"titulo_rojo",
+					  "orden":"1",
+					  "idProducto":"5582",
+					  "nombre":"Claro te PRESTA S\/ 2.00 x"
+				   },
+				   {
+					  "idCaracteristica":"9144",
+					  "estilo":"titulo_gris",
+					  "orden":"2",
+					  "idProducto":"5582",
+					  "nombre":"x 30 d\u00eda"
+				   }
+				],
+				"nombreProducto":"Claro te presta S\/ 2.00"
+			 },
+			{
+			  "idTipoLinea": "1",
+			  "flagValidarSaldoPontis": "1",
+			  "nombreMetodoPago": "Saldo de Recarga",
+			  "iniVigencia": "2018-07-01 00:00:00.0",
+			  "codTipoLinea": "1",
+			  "tipoVigencia": "DIAS",
+			  "idMetodoPago": "24",
+			  "precio": "10",
+			  "moneda1": "S/",
+			  "estadoMetodoPago": "1",
+			  "catvTitulo": "Paquetes Recomendados",
+			  "codigoPaquete": "BundlePaqRec10",
+			  "idProductoDeCompraAsociado": "356",
+			  "vigencia": "8",
+			  "finVigencia": "2099-07-30 00:00:00.0",
+			  "tituloProducto": "",
+			  "codigoProducto": "",
+			  "recomendadoCategoriaOrden": "1",
+			  "idProductoDeCompra": "356",
+			  "ordenMetodoPago": "1",
+			  "catnId": "89",
+			  "catvCodCategoria": "99",
+			  "cantidadFavoritos": "3",
+			  "flagPontis":"0",
+			  "listaCaracteristicasProducto": [
+				{
+				  "idCaracteristica": "546",
+				  "estilo": "titulo_blanco_recomendado_22",
+				  "orden": "1",
+				  "idProducto": "356",
+				  "nombre": "Por S/ 10 = 102 Días"
+				},
+				{
+				  "idCaracteristica": "547",
+				  "estilo": "titulo_blanco_recomendado_22",
+				  "orden": "2",
+				  "idProducto": "356",
+				  "nombre": "ILIMITADO"
+				},
+				{
+				  "idCaracteristica": "548",
+				  "estilo": "titulo_blanco_recomendado_22",
+				  "orden": "3",
+				  "idProducto": "356",
+				  "nombre": "Llamadas, Facebook"
+				},
+				{
+				  "idCaracteristica": "549",
+				  "estilo": "titulo_blanco_recomendado_20",
+				  "orden": "4",
+				  "idProducto": "356",
+				  "nombre": "Messenger, Twitter, Whatsapp"
+				},
+				{
+				  "idCaracteristica": "550",
+				  "estilo": "titulo_blanco_recomendado_20",
+				  "orden": "5",
+				  "idProducto": "356",
+				  "nombre": ""
+				},
+				{
+					"idCaracteristica": "550",
+					"estilo": "titulo_gris_recomendado_20",
+					"orden": "5",
+					"idProducto": "356",
+					"nombre": "x 10 dias"
+				},
+				{
+					"idCaracteristica": "550",
+					"estilo": "titulo_gris_recomendado_20",
+					"orden": "5",
+					"idProducto": "356",
+					"nombre": "S/ 10"
+				  }
+			  ],
+			  "nombreProducto": "10 Días ILIMITADO Llamadas, Facebook, Messenger, Twitter, Whatsapp"
+			},
+			{
+				"idTipoLinea":"1",
+				"flagValidarSaldoPontis":"1",
+				"nombreMetodoPago":"Saldo de Recarga",
+				"iniVigencia":"2019-03-21 00:00:00.0",
+				"codTipoLinea":"1",
+				"tituloConfirma":"Ahora Claro te Presta 50 megas para que sigas navegando",
+				"tipoVigencia":"DIAS",
+				"idMetodoPago":"24",
+				"subtituloConfirma":"\u00a1Tu Pr\u00e9stamo de 50 MB fue activado con \u00e9xito!",
+				"precio":"2.5",
+				"moneda1":"S\/",
+				"subtitulo":"",
+				"estadoMetodoPago":"1",
+				"catvTitulo":"Prestame",
+				"codigoPaquete":"SIN CODIGO",
+				"idProductoDeCompraAsociado":"1004",
+				"vigencia":"1",
+				"finVigencia":"2099-07-30 00:00:00.0",
+				"tituloProducto":"",
+				"recomendadoCategoriaOrden":"3",
+				"idProductoDeCompra":"1004",
+				"ordenMetodoPago":"1",
+				"catnId":"545",
+				"catvCodCategoria":"98",
+				"cantidadFavoritos":"3",
+				"flagPontis":"0",
+				"listaCaracteristicasProducto":[
+				   {
+					  "idCaracteristica":"807",
+					  "estilo":"titulo_rojo",
+					  "orden":"1",
+					  "idProducto":"1004",
+					  "nombre":"Claro te PRESTA 50 MB"
+				   },
+				   {
+					  "idCaracteristica":"808",
+					  "estilo":"titulo_gris",
+					  "orden":"2",
+					  "idProducto":"1004",
+					  "nombre":"x 1 d\u00eda"
+				   }
+				],
+				"nombreProducto":"Pr\u00e9stamo de 50 MB"
+			 },
+			{
+			  "idTipoLinea": "1",
+			  "flagValidarSaldoPontis": "1",
+			  "nombreMetodoPago": "Saldo de Recarga",
+			  "iniVigencia": "2017-09-01 00:00:00.0",
+			  "codTipoLinea": "1",
+			  "tipoVigencia": "DIAS",
+			  "idMetodoPago": "24",
+			  "precio": "5",
+			  "moneda1": "S/",
+			  "subtitulo": "",
+			  "estadoMetodoPago": "1",
+			  "catvTitulo": "Paquetes Recomendados",
+			  "codigoPaquete": "92002524;PONTIS_PQT_SMSVOZILIM_5S",
+			  "idProductoDeCompraAsociado": "141",
+			  "vigencia": "3",
+			  "finVigencia": "2099-09-30 00:00:00.0",
+			  "tituloProducto": "Pontis_CP_Chevere_5s",
+			  "codigoProducto": "2_025_UC_Dev_Prob_Spend_MinSMS_1stTime_3d",
+			  "recomendadoCategoriaOrden": "2",
+			  "idProductoDeCompra": "3098",
+			  "ordenMetodoPago": "1",
+			  "catnId": "622",
+			  "catvCodCategoria": "98",
+			  "cantidadFavoritos": "3",
+			  "flagPontis":"1",
+			  "listaCaracteristicasProducto": [
+				{
+				  "idCaracteristica": "2437",
+				  "estilo": "titulo_rojo",
+				  "orden": "1",
+				  "idProducto": "3098",
+				  "nombre": "Ilimitado"
+				},
+				{
+				  "idCaracteristica": "2438",
+				  "estilo": "titulo_gris",
+				  "orden": "2",
+				  "idProducto": "3098",
+				  "nombre": "x 3 días"
+				},
+				{
+				  "idCaracteristica": "2439",
+				  "estilo": "titulo_gris",
+				  "orden": "3",
+				  "idProducto": "3098",
+				  "nombre": "a S/ 5"
+				}
+			  ],
+			  "nombreProducto": "Llamadas Ilimitadas x3 días a S/5"
+			},
+			{
+			  "idTipoLinea": "1",
+			  "flagValidarSaldoPontis": "1",
+			  "nombreMetodoPago": "Saldo de Recarga",
+			  "iniVigencia": "2017-09-01 00:00:00.0",
+			  "codTipoLinea": "1",
+			  "tipoVigencia": "DIAS",
+			  "idMetodoPago": "24",
+			  "precio": "10",
+			  "moneda1": "S/",
+			  "subtitulo": "",
+			  "estadoMetodoPago": "1",
+			  "catvTitulo": "Paquetes Recomendados",
+			  "codigoPaquete": "92002525;PONTIS_PQT_SMSVOZILIM_10S",
+			  "idProductoDeCompraAsociado": "142",
+			  "vigencia": "6",
+			  "finVigencia": "2099-09-30 00:00:00.0",
+			  "tituloProducto": "Pontis_CP_Chevere_10s",
+			  "codigoProducto": "2_026_UC_Dev_Prob_Spend_MinSMS_1stTime_6d",
+			  "recomendadoCategoriaOrden": "2",
+			  "idProductoDeCompra": "4514",
+			  "ordenMetodoPago": "1",
+			  "catnId": "622",
+			  "catvCodCategoria": "97",
+			  "cantidadFavoritos": "3",
+			  "flagPontis":"1",
+			  "listaCaracteristicasProducto": [
+				{
+				  "idCaracteristica": "6500",
+				  "estilo": "titulo_rojo",
+				  "orden": "1",
+				  "idProducto": "4514",
+				  "nombre": "Ilimitado"
+				},
+				{
+				  "idCaracteristica": "6501",
+				  "estilo": "titulo_gris",
+				  "orden": "2",
+				  "idProducto": "4514",
+				  "nombre": "x 6 días"
+				},
+				{
+				  "idCaracteristica": "6502",
+				  "estilo": "titulo_gris",
+				  "orden": "3",
+				  "idProducto": "4514",
+				  "nombre": "a S/ 10"
+				}
+			  ],
+			  "nombreProducto": "Llamadas Ilimitadas x6 días a S/10"
+			},
+			{
+			  "idTipoLinea": "1",
+			  "flagValidarSaldoPontis": "1",
+			  "nombreMetodoPago": "Saldo de Recarga",
+			  "iniVigencia": "2017-09-01 00:00:00.0",
+			  "codTipoLinea": "1",
+			  "tipoVigencia": "DIAS",
+			  "idMetodoPago": "24",
+			  "precio": "3",
+			  "moneda1": "S/",
+			  "subtitulo": "",
+			  "estadoMetodoPago": "1",
+			  "catvTitulo": "Paquetes Recomendados",
+			  "codigoPaquete": "92002523;PONTIS_PQT_SMSVOZILIM_3S",
+			  "idProductoDeCompraAsociado": "140",
+			  "vigencia": "1",
+			  "finVigencia": "2099-09-30 00:00:00.0",
+			  "tituloProducto": "Pontis_CP_Chevere_3s",
+			  "codigoProducto": "2_040_UC_Dev_Prob_Spend_MinSMS_1stTime_1d",
+			  "recomendadoCategoriaOrden": "2",
+			  "idProductoDeCompra": "4509",
+			  "ordenMetodoPago": "1",
+			  "catnId": "622",
+			  "catvCodCategoria": "97",
+			  "cantidadFavoritos": "3",
+			  "flagPontis":"1",
+			  "listaCaracteristicasProducto": [
+				{
+				  "idCaracteristica": "6485",
+				  "estilo": "titulo_rojo",
+				  "orden": "1",
+				  "idProducto": "4509",
+				  "nombre": "Ilimitado"
+				},
+				{
+				  "idCaracteristica": "6486",
+				  "estilo": "titulo_gris",
+				  "orden": "2",
+				  "idProducto": "4509",
+				  "nombre": "x 1 día"
+				},
+				{
+				  "idCaracteristica": "6487",
+				  "estilo": "titulo_gris",
+				  "orden": "3",
+				  "idProducto": "4509",
+				  "nombre": "a S/ 3"
+				}
+			  ],
+			  "nombreProducto": "Llamadas Ilimitadas x1 día a S/3"
+			}
+		  ],
+		  "defaultServiceResponse": {
+			"idSesion": "80e0f1f8-31a4-46a5-9bc3-fc4604dc0a8f",
+			"mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+			"idTransaccional": "0c72a05f-c475-4675-a650-c12ef99306d1",
+			"idRespuesta": "0"
+		  }
+		},
+		"Header": {
+		  "HeaderResponse": {
+			"status": {
+			  "type": "0",
+			  "code": "0",
+			  "msgid": "DPS02-f812d9e3-2927-471d-9bae-fe2fe26b7d20",
+			  "message": "EJECUCIÓN CON ÉXITO"
+			},
+			"pid": "f5bc88de-f0ac-4ae1-bb53-cdaa57a1e2cd",
+			"consumer": "",
+			"timestamp": "2020-12-01T03:17:25-05:00",
+			"VarArg": ""
+		  }
+		}
+	  }
+	}
+  }

@@ -1,0 +1,26 @@
+{
+    "comunResponseType": {
+       "MessageResponse": {
+          "Header": {
+             "HeaderResponse": {
+                "consumer": "",
+                "pid": "bef2aaac-a899-4fc6-b2fd-af1ffc77306c",
+                "timestamp": "2019-10-21T15:51:39-05:00",
+                "VarArg": "",
+                "status": {
+                   "type": "0",
+                   "code": "0",
+                   "message": "EJECUCIÓN CON ÉXITO",
+                   "msgid": "DPS01-95a92907-9710-4495-9c7a-efc974d8c924"
+                }
+             }
+          },
+          "Body": {
+             "defaultServiceResponse": {
+                "idRespuesta": "0",
+                "mensaje": "OPERACION EXITOSA"
+             }
+          }
+       }
+    }
+ }

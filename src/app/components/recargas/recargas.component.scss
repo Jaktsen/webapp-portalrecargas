@@ -1,0 +1,558 @@
+.input-icon {
+    position: relative;
+  }
+  
+  .input-icon > i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 20%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+      font-style: normal;
+      color: black;
+      font-size: 14px;
+  }
+  
+  .input-icon > input {
+    padding-left: 25px;
+      padding-right: 0;
+      text-align: left;
+  }
+
+.paquetes-deshabilitados {
+    padding: 32px 0px 60px 0px;
+    max-width: 766px;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+
+    @media screen and (max-width: 600px) {
+        padding: 32px 16px 16px 16px;
+        height: auto;
+        margin-left:0px;
+    }
+
+    .titulo {
+        font-size: 12px;
+        font-weight: bold;
+        color: #595959;
+    }
+
+    .paquetes-box {
+        width: 100%;
+        display: inline-block;
+
+        .paquete-card {
+            height: 68px;
+            float: left;
+            width: 30%;
+            margin-right: 3%;
+            border-radius: 10px;
+            box-shadow: 0 0 4px 0 #d2d9e1;
+            border: solid 1px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 1% 0px;
+            margin-top: 16px;
+            background-color: #D2D9E1;
+
+            .vigen {
+                font-size: 10px;
+                color: #abb7c4;
+            }
+
+            .nombre {
+                color: #abb7c4;
+            }
+
+            .titulo_gris {
+                font-size: 10px;
+                color: #abb7c4;
+            }
+
+            .titulo_rojo {
+                color: #abb7c4;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 47%;
+                margin-top: 16px;
+                padding: 5% 0px;
+                height: 116px;
+            }
+        }
+    }
+
+    .input-box {
+        width: 30%;
+        border-radius: 10px;
+        background-color: #D2D9E1;
+        box-shadow: 0 0 4px 0 #d2d9e1;
+        margin-top: 16px;
+        font-size: 10px;
+        padding: 12px 20px;
+        color: #abb7c4;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        .texto-input {
+            margin: 0px;
+        }
+
+        .left-box {
+            margin: 4px 0;
+
+            .input-num {
+                border: none;
+                border-radius: 4px;
+                margin-right: 8px;
+                margin-bottom: 10px;
+                width:100%;
+                outline: none;
+                
+                border-bottom: 1px solid #2197AE;
+                &:disabled {
+                    background-color: #ffffff;
+                }
+            }
+    
+            .buton-ingresar {
+                width: 60px;
+                height: 16px;
+                border-radius: 20px;
+                font-size: 10px;
+                font-weight: 500;
+                text-align: center;
+                border: none;
+                color: #abb7c4;
+                background-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.paquetes-habilitados {
+    padding: 32px 0px 32px 0px;
+    max-width: 776px;
+    width: 100%;
+    margin-bottom: 32PX;
+    border-bottom: 1px solid #e3e3e3;
+
+    @media screen and (max-width: 600px) {
+        padding: 32px 16px 16px 16px;
+        height: auto;
+        margin-left:0px;
+    }
+
+    .titulo {
+        font-size: 12px;
+        font-weight: bold;
+        color: #595959;
+    }
+
+    .paquetes-box {
+        width: 100%;
+        display: inline-block;
+
+        .paquete-card {
+            height: 68px;
+            float: left;
+            width: 30%;
+            margin-right: 3%;
+            border-radius: 10px;
+            box-shadow: 0 0 4px 0 #d2d9e1;
+            border: solid 1px rgba(0, 0, 0, 0.03);
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 0px;
+            margin-top: 16px;
+            background-color: #FFFFFF;
+            cursor: pointer;
+
+            .vigen {
+                font-size: 10px;
+                color: #212121;
+            }
+
+            .nombre {
+                color: #da272c;
+                font-size: 16px;
+            }
+
+            .titulo_rojo {
+                color: #da272c;
+                font-size: 16px;
+            }
+
+            .titulo_gris {
+                font-size: 10px;
+                color: #212121;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 47%;
+                margin-top: 16px;
+                padding: 5% 0px;
+                height: 116px;
+            }
+        }
+    }
+
+    .input-box {
+        width: 30%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        //border: solid 1px rgba(0, 0, 0, 0.03);
+        //box-shadow: 0 0 4px 0 #d2d9e1;
+        margin-top: 16px;
+        font-size: 10px;
+        //padding: 12px 20px;
+        color: #212121;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        .texto-input {
+            margin: 0px;
+        }
+
+        .left-box {
+            margin: 4px 0;
+
+            .input-num {
+                //border: solid 1px rgba(0, 0, 0, 0.2);
+                //border-radius: 4px;
+                margin-right: 8px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                width:100%;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #2197AE;
+            }
+    
+            .buton-ingresar {
+                width: 78px;
+                height: 25px;
+                border-radius: 20px;
+                font-size: 13px;
+                font-weight: 500;
+                text-align: center;
+                border: none;
+                color: #ffffff;
+                background-color: #2197ae;
+            }
+        }
+    }
+}
+
+.paso {
+    font-size: 12px;
+    font-weight: bold;
+    color: #abafb0;
+    margin: 0 0 4px 0;
+}
+
+.titulo {
+    font-size: 17px;
+    color: #595959;
+    margin: 0 0 16px 0;
+}
+
+
+.new-card-price{
+    box-sizing: border-box;
+    width: 100%;
+    height: 162px;
+    border-radius: 8px;
+}
+
+
+.new-box{
+    height: 110px;
+    //background: #EE122C;
+    background-color: #f9f9f9;
+    border-radius: 8px 8px 0px 0px;
+    //border: 0.5px 0.5px 0px 0.5px solid #E5E7E8;
+    //box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+    align-items: center;
+}
+.new-box1{
+    height: 110px;
+    width: 100%;
+    //background: #EE122C;
+    border-radius: 8px 8px 0px 0px;
+    //border: 0.5px 0.5px 0px 0.5px solid #E5E7E8;
+    //box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;    
+    align-items: center;
+}
+
+.new-title{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.002em;
+    margin: 0px 0px 10px 0px;
+    width: 90px;
+}
+
+.new-description{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    border: 1px solid #E5E7E8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+.simbolo-precio{
+    width: 20px;
+    height: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+}
+
+.nuevo-precio{
+    width: 70px;
+    height: 70px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 70px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+
+    @media screen and (max-width: 600px){
+ 
+        font-size: 71px;
+        line-height: 85px;
+    }
+}
+
+.vigencia{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.002em;
+    color: #595959;
+    float: left;
+}
+
+.cantidad-vigencia{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #EE122C;
+    float: left;
+
+
+       .conside{
+        cursor: pointer;
+        float: right;
+        padding-right: 5%;
+        color: #2197ae !important;
+        text-decoration-line: underline;         
+        font-size: 15px;
+        
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+}
+
+
+.text{
+    width: 100px !important;
+}
+
+.text1{
+    width: 120px !important;
+}
+
+.nuevo-boton{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    @media screen and (max-width: 600px) {
+        right: 27px;
+    }
+   
+}
+
+.nuevo-boton:checked:before{
+    background-color:green;
+    }
+
+    input[type=checkbox] {
+        display:none; 
+    }
+    input[type=checkbox] + label {
+        cursor: pointer;
+    }
+    label:before {
+        content: "";
+        background: transparent;
+        border: 1px solid #E5E7E8;
+        border-radius: 2px;
+        display: inline-block;
+        height: 24px;
+        background: rgba(255, 255, 255, 0.5);
+        width: 24px;
+    }
+    input[type=checkbox]:checked + label:before {
+        background: #0FBDDF;
+        border-radius: 1px;
+        height: 24px;
+        width: 24px;
+        text-align: center;
+        content: '✓';
+        color: white;
+    }
+    
+
+    .disabled{
+        filter: grayscale(1);
+    }
+
+    .text-disabled{
+        color: #595959 !important;
+    }
+
+    .border-disabled{
+        border-bottom: 1px solid #595959 !important;
+    }
+    .button-disabled{
+        
+        background-color: #595959 !important;
+    }
+
+
+    .modal-generico {
+
+
+        .modal-white {
+            max-width: 298px;
+            min-height: 100px;
+            padding: 24px 16px;
+            background: #4a4a4a;
+
+        }
+           
+        #modalGamerMobile {
+            width: 298px;
+            height: 468px;
+            position: absolute;
+            top: calc(50% - 230px);
+            left: calc(50% - 144px);
+            margin: 0px;
+            padding: 0px;
+            display: none;
+            border-radius: 20px;
+    
+            .imagenMobile {
+                border-radius: 20px 20px 20px 20px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    //height: 480px;
+                    border-radius: 20px 20px 20px 20px;
+                }
+    
+                .cerrar {
+                    //background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L18 18' stroke='%232197AE' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M18 6L6 18' stroke='%232197AE' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A") no-repeat;              
+                    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOtJREFUSEvtlEEKwzAMBHf/0UL7ix6bl/bYZ7TQj+SQZwRcFGQwRpaUQ24J5BLLO/JmZeLghwfr4wSEDpsWlVI+AG4AJpKzp1JKkbqX1JO897Ue4AlAxIeQRlxqvySnLEC6qqcwIZ34bHUvsGGKVMCEZMVdgCxaELVAPN8sHHVerQrnoIMsAOR9ZMTDE9QuFPIDcNFvC8lrmFHvH7SbFfDWzmXJTVe7N2tR9VzsWXVGUhAXYKXFS5dlWRRTMy17IKNJruM/jGIWEl4VXs57yJ67aLMmGqJmGKUe6bsok+9sTRjTrNCo7gSEDv4BH01+GVRjEvEAAAAASUVORK5CYII=") no-repeat;              
+                    width: 24px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    height: 24px;
+                }
+                .cerrar1 {                   
+                    width: 24px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    background-color: #212121;
+                    height: 24px;
+                    border-radius: 20px;
+                }
+            }
+        }
+             
+        #modalGamerDesk {
+            width: 298px;
+            height: 468px;
+            position: absolute;
+            top: calc(50% - 230px);
+            left: calc(50% - 144px);
+            margin: 0px;
+            padding: 0px;
+            display: none;
+            border-radius: 20px;
+    
+            .imagenMobile {
+                border-radius: 20px 20px 20px 20px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    //height: 480px;
+                    border-radius: 20px 20px 20px 20px;
+                }
+    
+                .cerrar {
+                    //background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L18 18' stroke='%232197AE' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M18 6L6 18' stroke='%232197AE' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A") no-repeat; 
+                    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOtJREFUSEvtlEEKwzAMBHf/0UL7ix6bl/bYZ7TQj+SQZwRcFGQwRpaUQ24J5BLLO/JmZeLghwfr4wSEDpsWlVI+AG4AJpKzp1JKkbqX1JO897Ue4AlAxIeQRlxqvySnLEC6qqcwIZ34bHUvsGGKVMCEZMVdgCxaELVAPN8sHHVerQrnoIMsAOR9ZMTDE9QuFPIDcNFvC8lrmFHvH7SbFfDWzmXJTVe7N2tR9VzsWXVGUhAXYKXFS5dlWRRTMy17IKNJruM/jGIWEl4VXs57yJ67aLMmGqJmGKUe6bsok+9sTRjTrNCo7gSEDv4BH01+GVRjEvEAAAAASUVORK5CYII=") no-repeat;              
+                    width: 24px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    height: 24px;
+                }
+                .cerrar1 {
+                    width: 24px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    height: 24px;
+                    border-radius: 20px;
+                }
+            }
+    
+        }
+    
+        @media screen and (max-width: 1999px) {
+            #modalGamerDesk { display: none; }
+            #modalGamerMobile { display: inline-block; }
+        }
+    }
+    

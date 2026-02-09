@@ -1,0 +1,11 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "defaultServiceResponse": {
+                    "idRespuesta": "4"
+                }
+            }
+        }
+    } 
+}

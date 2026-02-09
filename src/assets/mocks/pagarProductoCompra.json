@@ -1,0 +1,56 @@
+{
+    "comunResponseType": {
+        "MessageResponse": {
+            "Body": {
+                "horaCompra": "2021-02-09T13:18:11.160-05:00",
+                "puntosPagados": "0",
+                "simboloMoneda": "S\/",
+                "type": "pagarProductoDeCompraResponse",
+                "fechaCompra": "2021-02-09T13:18:11.160-05:00",
+                "tiempoActualizacion": "24 horas",
+                "defaultServiceResponse": {
+                    "idSesion": "11118042-b811-4772-9be5-049a60331364",
+                    "mensaje": "Consulta con \u00e9xito, se proces\u00f3 correctamente la solicitud.",
+                    "mensajeAltaVelocidadError": "Podras comprar un paquete ALTA VELOCIDAD, cuando hayas degradado la velocidad de tu plan. Mayor info: claro.com.pe",
+                    "idTransaccional": "33f968e6-8c1c-4de2-833d-387423c39619",
+                    "idRespuesta": "0",
+                    "categoria": "3"
+                },
+                "emailNotificacion": "aso****W@fifif.com",
+                "descripcionDeLaCompra": "La transacci\u00f3n fue realizada con \u00e9xito.",
+                "idTransaccionCompra": "MzMzNjM=",
+                "numeroOperacion": "20210209131811",
+                "montoPagado": "100",
+                "fechaVigencia": "2021-03-11T13:18:11.159-05:00",
+                "crearInteracion": "true",
+                "modoPago": "2",
+                "interaccion": {
+                    "vigencia": "1",
+                    "monto": "100",
+                    "telefono": "997352963",
+                    "nombrePaquete": "RI Claro 25 Diario CI",
+                    "vigenciaCcl": "30",
+                    "mbIncluido": "300MB,150MB",
+                    "zonaRoaming": "Zona Claro, Zona Extendida",
+                    "telefonoSeguridad": "997352963"
+                },
+                "horaVigencia": "2021-03-11T13:18:11.159-05:00",
+                "estado": "Activo"
+            },
+            "Header": {
+                "HeaderResponse": {
+                    "status": {
+                        "type": "0",
+                        "code": "0",
+                        "msgid": "DPS01-dd71e8c0-2260-4a19-801c-efc974d8bfa7",
+                        "message": "EJECUCI\u00d3N CON \u00c9XITO"
+                    },
+                    "pid": "e113a9ee-86c1-4c5d-a03f-3d2641906e66",
+                    "consumer": "",
+                    "timestamp": "2021-02-09T12:18:12-06:00",
+                    "VarArg": ""
+                }
+            }
+        }
+    }
+}

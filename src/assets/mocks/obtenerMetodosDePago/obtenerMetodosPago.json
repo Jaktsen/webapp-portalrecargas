@@ -1,0 +1,83 @@
+{
+  "comunResponseType": {
+    "MessageResponse": {
+      "Body": {
+        "flagPaqueteIlimitado": false,
+        "listaMetodoPago": [
+          {
+            "precioMoneda": "0",
+            "estado": "1",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-02-09T13:16:53.914-05:00",
+            "tipoMetodoPago": "1",
+            "msgValidacionClaroClub": "Cuentas con los suficientes Claro Puntos.",
+            "simboloMoneda": "S\/",
+            "cantidad": "10",
+            "totalClaroPuntos": "300",
+            "fechaVigencia": "2021-03-11T13:16:53.914-05:00",
+            "codValidacionClaroClub": "0",
+            "nombre": "Claro Puntos",
+            "idMetodoPago": "21"
+          },
+          {
+            "precioMoneda": "100",
+            "estado": "1",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-02-09T13:16:54.206-05:00",
+            "tipoMetodoPago": "4",
+            "simboloMoneda": "S\/",
+            "cantidad": "100",
+            "fechaVigencia": "2023-03-11T13:16:54.206-05:00",
+            "nombre": "Saldo de Recarga",
+            "idMetodoPago": "24"
+          },
+          {
+            "precioMoneda": "100",
+            "estado": "1",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-02-09T13:16:54.207-05:00",
+            "tipoMetodoPago": "3",
+            "simboloMoneda": "S\/",
+            "cantidad": "100",
+            "fechaVigencia": "2021-03-11T13:16:54.207-05:00",
+            "nombre": "Tarjeta de Cr\u00e9dito\/D\u00e9bito",
+            "idMetodoPago": "23"
+          },
+          {
+            "precioMoneda": "100",
+            "estado": "1",
+            "flagMuestraTerminosCondiciones": "true",
+            "fechaCompra": "2021-02-09T13:16:54.208-05:00",
+            "tipoMetodoPago": "2",
+            "simboloMoneda": "S\/",
+            "cantidad": "100",
+            "fechaVigencia": "2021-03-11T13:16:54.208-05:00",
+            "nombre": "Cargo en Recibo",
+            "idMetodoPago": "22"
+          }
+        ],
+        "defaultServiceResponse": {
+          "idSesion": "11118042-b811-4772-9be5-049a60331364",
+          "mensaje": "Consulta con ?xito, se proces? correctamente la solicitud.",
+          "idTransaccional": "5a03d242-e0d0-4c9e-b375-d6fcef91e4c0",
+          "idRespuesta": "0",
+          "categoria": "3"
+        }
+      },
+      "Header": {
+        "HeaderResponse": {
+          "status": {
+            "type": "0",
+            "code": "0",
+            "msgid": "DPS01-d80d9068-df27-4f02-836b-efc974d8c317",
+            "message": "EJECUCI\u00d3N CON \u00c9XITO"
+          },
+          "pid": "88b5b0fe-d649-4fb0-b2a7-1f4c1acb4f89",
+          "consumer": "",
+          "timestamp": "2021-02-09T12:16:54-06:00",
+          "VarArg": ""
+        }
+      }
+    }
+  }
+}

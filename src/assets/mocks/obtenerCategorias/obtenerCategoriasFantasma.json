@@ -1,0 +1,279 @@
+{
+    "comunResponseType":{
+       "MessageResponse":{
+          "Body":{
+             "listaCategoriasDeCompra":[
+                {
+                   "codCategoria":"9",
+                   "cacnOrden":"1",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Prepago Chevere",
+                   "idCategoriaDeCompra":"1",
+                   "titulo":"Paquetes Ch\u00e9veres",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "codCategoria":"1",
+                   "cacnOrden":"2",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"\/wps\/wcm\/connect\/ac46fba1-e6f1-4cc9-bec5-4bd69edf240f\/icon-compras-internet.png?MOD=AJPERES",
+                   "idCategoriaDeCompra":"2",
+                   "titulo":"Paquetes de Megas",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "codCategoria":"10",
+                   "cacnOrden":"3",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Redes Sociales",
+                   "idCategoriaDeCompra":"3",
+                   "titulo":"Redes Sociales",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "listaSubCategorias":[
+                      {
+                         "canvCodigoCanal":"3",
+                         "listaCaracteristicas":[
+                            {
+                               "idCaracteristica":"1",
+                               "estilo":"titulo_celeste",
+                               "orden":"1",
+                               "nombre":"Llamadas y SMS"
+                            },
+                            {
+                               "idCaracteristica":"2",
+                               "estilo":"titulo_celeste",
+                               "orden":"2",
+                               "nombre":"Ilimitados"
+                            }
+                         ],
+                         "titulo":"Llamadas y SMS Ilimitadas",
+                         "codCategoria":"41",
+                         "precioClaroPuntos":"",
+                         "idCategoriaDeCompra":"11",
+                         "catcEstado":"1",
+                         "catvLogo":"Llamadas y SMS Ilimitadas",
+                         "canvNombre":"PORTALCOMPRAS",
+                         "cacnOrden":"1"
+                      },
+                      {
+                         "canvCodigoCanal":"3",
+                         "listaCaracteristicas":[
+                            {
+                               "idCaracteristica":"525",
+                               "estilo":"titulo_celeste",
+                               "orden":"1",
+                               "nombre":"SMS"
+                            },
+                            {
+                               "idCaracteristica":"526",
+                               "estilo":"titulo_celeste",
+                               "orden":"2",
+                               "nombre":"Ilimitados"
+                            }
+                         ],
+                         "titulo":"Paquetes de SMS",
+                         "codCategoria":"3",
+                         "precioClaroPuntos":"22",
+                         "idCategoriaDeCompra":"6",
+                         "catcEstado":"1",
+                         "catvLogo":"SMS Ilimitados",
+                         "canvNombre":"PORTALCOMPRAS",
+                         "cacnOrden":"5"
+                      }
+                   ],
+                   "canvCodigoCanal":"3",
+                   "titulo":"Paquetes de Minutos y SMS",
+                   "codCategoria":"2",
+                   "idCategoriaDeCompra":"4",
+                   "catcEstado":"1",
+                   "catvLogo":"\/wps\/wcm\/connect\/514d85d1-9072-443d-a320-5910dbdd0529\/icon-compras-voz-sms.png?MOD=AJPERES",
+                   "canvNombre":"PORTALCOMPRAS",
+                   "cacnOrden":"4"
+                },
+                {
+                   "codCategoria":"4",
+                   "cacnOrden":"5",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"\/wps\/wcm\/connect\/cdeeda73-6b01-460a-ab0e-1dd663cc7029\/icon-compras-soles.png?MOD=AJPERES",
+                   "idCategoriaDeCompra":"5",
+                   "titulo":"Recarga de Soles",
+                   "catcEstado":"0",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "codCategoria":"22",
+                   "cacnOrden":"5",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Paquetes Exclusivos Online",
+                   "idCategoriaDeCompra":"603",
+                   "titulo":"Paquetes Exclusivos Online",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "codCategoria":"13",
+                   "cacnOrden":"9",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"\/wps\/wcm\/connect\/bc861a46-0ec9-41be-a191-ba8099e20274\/icon-compras-videos.png?MOD=AJPERES",
+                   "idCategoriaDeCompra":"8",
+                   "titulo":"Alquiler de pel\u00edculas",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "listaSubCategorias":[
+                      {
+                         "canvCodigoCanal":"3",
+                         "listaCaracteristicas":[
+                            {
+                               "idCaracteristica":"205",
+                               "estilo":"titulo_negro",
+                               "orden":"1",
+                               "nombre":"Regala GB"
+                            },
+                            {
+                               "idCaracteristica":"206",
+                               "estilo":"titulo_negro",
+                               "orden":"3",
+                               "nombre":"para navegar"
+                            }
+                         ],
+                         "titulo":"Regala GB para navegar",
+                         "codCategoria":"81",
+                         "precioClaroPuntos":"",
+                         "idCategoriaDeCompra":"185",
+                         "catcEstado":"1",
+                         "catvLogo":"Regala GB para navegar",
+                         "canvNombre":"PORTALCOMPRAS",
+                         "cacnOrden":"1"
+                      },
+                      {
+                         "canvCodigoCanal":"3",
+                         "listaCaracteristicas":[
+                            {
+                               "idCaracteristica":"207",
+                               "estilo":"titulo_negro",
+                               "orden":"2",
+                               "nombre":"Regala"
+                            },
+                            {
+                               "idCaracteristica":"208",
+                               "estilo":"titulo_negro",
+                               "orden":"4",
+                               "nombre":"Redes Sociales"
+                            }
+                         ],
+                         "titulo":"Regala Redes Sociales",
+                         "codCategoria":"82",
+                         "precioClaroPuntos":"",
+                         "idCategoriaDeCompra":"186",
+                         "catcEstado":"1",
+                         "catvLogo":"Regala Redes Sociales",
+                         "canvNombre":"PORTALCOMPRAS",
+                         "cacnOrden":"2"
+                      }
+                   ],
+                   "canvCodigoCanal":"3",
+                   "titulo":"Gift Card",
+                   "codCategoria":"80",
+                   "idCategoriaDeCompra":"184",
+                   "catcEstado":"1",
+                   "catvLogo":"Gift Card",
+                   "canvNombre":"PORTALCOMPRAS",
+                   "cacnOrden":"11"
+                },
+                {
+                   "codCategoria":"98",
+                   "cacnOrden":"12",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Prestame",
+                   "idCategoriaDeCompra":"545",
+                   "titulo":"Prestame",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "listaSubCategorias":{
+                      "canvCodigoCanal":"3",
+                      "listaCaracteristicas":[
+                         {
+                            "idCaracteristica":"493",
+                            "estilo":"titulo_negro",
+                            "orden":"1",
+                            "nombre":"Canjea"
+                         },
+                         {
+                            "idCaracteristica":"494",
+                            "estilo":"titulo_negro",
+                            "orden":"2",
+                            "nombre":"Claro Evento 2"
+                         }
+                      ],
+                      "titulo":"Evento 2",
+                      "codCategoria":"17",
+                      "precioClaroPuntos":"",
+                      "idCategoriaDeCompra":"529",
+                      "catcEstado":"1",
+                      "catvLogo":"Evento 2",
+                      "canvNombre":"PORTALCOMPRAS",
+                      "cacnOrden":"2"
+                   },
+                   "canvCodigoCanal":"3",
+                   "titulo":"Eventos Claro Club",
+                   "codCategoria":"15",
+                   "idCategoriaDeCompra":"527",
+                   "catcEstado":"1",
+                   "catvLogo":"Eventos Claro Club",
+                   "canvNombre":"PORTALCOMPRAS",
+                   "cacnOrden":"13"
+                },
+                {
+                   "codCategoria":"97",
+                   "cacnOrden":"13",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Paquetes Recomendados Pontis",
+                   "idCategoriaDeCompra":"622",
+                   "titulo":"Paquetes Recomendados Pontis",
+                   "catcEstado":"0",
+                   "canvNombre":"PORTALCOMPRAS"
+                },
+                {
+                   "codCategoria":"99",
+                   "cacnOrden":"99",
+                   "canvCodigoCanal":"3",
+                   "catvLogo":"Paquetes Recomendados",
+                   "idCategoriaDeCompra":"89",
+                   "titulo":"Paquetes Recomendados",
+                   "catcEstado":"1",
+                   "canvNombre":"PORTALCOMPRAS"
+                }
+             ],
+             "defaultServiceResponse":{
+                "idSesion":"8b3c49e0-01b9-461f-8d24-dcea262e3520",
+                "mensaje":"Consulta con ?xito, se proces? correctamente la solicitud.",
+                "idTransaccional":"4b47e82d-e487-4e2c-8b1c-117337bf2cbc",
+                "idRespuesta":"0"
+             }
+          },
+          "Header":{
+             "HeaderResponse":{
+                "status":{
+                   "type":"0",
+                   "code":"0",
+                   "msgid":"DPS01-ee6ca6bc-421d-4c88-a8fe-efc974d813ec",
+                   "message":"EJECUCI\u00d3N CON \u00c9XITO"
+                },
+                "pid":"f681e644-b953-4f7e-b0af-b6553958f3b9",
+                "consumer":"",
+                "timestamp":"2021-03-02T10:16:36-06:00",
+                "VarArg":""
+             }
+          }
+       }
+    }
+ }

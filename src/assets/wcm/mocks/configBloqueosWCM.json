@@ -1,0 +1,91 @@
+var configBloqueos = 
+[
+	{
+           'Codigos': [
+								{
+									  'M1':[
+											{ codigo :'BLOQ_ROB', descripcion: 'Bloqueo por Robo'},
+											{ codigo :'2033', descripcion: 'Bloqueo por Robo'},
+											{ codigo :'BLOQ_PER', descripcion:  'Bloqueo por Perdida'},
+											{ codigo :'2034', descripcion:  'Bloqueo por Perdida'},
+											{ codigo :'BLOQ_FRA', descripcion:  'Bloqueo por Fraude'},
+											{ codigo :'2043', descripcion:  'Bloqueo por Fraude'},
+											{ codigo :'BLOQ_APC', descripcion:  'Bloqueo a Pedido del Cliente'},
+											{ codigo :'2140', descripcion:  'Bloqueo a Pedido del Cliente'},
+											{ codigo :'BLOQ_PRO', descripcion:  'Bloqueo por Uso Prohibido'},
+											{ codigo :'2048', descripcion:  'Bloqueo por Uso Prohibido'},
+											{ codigo :'BLOQ_S20', descripcion:  'Bloqueo S20 x fraude'},
+											{ codigo :'2045', descripcion:  'Bloqueo S20 x fraude'},
+											{ codigo :'BLOQ_S10',  descripcion: 'Bloqueo S10 x fraude ( antes del BL S20)'},
+                                            { codigo :'BLOQ_DSC',  descripcion: 'Bloqueo por Desconocimiento'},
+											{ codigo :'2041',  descripcion: 'Bloqueo por Desconocimiento'},
+											{ codigo :'BLOQ_OSP',  descripcion: 'Bloqueo OSP'},
+											{ codigo :'2144',  descripcion: 'Bloqueo OSP'}
+							
+											]
+								},
+								{
+									  'M2':[
+											{ codigo :'BLOQ_COB', descripcion:'Bloqueo por Cobranzas'},
+											{ codigo :'2036', descripcion:'Bloqueo por Cobranzas'},
+											{ codigo :'BLOQ_FIN', descripcion:'Bloqueo por Financiamiento'},  
+											{ codigo :'2040', descripcion:'Bloqueo por Financiamiento'},                                                                                       
+											{ codigo :'BLOQ_SAC', descripcion:'Bloqueo por SAC'},
+											{ codigo :'2132', descripcion:'Bloqueo por SAC'},
+                                            { codigo :'BLOQ_SES', descripcion:'Bloqueo por SES'},
+											{ codigo :'2136', descripcion:'Bloqueo por SES'},
+											{ codigo :'BLOQ_COV', descripcion:'Bloqueo COV'},
+											{ codigo :'2134', descripcion:'Bloqueo COV'},
+                                            { codigo :'BLOQ_OLD', descripcion:'Bloqueo OLD'},
+											{ codigo :'2142', descripcion:'Bloqueo OLD'}
+										    ]
+								},
+								{
+									  'M3':[
+											{ codigo :'BLOQ_LC', descripcion: 'Bloqueo por Límite de Crédito'},
+											{ codigo :'2138', descripcion: 'Bloqueo por Límite de Crédito'},
+											{ codigo :'SUSP_COB', descripcion: 'Bloqueo Linea por Cobranza - Cobranza - Total'},
+											{ codigo :'2035', descripcion: 'Bloqueo Linea por Cobranza - Cobranza - Total'}
+										    ]
+								},
+								{
+									  'M4':[
+											{ codigo: 'SUSP_APC' , descripcion: 'Suspención Pedido del Cliente - Otros'},
+											{ codigo: '2007' , descripcion: 'Suspención Pedido del Cliente - Otros'},
+											{ codigo: '2006' , descripcion: 'Suspención Pedido del Cliente - Servicio Técnico'},
+											{ codigo: 'SUSP_FIN' , descripcion: 'Suspención por Cobranza - Financiamiento - Total'},
+											{ codigo: '2039' , descripcion: 'Suspención por Cobranza - Financiamiento - Total'},
+											{ codigo: 'SUSP_FRA' , descripcion: 'Suspension FRA'},
+											{ codigo: '2146' , descripcion: 'Suspension FRA'},
+											{ codigo: 'SUSP_TMP' , descripcion: 'Suspension TMP'},
+											{ codigo: '2148' , descripcion: 'Suspension TMP'},
+											{ codigo: '2151' , descripcion: 'Bloqueo EQI'},
+										     ]
+								}
+							]
+	},
+	{
+           'Mensajes': [
+								{
+								  titulo:'La línea ingresada se encuentra bloqueada',
+								  mensaje:'Para ayudarte con el desbloqueo, comunícate con un asesor llamando al <strong>123</strong> desde un móvil Claro o al <strong>0800 00123</strong> desde un fijo',
+								  comment:'Bloque de PopUp'
+								},
+								{
+								  titulo:'',
+								  mensaje:'No puedes cargar la compra a tu recibo debido<br>a que tienes una <strong>deuda pendiente de pago</strong>',
+								  comment:'CR - deuda pendiente '
+								},
+								{
+								  titulo:'',
+								  mensaje:'No puedes cargar la compra a tu recibo debido<br>a que has <strong>superado tu límite de crédito</strong>',
+								  comment:'CR - limite de credito'
+								},
+								{
+								  titulo:'Por el momento, no puedes hacer compras desde esta línea',
+								  mensaje:'Este servicio se encuentra suspendido, por lo que temporalmente no puedes realizar compras. Si deseas, puedes realizar compras desde otras lineas disponibles.<br> <br> Si, tienes alguna duda, por favor, <strong>contáctate con nosotros al 123.</strong>',
+								  comment:'Suspensión'
+								}
+							]			
+    }
+];

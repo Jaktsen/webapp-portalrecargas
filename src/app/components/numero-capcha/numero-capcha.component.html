@@ -1,0 +1,105 @@
+<div class="numero-capcha-box" [ngClass]="{'inicio': tipoLogin === 'loginInicio', 'home': tipoLogin === 'loginNoAuto' || tipoLogin === 'loginAuto'}">
+    <div class="text-box">
+        <p class="text-inicio" *ngIf="tipoLogin === 'loginInicio'">Seleccione el servicio al que desees comprar</p>
+        <p class="text-inicio" *ngIf="tipoLogin === 'loginNoAuto' || tipoLogin === 'loginAuto'"><b>ESTÁS COMPRANDO A ESTE SERVICIO</b></p>
+        <p class="text-inicio" *ngIf="tipoLogin === 'loginNoAuto' || tipoLogin === 'loginAuto'">
+            <span *ngIf="!servicioCompartido.isIFILTE && servicioCompartido.tipoLinea=='1' ">
+                Línea móvil - <b>Prepago</b>
+            </span>
+            <span *ngIf="!servicioCompartido.isIFILTE && servicioCompartido.tipoLinea=='2' ">
+                Línea móvil - <b>Postpago</b>
+            </span>                        
+           <span *ngIf="servicioCompartido.isIFILTE">
+                Código de pago - <b>Internet fijo inalámbrico</b>
+            </span>
+        </p>
+    </div>
+
+    <div class="movil-home-box" *ngIf="tipoLogin === 'loginInicio'">
+        <button class="boton-movil-home" style="margin-right: 8px;" [ngClass]="{'activo': tipoLinea === 'M'}" (click)="cambiarTipoLinea('M')">Móvil</button>
+        <button class="boton-movil-home" [ngClass]="{'activo': tipoLinea === 'H'}" (click)="cambiarTipoLinea('H')">Hogar</button>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" autocomplete="off" *ngIf="tipoLogin === 'loginInicio' || tipoLogin === 'loginNoAuto'">
+        <div class="form-group">
+            <mat-form-field [ngClass]="{'input-campo-inicio': tipoLogin === 'loginInicio', 'input-campo-home': tipoLogin === 'loginNoAuto'}">
+                <input matInput placeholder="{{placeHolder}}" type="text" inputmode="numeric" name="telephone" 
+                formControlName="telephone" autocomplete="off" #telephone maxlength="9" id="inputNumero">
+            </mat-form-field>
+
+            <div class="cambioNumero" *ngIf="tipoLogin === 'loginNoAuto'" (click)="cambiarNumero('1')">CAMBIAR</div>
+
+            <div class="tooltip-hogar" *ngIf="tipoLinea === 'H'" (click)="cargaModalHogar()"></div>
+
+            <mat-error class="error-input" *ngIf="loginForm.controls.telephone.dirty && loginForm.controls.telephone.touched && loginForm.controls.telephone.invalid  && getErrorMessage('telephone')!=''" id="errorLine">
+                <mat-icon class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                {{ getErrorMessage("telephone") }}
+            </mat-error>
+        </div>
+
+        <div class="form-group">
+            <div class="capcha-box">
+                <mat-form-field class="capcha" id="captcha_box">
+                    <input matInput placeholder="{{'Ingrese el captcha'}}" type="text" name="capcha" formControlName="capcha" 
+                    autocomplete="off" #capcha maxlength="5" id="inputCapcha">
+                </mat-form-field>
+    
+                <mat-error class="error-input" *ngIf="loginForm.controls.capcha.dirty && loginForm.controls.capcha.touched && loginForm.controls.capcha.invalid && getErrorMessage('capcha')!=''" id="errorCapcha">
+                    <mat-icon  class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                    {{ getErrorMessage("capcha") }}  
+                </mat-error>
+            </div>
+
+            <div class="imagen-capcha" [ngStyle]="{'margin-top': tipoLinea === 'H'? '-18px' : '0px'}">
+                <div class="recarga-captcha" (click)="cargarCaptcha()"></div>
+                <img class="captcha-img" [hidden]="!captchaImage" id="loginCaptchaImage" [attr.src]="captchaImage">
+            </div>  
+        </div>
+    
+        <div class="boton-loading-box" [ngClass]="{'inicio': tipoLogin === 'loginInicio', 'home': tipoLogin === 'loginNoAuto'}">
+            <button type="submit" class="buton-ingresar" [disabled]="!loginForm.valid || isLoading || loginForm.controls.telephone.disabled">Continuar</button>
+            <div class="loading" *ngIf="isLoading">
+                <label class="loader" ></label>
+            </div>
+        </div>
+    </form>
+
+    <form [formGroup]="loginFormAuto" (ngSubmit)="onSubmitAuto()" autocomplete="off" *ngIf="tipoLogin === 'loginAuto'">
+        <div class="form-group">
+            <mat-form-field class="input-campo-home">
+                <input matInput placeholder="{{placeHolder | uppercase}}" type="text" inputmode="numeric" name="numeroAuto" 
+                formControlName="numeroAuto" autocomplete="off" #numeroAuto maxlength="9" id="inputNumAuto">
+            </mat-form-field>
+
+            <div *ngIf="!cambiandoNumero && mostrarCambiar" class="cambioNumero" (click)="cambiarNumero('2')">CAMBIAR</div>
+            <div *ngIf="cambiandoNumero && mostrarCambiar" class="cambioNumero infoStyle" (click)="cargaModalHomeHogar()"></div>
+
+
+            <mat-error class="error-input" *ngIf="loginFormAuto.controls.numeroAuto.dirty && loginFormAuto.controls.numeroAuto.touched && !loginFormAuto.controls.numeroAuto.valid  && getErrorMessage('numeroAuto')!=''" id="errorLine">
+                <mat-icon class="error-icon" aria-hidden="false" aria-label="Example home icon">error</mat-icon>
+                {{ getErrorMessage("numeroAuto") }}
+            </mat-error>
+        </div>
+    </form>
+</div>
+
+<div class="modalCompleto" *ngIf="modalAbierto">
+    <div class="modal-hogar">
+        <p class="text-modal">Encuéntralo en la parte superior derecha de tu recibo:</p>
+        <div class="imagen-modal"></div>
+        <p class="gray-texto">* image referencial</p>
+        <button class="boton-modal" (click)="cargaModalHogar()">Listo</button>
+    </div>
+</div>
+<div class="modalCompleto" *ngIf="modalHomeAbierto">
+    <div class="modal-hogar inicio">
+        <p class="custom-leftMsg-Hogar"><strong>Para servicios móviles,</strong>
+            <br>Ingresa tu número de línea <br>Ejm: 990388777</p>             
+            <hr>
+            <p class="custom-leftMsg-Hogar"><strong>Para servicios hogar,</strong><br>Ingresa tu código de pago </p>             
+            <p class="custom-leftMsg-Hogar">Encuéntralo en la parte superior derecha de tu recibo</p> 
+            <div class="imagen-modal"></div>    
+            <p class="gray-texto left">* image referencial</p>
+            <button type="button" class="boton-modal" (click)="cargaModalHomeHogar()" >Listo</button>
+    </div>
+</div>

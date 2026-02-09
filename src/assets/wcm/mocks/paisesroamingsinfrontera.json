@@ -1,0 +1,20 @@
+var paisesRoamingSinFrontera = [
+    {"country_code":"09","country":"Argentina","description":"OfertadeplanesClaroMax."},
+    {"country_code":"25","country":"Brasil","description":"OfertadeplanesClaroMax."},
+    {"country_code":"29","country":"Chile","description":"OfertadeplanesClaroMax."},
+    {"country_code":"32","country":"Colombia","description":"OfertadeplanesClaroMax."},
+    {"country_code":"35","country":"Costa Rica","description":"OfertadeplanesClaroMax."},
+    {"country_code":"41","country":"Ecuador","description":"OfertadeplanesClaroMax."},
+    {"country_code":"43","country":"El Salvador","description":"OfertadeplanesClaroMax."},
+    {"country_code":"61","country":"Guatemala","description":"OfertadeplanesClaroMax."},
+    {"country_code":"68","country":"Honduras","description":"OfertadeplanesClaroMax."},
+    {"country_code":"104","country":"México","description":"OfertadeplanesClaroMax."},
+    {"country_code":"109","country":"Nicaragua","description":"OfertadeplanesClaroMax."},
+    {"country_code":"116","country":"Panamá","description":"OfertadeplanesClaroMax."},
+    {"country_code":"117","country":"Paraguay","description":"OfertadeplanesClaroMax."},
+    {"country_code":"121","country":"Puerto Rico","description":"OfertadeplanesClaroMax."},
+    {"country_code":"125","country":"República Dominicana","description":"OfertadeplanesClaroMax."},
+    {"country_code":"155","country":"Uruguay","description":"OfertadeplanesClaroMax."},
+    {"country_code":"48","country":"Estados Unidos","description":"El país de Estados Unidos sólo aplica para la oferta de planes ClaroMax 189 y superiores."}
+    ];
+    
