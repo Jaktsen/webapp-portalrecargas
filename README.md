@@ -26,6 +26,33 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Docker (Modern Workflow)
+
+This project has been modernized to run in a self-contained Docker environment, decoupled from WebSphere Portal/WCM.
+
+### Build the image
+```bash
+docker build -t portal-recargas:latest .
+```
+
+### Run the container
+```bash
+docker run -d -p 8080:8080 --name portal-recargas portal-recargas:latest
+```
+Navigate to `http://localhost:8080`.
+
+### Push to Docker Hub
+Replace `jaktsen` with your username:
+```bash
+docker tag portal-recargas:latest jaktsen/portal-recargas:latest
+docker push jaktsen/portal-recargas:latest
+```
+
+### Why use Docker?
+- **Decoupled from WCM**: Uses local mocks automatically via Nginx configuration.
+- **Portability**: Run the exact same environment on any machine without installing Node.js/Gulp.
+- **Deployment Ready**: Easy to deploy to Cloud or any Docker-ready infrastructure.
+
 ## Preparar el ambiente local
 
 **Precondición para publicar:  Para poder publicar se necesita tener el directorio gulp-config y dentro el archivo data.js para poder publicar.  Usar el archivo data.js.example como base, copiarlo y renombrarlo como data.js y llenar las credenciales del ambiente.
