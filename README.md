@@ -1,109 +1,116 @@
-# WebappPortalrecargasAngular8
+# Portal de Compras y Recargas (Angular 8)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 8.3.17.
 
-## Development server
+## Servidor de Desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-## Code scaffolding
+## Generación de Código
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta `ng generate component nombre-del-componente` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Construcción (Build)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ejecuta `ng build` para construir el proyecto. Los archivos de construcción se almacenarán en el directorio `dist/`. Usa la bandera `--prod` para una construcción de producción.
 
-## Running unit tests
+## Docker (Flujo de Trabajo Moderno)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Este proyecto ha sido modernizado para ejecutarse en un entorno Docker autónomo, desacoplado de WebSphere Portal/WCM.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Docker (Modern Workflow)
-
-This project has been modernized to run in a self-contained Docker environment, decoupled from WebSphere Portal/WCM.
-
-### Build the image
+### Construir la imagen
 ```bash
 docker build -t portal-recargas:latest .
 ```
 
-### Run the container
+### Ejecutar el contenedor
 ```bash
 docker run -d -p 8080:8080 --name portal-recargas portal-recargas:latest
 ```
-Navigate to `http://localhost:8080`.
+Navega a `http://localhost:8080`.
 
-### Push to Docker Hub
-Replace `jaktsen` with your username:
+### Subir a Docker Hub
+Reemplaza `jaktsen` con tu usuario:
 ```bash
 docker tag portal-recargas:latest jaktsen/portal-recargas:latest
 docker push jaktsen/portal-recargas:latest
 ```
 
-### Why use Docker?
-- **Decoupled from WCM**: Uses local mocks automatically via Nginx configuration.
-- **Portability**: Run the exact same environment on any machine without installing Node.js/Gulp.
-- **Deployment Ready**: Easy to deploy to Cloud or any Docker-ready infrastructure.
+### ¿Por qué usar Docker?
+- **Desacoplado de WCM**: Usa mocks locales automáticamente mediante la configuración de Nginx.
+- **Portabilidad**: Ejecuta exactamente el mismo entorno en cualquier máquina sin instalar Node.js o Gulp.
+- **Listo para Despliegue**: Fácil de desplegar en la nube o cualquier infraestructura compatible con Docker.
 
-## Preparar el ambiente local
+---
 
-**Precondición para publicar:  Para poder publicar se necesita tener el directorio gulp-config y dentro el archivo data.js para poder publicar.  Usar el archivo data.js.example como base, copiarlo y renombrarlo como data.js y llenar las credenciales del ambiente.
+## Receta: Configuración On-Premise (Nginx Nativo)
 
-Desde cualquier directorio: 
-1. Instalar nodejs
-2. npm install -g gulp
-3. npm install -g @angular/cli
+Si decides **no usar Docker** y configurar un servidor Linux (Ubuntu/CentOS) desde cero:
 
-Desde el directorio que contiene el archivo package.json
+### 1. Preparar los Archivos (Build)
+En tu máquina de desarrollo:
+```bash
+npm install
+ng build --prod
+```
+Esto generará la carpeta `dist/webapp-portalrecargas-angular/`.
 
-4. npm install
-5. ng serve -o
-6. ctrl+c para detener el servidor local
+### 2. Instalación de Nginx en el Servidor
+```bash
+sudo apt update
+sudo apt install nginx -y
+```
 
-## Publicar en desarrollo
-1. npm run pub
+### 3. Configuración de Nginx
+Edita el archivo de configuración: `sudo nano /etc/nginx/sites-available/portal-recargas`
+```nginx
+server {
+    listen 80;
+    server_name tu-dominio.com;
 
-## Publicar en authoring 
-1. Es pre-condición tener un puente al servidor de authoring con puerto remoto 22 al puerto local 10040
-2. npm run auth
+    root /var/www/portal-recargas;
+    index index.html;
 
-## Publicar build no minificado
-ng build --prod --optimization=false
+    # Archivos WCM mock: servir .json como JavaScript
+    location ~* ^/assets/wcm/mocks/.*\.json(\?.*)?$ {
+        types { }
+        default_type application/javascript;
+        add_header X-Content-Type-Options "nosniff" always;
+    }
 
-## Lint 
-1. ng lint
-2. ng lint specific files:  ng lint --files src/app/shared/components/mantenimientoFavoritosRequest.ts 
-3. ng lint --format json > jsonOutput.json    (generar archivo de reporte)
+    # SPA Fallback
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
 
+### 4. Despliegue y Activación
+1. Crea la carpeta: `sudo mkdir -p /var/www/portal-recargas`
+2. Copia el contenido de `dist/` a `/var/www/portal-recargas/`.
+3. Activa el sitio:
+```bash
+sudo ln -s /etc/nginx/sites-available/portal-recargas /etc/nginx/sites-enabled/
+sudo systemctl restart nginx
+```
 
-# Mocks 
-Estos archivos no se subirán a WCM en la publicación
+---
 
-1. Carpeta de imágenes que se usarán solo en local   src\assets\img\mocks
-2. Carpeta de mocks de WCM src\assets\wcm\mocks
-3. Carpeta de mocks de WEF src\assets\mocks
-3. Carpeta de mocks de WEF usados en pruebas unitarias src\assets\mocks\tests
+## Flujo de Trabajo Tradicional (Legacy)
 
-# Archivos excluídos de publicación
+### Preparar el ambiente local
+**Precondición:** Necesitas el directorio `gulp-config` y el archivo `data.js` (basado en `data.js.example`).
 
-1. Los mocks
-2. Imágenes svg de la carpeta src\assets\img
+1. `npm install -g gulp @angular/cli`
+2. `npm install`
+3. `ng serve -o`
 
+### Mocks
+Los mocks se encuentran en:
+- `src/assets/wcm/mocks`
+- `src/assets/mocks`
 
-Correr tests e2e
-
-> ng e2e
-=======
-# Validar contenido de bundle
-1. npm install -g webpack-bundle-analyzer
-2. ng build --stats-json
-3. webpack-bundle-analyzer dist\webapp-portalrecargas-angular8\stats-es2015.json
-4. Navegar a localhost:8888
+### Validar contenido del Bundle
+1. `npm install -g webpack-bundle-analyzer`
+2. `ng build --stats-json`
+3. `webpack-bundle-analyzer dist/webapp-portalrecargas-angular8/stats-es2015.json`
